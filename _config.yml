@@ -1,2 +1,4 @@
 baseurl: ""
 url: "https://choosemecafe.github.io"
+
+theme: jekyll-theme-cayman
