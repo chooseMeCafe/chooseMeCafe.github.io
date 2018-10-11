@@ -1,0 +1,108 @@
+@import "./utility";
+
+$width-rate: 100vw / 1920;
+$container-width: 1200px;
+$item-padding: 5px;
+$grid-width: (100% / 3 - 0.05);
+$golden-rate: 1.618;
+$grid-primary-height: 350 * $golden-rate * $width-rate;
+$grid-secondary-height: 350 * $width-rate;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.grid {
+  position: relative;
+}
+
+.item {
+  display: block;
+  padding: $item-padding;
+  position: absolute;
+  width: $grid-width;
+  z-index: 1;
+}
+
+.primary_item {
+  height: $grid-primary-height;
+}
+
+.secondary_item {
+  height: $grid-secondary-height;
+}
+
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+
+.item-content {
+  @include border-radius();
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.4s;
+}
+
+.item-content:hover {
+  box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.4);
+}
+
+.item_one {
+  @include border-radius();
+  @include bg-full(
+    "http://www.louisacoffee.co/upload/news/20180120_040034-image().jpg"
+  );
+}
+
+.item_two {
+  @include border-radius();
+  @include bg-full(
+    "http://www.louisacoffee.co/upload/news/20180120_040054-image().jpg"
+  );
+}
+
+.item_three {
+  @include border-radius();
+  @include bg-full(
+    "http://www.louisacoffee.co/upload/news/20180608_095536-image().png"
+  );
+}
+
+.item_four {
+  @include border-radius();
+  @include bg-full(
+    "http://www.louisacoffee.co/upload/news/20180120_040108-image().jpg"
+  );
+}
+
+.item_five {
+  @include border-radius();
+  @include bg-full(
+    "http://www.louisacoffee.co/upload/news/20180120_040147-image().jpg"
+  );
+}
+
+.item_six {
+  @include border-radius();
+  @include bg-full(
+    "http://www.louisacoffee.co/upload/news/20180120_040131-image().jpg"
+  );
+}
