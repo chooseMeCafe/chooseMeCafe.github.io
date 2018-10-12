@@ -5,8 +5,8 @@ $container-width: 1200px;
 $item-padding: 5px;
 $grid-width: (100% / 3 - 0.05);
 $golden-rate: 1.618;
-$grid-primary-height: 350 * $golden-rate * $width-rate;
-$grid-secondary-height: 350 * $width-rate;
+$grid-primary-height: 700 * $width-rate;
+$grid-secondary-height: 700 * $width-rate;
 
 * {
   box-sizing: border-box;
@@ -106,17 +106,3 @@ body {
     "http://www.louisacoffee.co/upload/news/20180120_040131-image().jpg"
   );
 }
-
-// @media screen and (max-width: 375px) {
-//   $grid-primary-height: 350 * $width-rate;
-//   $grid-secondary-height: 350 * $width-rate;
-  
-//   .primary_item {
-//     height: 700px;
-//   }
-  
-//   .secondary_item {
-//     height: 700px;
-//   }
-
-// }
