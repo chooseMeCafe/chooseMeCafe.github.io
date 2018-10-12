@@ -107,16 +107,16 @@ body {
   );
 }
 
-// @media screen and (max-width: 375px) {
-//   $grid-primary-height: 350 * $width-rate;
-//   $grid-secondary-height: 350 * $width-rate;
+@media screen and (max-width: 800px) {
+  $grid-primary-height: 800 * $width-rate;
+  $grid-secondary-height: 800 * $width-rate;
   
-//   .primary_item {
-//     height: 700px;
-//   }
+  .primary_item {
+    height: $grid-primary-height;
+  }
   
-//   .secondary_item {
-//     height: 700px;
-//   }
+  .secondary_item {
+    height: $grid-secondary-height;
+  }
 
-// }
+}
