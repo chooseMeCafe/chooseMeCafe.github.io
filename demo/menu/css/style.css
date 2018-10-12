@@ -113,11 +113,14 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .item {
+    width: 49.95%;
+  }
   .primary_item {
-    height: 41.66667vw;
+    height: 36.45833vw;
   }
   .secondary_item {
-    height: 41.66667vw;
+    height: 36.45833vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

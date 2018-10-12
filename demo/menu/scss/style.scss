@@ -108,8 +108,13 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  $grid-primary-height: 800 * $width-rate;
-  $grid-secondary-height: 800 * $width-rate;
+  $grid-width: (100% / 2 - 0.05);
+  $grid-primary-height: 700 * $width-rate;
+  $grid-secondary-height: 700 * $width-rate;
+
+  .item {
+    width: $grid-width;
+  }
   
   .primary_item {
     height: $grid-primary-height;
