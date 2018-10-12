@@ -8,7 +8,7 @@ $grid-width: (100% / 3 - 0.05);
 $golden-rate: 1.618;
 $grid-primary-height: 350 * $golden-rate * $width-rate;
 $grid-secondary-height: 350 * $width-rate;
-$label-font-size: 28px;
+$label-font-size: 32px;
 
 * {
   box-sizing: border-box;
@@ -119,11 +119,12 @@ body {
 .item_label {
   color: white;
   font-size: $label-font-size;
+  text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.4);
+  font-weight: 500;
 }
 
 @media screen and (max-width: 800px) {
   $grid-width: 100%;
-  // $grid-width: (100% / 2 - 0.05);
   $grid-primary-height: 700 * $width-rate;
   $grid-secondary-height: 700 * $width-rate;
 
