@@ -9,3 +9,9 @@
 @mixin border-radius($radius: 10px) {
   border-radius: $radius;
 }
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
