@@ -114,7 +114,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .item {
-    width: 49.95%;
+    width: 100%;
   }
   .primary_item {
     height: 36.45833vw;
