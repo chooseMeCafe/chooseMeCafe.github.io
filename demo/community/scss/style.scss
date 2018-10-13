@@ -20,7 +20,7 @@ img {
 }
 
 // 手機寬度小於800px時，轉換成一個swiper輪播照片。
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
     .swiper_container:not(:first-child) {
         display: none;
