@@ -1,20 +1,28 @@
 body {
-  padding-top: 200px;
-  height: 2000px;
+    padding-top: 200px;
+    height: 2000px;
 }
 
 .container {
-  max-width: 90%;
+    max-width: 90%;
 }
 
 .col {
-  width: 33%;
+    width: 33%;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .swiper-container {
-  width: 33%;
+    width: 33%;
+}
+
+// 手機寬度小於800px時，轉換成一個swiper輪播照片。
+@media screen and (max-width: 800px) {
+
+    .swiper_container:not(:first-child) {
+        display: none;
+    }
 }
