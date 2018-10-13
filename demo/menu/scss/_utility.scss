@@ -1,7 +1,6 @@
-@mixin bg-full($img, $position: center, $size: cover) {
+@mixin bg-full($position: center, $size: cover) {
   width: 100%;
   height: 100%;
-  background-image: url($img);
   background-size: $size;
   background-position: $position;
 }
