@@ -1,9 +1,13 @@
 function setBackgroundImages(elements, imgs) {
   for (let index = 0; index < elements.length; index++) {
-    elements[index].style.backgroundImage = getUrl(imgs[index]);
+    elements[index].style.backgroundImage = stringToUrl(imgs[index]);
   }
 }
 
-function getUrl(url) {
+function stringToUrl(url) {
   return "url('" + url + "')";
+}
+
+function stringToId(id) {
+  return "#" + id;
 }
