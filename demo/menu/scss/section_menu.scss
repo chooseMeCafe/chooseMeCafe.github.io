@@ -1,18 +1,31 @@
 #section_menu {
-  // background-color: red;
+  // background-color: blue;
 }
 
-.menu_gap {
+.menu_gap,
+.menu_gap2 {
   height: 100px;
+  // background-color: red;
 }
 
 .menu_img {
   width: 100%;
-  transition-duration: 10s;
+}
+
+.menu_container {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+}
+
+.menu_pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-duration: 1s;
   opacity: 1;
 }
 
-.no_height {
+.hidden {
   opacity: 0;
-  height: 0;
 }

@@ -1,2 +1,2 @@
-.menu_gap{height:100px}.menu_img{width:100%;-webkit-transition-duration:10s;transition-duration:10s;opacity:1}.no_height{opacity:0;height:0}
+.menu_gap,.menu_gap2{height:100px}.menu_img{width:100%}.menu_container{position:relative;height:0px;overflow:hidden}.menu_pic{position:absolute;top:0;left:0;-webkit-transition-duration:1s;transition-duration:1s;opacity:1}.hidden{opacity:0}
 /*# sourceMappingURL=section_menu.min.css.map */
