@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,SAAS,AAAC,CACR,MAAM,CAAE,KAAK,CACd,AAED,AAAA,SAAS,AAAC,CACR,KAAK,CAAE,IAAI,CACX,mBAAmB,CAAE,GAAG,CACxB,OAAO,CAAE,CAAC,CACX,AAED,AAAA,UAAU,AAAC,CACT,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACV",
+    "sources": [
+        "../scss/section_menu.scss"
+    ],
+    "names": [],
+    "file": "section_menu.min.css"
+}

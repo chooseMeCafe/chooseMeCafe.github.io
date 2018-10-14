@@ -9,78 +9,82 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+
   <!-- 自己的CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/section_menu.min.css">
 
   <!-- 請在每次大改時，將版本數字+1，比較方便確認push後，網站是否已更新 -->
-  <title>初米咖啡-menu-v1</title>
+  <title>初米咖啡-menu-v2</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="row no-gutters section_menu">
-      <div class="col">
+
+    <!-- 菜單選單 -->
+    <div id="section_menu_option" class="row no-gutters">
+      <div id="menu_option_panel" class="col">
 
         <div id="menu">
           <div class="grid">
 
             <div class="item primary_item">
               <div class="item-content">
-                <div class="box menu_option">
-                  <div class="menu_label">
-                    Appetizer
-                  </div>
+                <div class="menu_option">
+                </div>
+                <div class="menu_label">
+                  APPETIZER
                 </div>
               </div>
             </div>
 
             <div class="item secondary_item">
               <div class="item-content">
-                <div class="box menu_option">
-                  <div class="menu_label">
-                    Brunch
-                  </div>
+                <div class="menu_option">
+                </div>
+                <div class="menu_label">
+                  BRUNCH
                 </div>
               </div>
             </div>
 
             <div class="item primary_item">
               <div class="item-content">
-                <div class="box menu_option">
-                  <div class="menu_label">
-                    Rice
-                  </div>
+                <div class="menu_option">
+                </div>
+                <div class="menu_label">
+                  RICE
                 </div>
               </div>
             </div>
 
             <div class="item primary_item">
               <div class="item-content">
-                <div class="box menu_option">
-                  <div class="menu_label">
-                    Pasta
-                  </div>
+                <div class="menu_option">
+                </div>
+                <div class="menu_label">
+                  PASTA
                 </div>
               </div>
             </div>
 
             <div class="item secondary_item">
               <div class="item-content">
-                <div class="box menu_option">
-                  <div class="menu_label">
-                    Dessert
-                  </div>
+                <div class="menu_option">
+                </div>
+                <div class="menu_label">
+                  DESSERT
                 </div>
               </div>
             </div>
 
             <div class="item secondary_item">
               <div class="item-content">
-                <div class="box menu_option">
-                  <div class="menu_label">
-                    Drink
-                  </div>
+                <div class="menu_option">
+                </div>
+                <div class="menu_label">
+                  DRINK
                 </div>
               </div>
             </div>
@@ -89,6 +93,21 @@
         </div>
       </div>
     </div>
+
+    <!-- <button id="btn">test</button> -->
+    <!-- 菜單 -->
+    <div id="section_menu" class="row section_menu">
+      <div id="menu_gap" class="menu_gap w-100"></div>
+      <div class="col">
+        <img class="menu_img" src="./img/menu_appetizer.jpg" alt="appetizer">
+        <img class="menu_img" src="./img/menu_brunch.jpg" alt="brunch">
+        <img class="menu_img" src="./img/menu_rice.jpg" alt=rice"">
+        <img class="menu_img" src="./img/menu_pasta.jpg" alt="pasta">
+        <img class="menu_img" src="./img/menu_dessert.jpg" alt="dessert">
+        <img class="menu_img" src="./img/menu_drink.jpg" alt="drink">
+      </div>
+    </div>
+
   </div>
 
   <!-- 以下為JS檔 -->

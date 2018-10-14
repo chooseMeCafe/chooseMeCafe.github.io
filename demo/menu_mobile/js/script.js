@@ -1,7 +1,7 @@
 "use strict";
 
-var MENU_MOBILE_OPTION_CLASS = ".menu_mobile_option";
-var MENU_COLLAPSE = ".menu_collapse";
+const MENU_MOBILE_OPTION_CLASS = ".menu_mobile_option";
+const MENU_COLLAPSE = ".menu_collapse";
 
 var bgImages = [
   "./img/menu_option_appetizer.jpg",
