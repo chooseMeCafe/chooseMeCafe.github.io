@@ -19,18 +19,31 @@ setBackgroundImages(menuMobileOptions, bgImages);
 
 for (let index = 0; index < menuMobileOptions.length; index++) {
   menuMobileOptions[index].onclick = function() {
-    $(stringToId(menuMobileCollapses[index].id)).collapse("toggle");
+    $(menuMobileCollapses[index]).collapse("toggle");
   };
 }
 
 for (let index = 0; index < menuMobileCollapses.length; index++) {
-  $(stringToId(menuMobileCollapses[index].id)).on(
-    "shown.bs.collapse",
-    function() {
-      this.scrollIntoView({
-          block: 'start',
-          behavior: 'smooth'
-      });
-    }
-  );
+  let menuMobileCollapse = $(menuMobileCollapses[index]);
+  let menuMobileOption = menuMobileOptions[index];
+
+  menuMobileCollapse.on("show.bs.collapse", function() {
+    this.classList.add("fadeIn");
+  });
+
+  menuMobileCollapse.on("shown.bs.collapse", function() {
+    this.classList.remove("fadeIn");
+    menuMobileOption.scrollIntoView({
+      block: "start",
+      behavior: "smooth"
+    });
+  });
+
+  menuMobileCollapse.on("hide.bs.collapse", function() {
+    this.classList.add("fadeOut");
+  });
+
+  menuMobileCollapse.on("hidden.bs.collapse", function() {
+    this.classList.remove("fadeOut");
+  });
 }
