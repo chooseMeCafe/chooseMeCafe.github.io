@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
-@import "../../../scss/utility";
+@import "./utility";
 
 $width-rate: 100vw / 1920;
 $item-padding: 10px;
@@ -48,11 +48,13 @@ body {
   height: 3000px;
 }
 
-.primary_item {
+.item {
   height: $grid-primary-height;
 }
 
-.secondary_item {
+.item:nth-child(2),
+.item:nth-child(5),
+.item:nth-child(6) {
   height: $grid-secondary-height;
 }
 
@@ -76,12 +78,12 @@ body {
 }
 
 .item_small {
-  width: calc(100% / 6);
-  height: 100px;
+  width: calc(100% / 6 - 0.2px);
+  height: 100px !important;
 }
 
 .fixed {
-  position: fixed; 
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;

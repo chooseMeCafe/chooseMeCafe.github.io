@@ -1,16 +1,1 @@
-@mixin bg-full($position: center, $size: cover) {
-  width: 100%;
-  height: 100%;
-  background-size: $size;
-  background-position: $position;
-}
-
-@mixin border-radius($radius: 10px) {
-  border-radius: $radius;
-}
-
-@mixin flex-center() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import "../../../scss/utility";
