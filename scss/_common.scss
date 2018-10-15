@@ -4,16 +4,14 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-html {
-  font-size: 32px;
-}
+$h5-size: 12px;
 
 h1 {
-  font-size: 1rem;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 0.7rem; 
+  font-size: 32px; 
 }
 
 h3 {
@@ -22,11 +20,10 @@ h3 {
 
 h4 {
   font-size: 0.5rem;
-
 }
 
 h5 {
-  font-size: 0.4rem;
+  font-size: $h5-size;
 
 }
 
@@ -38,7 +35,7 @@ h6 {
 $screen-max-width: 768px;
 
 // 手機內容字體大小 
-$mobile-font-size: 12px;
+$mobile-font-size: $h5-size;
 
 // 主色
 $primary-color: #8AA2B7;
