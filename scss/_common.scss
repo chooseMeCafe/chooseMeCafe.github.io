@@ -4,10 +4,18 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-$h5-size: 12px;
+// 手機含平板寬度設定
+$screen-max-width: 768px;
+
+// 主色
+$primary-color: #8AA2B7;
+
+// 背景色
+$bg-color: #E5E7EC;
 
 h1 {
-  font-size: 60px;
+  font-size: 200px;
+  color: red;
 }
 
 h2 {
@@ -23,22 +31,20 @@ h4 {
 }
 
 h5 {
-  font-size: $h5-size;
-
+  font-size: 16px;
 }
 
 h6 {
   font-size: 0.3rem;
 }
 
-// 手機含平板寬度設定
-$screen-max-width: 768px;
+// footer
 
-// 手機內容字體大小 
-$mobile-font-size: $h5-size;
+.footer_title {
+  font-size: 20px;
+}
 
-// 主色
-$primary-color: #8AA2B7;
+.footer_content {
+  font-size: 18px;
+}
 
-// 背景色
-$bg-color: #E5E7EC;
