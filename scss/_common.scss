@@ -10,39 +10,36 @@ html {
 
 // 手機含平板寬度設定
 $screen-max-width: 768px;
-
 // 主色
 $primary-color: #8aa2b7;
-
 // 背景色
 $bg-color: #e5e7ec;
 
 h1 {
-  font-size: 6rem;
+  font-size: 6rem; // h1 60px
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.2rem; // h2 32px
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-size: 2.6rem; // h3 26px
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.8rem; // h4 18px
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.6rem; // h5 16px
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: 1.2rem; // h6 12px
 }
 
 // footer
-
 .footer_title {
   font-size: 20px;
 }
