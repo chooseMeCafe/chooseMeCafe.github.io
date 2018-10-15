@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=style.min.css.map */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);*{font-family:"Noto Sans TC", sans-serif}.footer{background-color:lightgray}.card{background-color:gray}.icongroup{text-align:center;line-height:50px}.gotop{position:fixed;float:right;margin-top:20px;right:20px;bottom:20px}.copyright{text-align:center;margin-top:40px}@media screen and (max-width: 762px){li{font-size:12px}}
+/*# sourceMappingURL=style.min.css.map */
