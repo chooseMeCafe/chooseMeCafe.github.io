@@ -8,26 +8,25 @@
 $screen-max-width: 768px;
 
 // 主色
-$primary-color: #8AA2B7;
+$primary-color: #8aa2b7;
 
 // 背景色
-$bg-color: #E5E7EC;
+$bg-color: #e5e7ec;
 
 h1 {
-  font-size: 200px;
-  color: red;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 32px; 
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 0.6rem;
+  font-size: 26px;
 }
 
 h4 {
-  font-size: 0.5rem;
+  font-size: 18px;
 }
 
 h5 {
@@ -35,7 +34,7 @@ h5 {
 }
 
 h6 {
-  font-size: 0.3rem;
+  font-size: 1rem;
 }
 
 // footer
@@ -47,4 +46,3 @@ h6 {
 .footer_content {
   font-size: 18px;
 }
-
