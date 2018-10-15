@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,4DAAI,CAEZ,AAAA,CAAC,AAAC,CACA,WAAW,CAAE,0BAA0B,CACxC,AAED,AAAA,IAAI,AAAC,CACH,SAAS,CAAE,KAAK,CACjB",
     "sources": [
-        "../scss/style.scss"
+        "../scss/style.scss",
+        "../scss/common.scss"
     ],
     "names": [],
     "file": "style.min.css"

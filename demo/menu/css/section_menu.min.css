@@ -1,2 +1,2 @@
-.menu_gap,.menu_gap2{height:100px}.menu_img{width:100%}.menu_container{position:relative;height:0px;overflow:hidden}.menu_pic{position:absolute;top:0;left:0;-webkit-transition-duration:1s;transition-duration:1s;opacity:1}.hidden{opacity:0}
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);*{font-family:"Noto Sans TC", sans-serif}html{font-size:32px}h1{font-size:1rem}h2{font-size:0.7rem}h3{font-size:0.6rem}h4{font-size:0.5rem}h5{font-size:0.4rem}h6{font-size:0.3rem}.menu_gap,.menu_gap2{height:100px}.menu_img{width:100%}.menu_container{position:relative;height:0px;overflow:hidden}.menu_pic{position:absolute;top:0;left:0;-webkit-transition-duration:1s;transition-duration:1s;opacity:1}.hidden{opacity:0}
 /*# sourceMappingURL=section_menu.min.css.map */

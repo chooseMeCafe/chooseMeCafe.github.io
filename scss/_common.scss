@@ -4,6 +4,36 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+html {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 0.7rem; 
+}
+
+h3 {
+  font-size: 0.6rem;
+}
+
+h4 {
+  font-size: 0.5rem;
+
+}
+
+h5 {
+  font-size: 0.4rem;
+
+}
+
+h6 {
+  font-size: 0.3rem;
+}
+
 // 手機含平板寬度設定
 $screen-max-width: 768px;
 
