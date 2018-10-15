@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+// 手機含平板寬度設定
+$screen-max-width: 768px;
+
+// 手機內容字體大小 
+$mobile-font-size: 12px;
+
+// 主色
+$primary-color: #8AA2B7;
+
+// 背景色
+$bg-color: #E5E7EC;

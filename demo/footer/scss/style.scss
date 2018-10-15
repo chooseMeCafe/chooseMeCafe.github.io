@@ -1,34 +1,33 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import "./common";
 
-        * {
-            font-family: "Noto Sans TC", sans-serif;
-        }
+.footer {
+  background-color: $bg-color;
+}
 
-        .footer {
-            // max-width: 100%;
-            // margin-top: 50px;
-            background-color: lightgray;
-        }
-        .card {
-            background-color: gray;
-        }
-        .icongroup {
-            text-align: center;
-            line-height: 50px;
-        }
-        .gotop {
-            position: fixed;
-            float: right;
-            margin-top: 20px;
-            right: 20px;
-            bottom: 20px;
-        }
-        .copyright {
-            text-align: center;
-            margin-top: 40px;
-        }
-        @media screen and (max-width:762px) {
-            li {
-                font-size: 12px;
-            }
-        }
+.card {
+  background-color: $primary-color;
+}
+
+.icongroup {
+  text-align: center;
+  line-height: 50px;
+}
+
+.gotop {
+  position: fixed;
+  float: right;
+  margin-top: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: $screen-max-width) {
+  li {
+    font-size: $mobile-font-size;
+  }
+}
