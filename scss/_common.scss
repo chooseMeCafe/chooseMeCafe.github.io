@@ -4,6 +4,10 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+html {
+  font-size: 10px;
+}
+
 // 手機含平板寬度設定
 $screen-max-width: 768px;
 
@@ -14,27 +18,27 @@ $primary-color: #8aa2b7;
 $bg-color: #e5e7ec;
 
 h1 {
-  font-size: 60px;
+  font-size: 6rem;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 // footer
