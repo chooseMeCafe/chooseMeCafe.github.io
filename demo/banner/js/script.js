@@ -13,4 +13,11 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-});
+    breakpoints: {
+        375: {
+            slidesPerView: 1,
+            spaceBetween: 100,
+        }
+    },
+
+    });

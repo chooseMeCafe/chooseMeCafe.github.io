@@ -14,6 +14,10 @@ html,
             padding: 0;
         }
 
+        #section_banner{
+            width: 100%;
+        }
+
         .swiper-container {
             width: 50%;
             height: 50%;
@@ -55,7 +59,17 @@ html,
             background: #007aff;
         }
 
+        /* 設定文字大小 */
         .banner_width_height {
             width: 100%;
             height: 100%;
+        }
+
+        /* 手機版 */
+        @media screen and (max-width: 375px) {
+            .swiper-container{
+                width: 100%;
+                height: 100%;
+            }
+
         }
