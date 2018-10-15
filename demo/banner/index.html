@@ -11,7 +11,8 @@
     crossorigin="anonymous">
 
   <!-- 自己的 CSS -->
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
 
   <!-- 請在每次大改時，將版本數字+1，比較方便確認push後，網站是否已更新 -->
   <title>初米咖啡-banner-v1</title>
@@ -22,19 +23,34 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        辛苦了 加油哦~！
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="banner_width_height" src="./img/2018-10-13-WEB-chooseme-v1-01.jpg"
+                alt="banner_1"></div>
+            <div class="swiper-slide"><img class="banner_width_height" src="./img/2018-10-13-WEB-chooseme-v1-02.jpg"
+                alt="banner_2"></div>
+            <div class="swiper-slide"><img class="banner_width_height" src="./img/2018-10-13-WEB-chooseme-v1-03.jpg"
+                alt="banner_3"></div>
+            <div class="swiper-slide"><img class="banner_width_height" src="./img/2018-10-13-WEB-chooseme-v1-04.jpg"
+                alt="banner_4"></div>
+            <div class="swiper-slide"><img class="banner_width_height" src="./img/2018-10-13-WEB-chooseme-v1-05.jpg"
+                alt="banner_5"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- 以下為JS檔 -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.esm.bundle.js"></script>
 </body>
 
 </html>
