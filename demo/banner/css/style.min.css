@@ -14,13 +14,12 @@ body {
 }
 
 #section_banner{
-    width: 100%;
-    
+    width: 100%;           
 }
 
 .swiper-container {
     width: 100%;
-    height: 95%;
+    height: 100%;
 }
 
 .swiper-slide {
@@ -59,7 +58,7 @@ body {
     background: #007aff;
 }
 
-/* 設定文字大小 */
+/* 設定圖片大小 */
 .banner_width_height {
     width: 100%;
     height: 100%;
