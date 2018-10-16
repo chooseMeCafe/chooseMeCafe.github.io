@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2.2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.footer_title {
+  font-size: 20px;
+}
+
+.footer_content {
+  font-size: 18px;
+}
+
+.section_brand * {
+  font-family: "FangSong", sans-serif;
+}
+
+.section_brand_one {
+  background-color: #e6e6e6;
+}
+
+.section_brand_two {
+  background-color: #b3b3b3;
+}
+
+.section_brand_three {
+  background-color: #e6e6e6;
+}
+
+.section_brand img {
+  height: 500px;
+}
+
+.section_brand .col {
+  padding: 100px 0;
+}
+
+.section_brand_two_content_center {
+  background-color: green;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text_center {
+  text-align: center;
+}
+
+img.brand_logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+img.brand_section_one_img,
+img.brand_section_three_img {
+  display: block;
+  margin-left: auto;
+}
+
+h2 span {
+  display: block;
+}
+
+.test {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
