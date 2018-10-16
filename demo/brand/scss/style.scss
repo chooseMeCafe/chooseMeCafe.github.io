@@ -1,5 +1,11 @@
 @import "./common";
 
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+.section_brand h1, h2, h3, h4, h5, p, span {
+    font-family: "FangSong", sans-serif;
+}
+
 .section_brand_one {
     background-color: #e6e6e6;
 }
@@ -10,3 +16,22 @@
 .section_brand_three {
     background-color: #e6e6e6;
 }
+
+.section_brand img {
+    width: 100%;
+}
+
+.section_brand .col {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section_brand_one_content {
+    // background-color: red;
+}
+
+.text_center {
+    text-align: center;
+}
+
+h2 span { display: block; }
