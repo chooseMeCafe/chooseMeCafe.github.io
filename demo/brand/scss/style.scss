@@ -2,36 +2,61 @@
 
 @import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
-.section_brand h1, h2, h3, h4, h5, p, span {
-    font-family: "FangSong", sans-serif;
+.section_brand * {
+  font-family: "FangSong", sans-serif;
 }
 
 .section_brand_one {
-    background-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 .section_brand_two {
-    background-color: #b3b3b3;
+  background-color: #b3b3b3;
 }
 
 .section_brand_three {
-    background-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .section_brand img {
-    width: 100%;
+  height: 500px;
 }
 
 .section_brand .col {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding: 100px 0;
 }
 
 .section_brand_one_content {
-    // background-color: red;
+}
+
+.section_brand_two_content_center {
+    background-color: green;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text_center {
-    text-align: center;
+  text-align: center;
 }
 
-h2 span { display: block; }
+img.brand_logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+img.brand_section_one_img,
+img.brand_section_three_img {
+  display: block;
+  margin-left: auto;
+}
+
+h2 span {
+  display: block;
+}
+
+.test {
+    background-color: green;
+}
