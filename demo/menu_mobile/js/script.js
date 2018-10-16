@@ -33,10 +33,10 @@ for (let index = 0; index < menuMobileCollapses.length; index++) {
 
   menuMobileCollapse.on("shown.bs.collapse", function() {
     this.classList.remove("fadeIn");
-    menuMobileOption.scrollIntoView({
-      block: "start",
-      behavior: "smooth"
-    });
+    // menuMobileOption.scrollIntoView({
+    //   block: "start",
+    //   behavior: "smooth"
+    // });
   });
 
   menuMobileCollapse.on("hide.bs.collapse", function() {
