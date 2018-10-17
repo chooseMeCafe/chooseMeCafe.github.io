@@ -1,8 +1,8 @@
 @import "./common";
-@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
 .section_brand * {
   font-family: "FangSong", "STFangSong", sans-serif;
+  // font-weight: 600;
 }
 
 .section_brand img {
@@ -10,8 +10,8 @@
   width: 600px;
 }
 
-.section_brand .col {
-  padding: 130px 0;
+.section_brand .row > div {
+  padding: 105px 0;
 }
 
 .section_brand > div:nth-child(odd) {
@@ -22,20 +22,14 @@
   background-color: #b3b3b3;
 }
 
-.line {
-  display: none;
-}
-
 img.brand_logo {
   width: 60px;
   height: 60px;
 }
 
-h2 span {
-  display: block;
+.text-vertical {
+  writing-mode: vertical-lr;
 }
-
-
 
 .section_brand .label {
   margin-bottom: 50px;
@@ -43,15 +37,11 @@ h2 span {
 
 @media screen and (max-width: 1200px) {
   .section_brand > div:nth-child(odd) {
-    // background-color: red;
+    background-color: rgb(235, 177, 177);
   }
 }
 
 @media screen and (max-width: 992px) {
-
-  .line {
-    display: block;
-  }
 
   .section_brand .content {
     justify-content: center;
@@ -62,13 +52,13 @@ h2 span {
  }
 
   .section_brand > div:nth-child(odd) {
-    // background-color: blue;
+    background-color: rgb(156, 156, 231);
   }
 }
 
 @media screen and (max-width: 576px) {
   .section_brand > div:nth-child(odd) {
-    // background-color: green;
+    background-color: rgb(184, 221, 184);
   }
 
 }
