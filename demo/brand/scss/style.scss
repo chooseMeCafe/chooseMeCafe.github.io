@@ -38,13 +38,12 @@ img.brand_logo {
 }
 
 @media screen and (max-width: 1200px) {
-  .section_brand > div:nth-child(odd) {
-    background-color: rgb(235, 177, 177);
-  }
-
   .section_brand img {
     max-width: 100%;
     height: auto;
+  }
+  .box {
+    background-color: rgb(235, 177, 177);
   }
 }
 
@@ -65,13 +64,17 @@ img.brand_logo {
     padding: 50px 15px;
   }
 
-  .section_brand > div:nth-child(odd) {
+  .section_brand .row > div:first-child {
+    padding-bottom: 0;
+  }
+
+  .box {
     background-color: rgb(156, 156, 231);
   }
 }
 
 @media screen and (max-width: 576px) {
-  .section_brand > div:nth-child(odd) {
+  .box {
     background-color: rgb(184, 221, 184);
   }
 }
