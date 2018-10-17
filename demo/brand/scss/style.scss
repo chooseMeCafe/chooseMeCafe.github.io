@@ -1,5 +1,5 @@
 @import "./common";
-
+import "~boostrap/scss/bootstrap-grid.scss";
 @import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
 .section_brand * {
@@ -9,22 +9,19 @@
 .section_brand img {
   height: 500px;
   width: 500px;
+
 }
 
 .section_brand .col {
   padding: 130px 0;
 }
 
-.section_brand_one {
+.section_brand > div:nth-child(odd) {
   background-color: #e6e6e6;
 }
 
-.section_brand_two {
+.section_brand > div:nth-child(even) {
   background-color: #b3b3b3;
-}
-
-.section_brand_three {
-  background-color: #e6e6e6;
 }
 
 img.brand_logo {
@@ -39,3 +36,41 @@ h2 span {
 .section_brand_three .label {
   margin-bottom: 50px;
 }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .section_brand > div:nth-child(odd) {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section_brand > div:nth-child(odd) {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section_brand > div:nth-child(odd) {
+    background-color: green;
+  }
+}
+
+// @media screen and (max-width: 1200px) {
+//   .section_brand > div:nth-child(odd) {
+//     background-color: red;
+//   }
+// }
+
+// @media screen and (max-width: 960px) {
+//   .section_brand > div:nth-child(odd) {
+//     background-color: blue;
+//   }
+// }
+
+// @media screen and (max-width: 520px) {
+//   .section_brand > div:nth-child(odd) {
+//     background-color: green;
+//   }
+// }
