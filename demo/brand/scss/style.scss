@@ -1,5 +1,4 @@
 @import "./common";
-import "~boostrap/scss/bootstrap-grid.scss";
 @import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
 .section_brand * {
@@ -7,9 +6,8 @@ import "~boostrap/scss/bootstrap-grid.scss";
 }
 
 .section_brand img {
-  height: 500px;
-  width: 500px;
-
+  height: 550px;
+  width: 600px;
 }
 
 .section_brand .col {
@@ -35,8 +33,6 @@ h2 span {
 
 .section_brand_three .label {
   margin-bottom: 50px;
-}
-
 }
 
 @media screen and (max-width: 1200px) {
