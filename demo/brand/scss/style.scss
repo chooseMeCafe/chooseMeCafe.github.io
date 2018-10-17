@@ -2,12 +2,12 @@
 
 .section_brand * {
   font-family: "FangSong", "STFangSong", sans-serif;
-  // font-weight: 600;
+  // font-weight: 60;
 }
 
 .section_brand img {
-  height: 550px;
   width: 600px;
+  max-height: 550px;
 }
 
 .section_brand .row > div {
@@ -39,17 +39,21 @@ img.brand_logo {
   .section_brand > div:nth-child(odd) {
     background-color: rgb(235, 177, 177);
   }
+
+  .section_brand img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 992px) {
-
   .section_brand .content {
     justify-content: center;
   }
-  
- .section_brand img {
-   margin: 0 auto;
- }
+
+  .section_brand img {
+    margin: 0 auto;
+  }
 
   .section_brand > div:nth-child(odd) {
     background-color: rgb(156, 156, 231);
@@ -60,5 +64,4 @@ img.brand_logo {
   .section_brand > div:nth-child(odd) {
     background-color: rgb(184, 221, 184);
   }
-
 }

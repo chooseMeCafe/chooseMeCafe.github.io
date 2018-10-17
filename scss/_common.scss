@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
+$xl: 1200px;
+$lg: 992px;
+$sm: 540px;
+
 * {
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -50,4 +54,16 @@ p {
 
 .footer_content {
   font-size: 18px;
+}
+
+@media screen and (max-width: $xl) {
+}
+
+@media screen and (max-width: $lg) {
+}
+
+@media screen and (max-width: $sm) {
+  html {
+    font-size: 8px;
+  }
 }
