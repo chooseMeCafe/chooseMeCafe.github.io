@@ -44,6 +44,7 @@ img.brand_logo {
     max-width: 100%;
     height: auto;
   }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -53,6 +54,10 @@ img.brand_logo {
 
   .section_brand img {
     margin: 0 auto;
+  }
+
+  .section_brand .label {
+    margin-bottom: 40px !important;
   }
 
   .section_brand > div:nth-child(odd) {
