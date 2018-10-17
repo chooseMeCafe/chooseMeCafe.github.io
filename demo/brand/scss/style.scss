@@ -1,8 +1,11 @@
 @import "./common";
 
 .section_brand * {
-  font-family: "FangSong", "STFangSong", sans-serif;
-  // font-weight: 60;
+  font-family: "FangSong", "STFangSong", "cwTeXFangSong", "Noto Sans TC",
+    sans-serif;
+  font-weight: 400;
+  color: rgb(82, 80, 80);
+  font-style: regular;
 }
 
 .section_brand img {
@@ -44,7 +47,6 @@ img.brand_logo {
     max-width: 100%;
     height: auto;
   }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -58,6 +60,10 @@ img.brand_logo {
 
   .section_brand .label {
     margin-bottom: 40px !important;
+  }
+
+  .section_brand .row > div {
+    padding: 50px 15px;
   }
 
   .section_brand > div:nth-child(odd) {
