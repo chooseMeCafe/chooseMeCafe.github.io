@@ -1,11 +1,24 @@
-@import "./common";
+html,
+body {
+  position: relative;
+  height: 3000px; /* 記得必須拿掉 */
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
 
 /* section_navbar */
 .logo {
   width: 100px;
 }
 
-.navbar {
+.navbar_bgcolor {
   background-color: rgba(233, 219, 219, 0.8);
   width: 100%;
 }
@@ -46,6 +59,15 @@
 }
 #section_banner_mobile {
   display: none;
+}
+
+#section_navbar_mobile {
+  display: none;
+}
+
+/* section_banner */
+#section_banner {
+  width: 100%;
 }
 
 .swiper-container {
@@ -95,22 +117,6 @@
   height: 100%;
 }
 
-@media screen and (max-width: $xl) {
-  body {
-    background-color: blue;
-  }
-}
-@media screen and (max-width: $lg) {
-  body {
-    background-color: red;
-  }
-}
-@media screen and (max-width: $sm) {
-  body {
-    background-color: green;
-  }
-}
-
 /* 手機版 */
 @media screen and (max-width: 500px) {
   .swiper-container {
@@ -121,20 +127,14 @@
     display: none;
   }
 
-  //   #section_navbar {
-  //     display: none;
-  //   }
-
-//   #section_banner_mobile {
-//     display: block;
-//   }
+  #section_navbar {
+    display: none;
+  }
+  #section_banner_mobile {
+    display: block;
+  }
 
   #section_navbar_mobile {
     display: block;
   }
 }
-
-// .navbar_bgcolor{
-// background-color: rgba(233, 219, 219, 0.8);
-// width: 100%;
-// }
