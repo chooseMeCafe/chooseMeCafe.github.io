@@ -65,17 +65,28 @@ span {
 }
 
 @media screen and (max-width: $xl) {
+  body {
+    background-color: rgb(235, 177, 177);
+  }
 }
 
 @media screen and (max-width: $lg) {
+  body {
+    background-color: rgb(156, 156, 231);
+  }
 }
 
 @media screen and (max-width: $sm) {
+  body {
+    background-color: rgb(184, 221, 184);
+  }
+
   html {
     font-size: 8px;
   }
 
-  p, span {
+  p,
+  span {
     font-size: 2rem;
   }
 }

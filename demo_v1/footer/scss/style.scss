@@ -1,0 +1,30 @@
+@import "./common";
+
+.footer {
+  background-color: $bg-color;
+}
+
+.card {
+  background-color: $primary-color;
+}
+
+.icongroup {
+  text-align: center;
+  line-height: 50px;
+}
+
+.gotop {
+  position: fixed;
+  float: right;
+  margin-top: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: $screen-max-width) {
+}

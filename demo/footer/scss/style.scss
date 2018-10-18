@@ -1,19 +1,28 @@
 @import "./common";
 
-.footer {
+// 第一個 div(卡片列表)
+.section_footer > div:first-child {
   background-color: $bg-color;
 }
 
-.card {
+// 分隔線 hr
+.section_footer hr {
+  background-color: white;
+  width: 50px;
+}
+
+// 所有卡片 .card
+.section_footer .card {
   background-color: $primary-color;
 }
 
-.icongroup {
-  text-align: center;
+// fb ig 小圖標 .icon_group
+.section_footer .icon_group {
   line-height: 50px;
 }
 
-.gotop {
+// 返回最上按鈕 .go_top
+.go_top {
   position: fixed;
   float: right;
   margin-top: 20px;
@@ -21,10 +30,24 @@
   bottom: 20px;
 }
 
-.copyright {
+// 版權聲明 .copyright
+.section_footer .copyright {
   text-align: center;
   margin-top: 40px;
 }
 
-@media screen and (max-width: $screen-max-width) {
+// 螢幕寬度介於 lg:992px 與 xl:1200px 之間
+@media (min-width: $lg) and (max-width: $xl) {
+  // 選取 col* 最後一個元素(卡片 Follow Us)
+  div[class^="col"]:last-child {
+    margin-top: 0.5rem;
+  }
+}
+
+// 螢幕寬度小於 lg:992px
+@media screen and (max-width: $lg) {
+  // 選取所有 col* 元素(3張卡片)
+  div[class^="col"] {
+    margin-bottom: 0.5rem;
+  }
 }
