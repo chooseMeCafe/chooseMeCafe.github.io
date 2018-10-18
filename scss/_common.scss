@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 $xl: 1200px;
 $lg: 992px;
@@ -7,6 +8,8 @@ $sm: 540px;
 
 * {
   font-family: "Noto Sans TC", sans-serif;
+  // font-style: regular;
+  // font-weight: 300;
 }
 
 html {
@@ -45,7 +48,11 @@ h6 {
 }
 
 p {
-  font-size: 1.8rem; // p 16px
+  font-size: 1.8rem; // p 18px
+}
+
+span {
+  font-size: 1.8rem; // p 18px
 }
 
 // footer
@@ -68,7 +75,7 @@ p {
     font-size: 8px;
   }
 
-  p {
+  p, span {
     font-size: 2rem;
   }
 }

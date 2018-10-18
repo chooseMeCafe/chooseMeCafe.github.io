@@ -1,9 +1,7 @@
 @import "./common";
 
 .section_brand * {
-  font-family: 
-  "FangSong", "STFangSong", "cwTeXFangSong", "Noto Sans TC",
-    sans-serif;
+  font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC", sans-serif;
   color: rgb(82, 80, 80);
 }
 
@@ -77,5 +75,9 @@ img.brand_logo {
 @media screen and (max-width: 576px) {
   .box {
     background-color: rgb(184, 221, 184);
+  }
+
+  .section_brand .content div {
+    align-items: center;
   }
 }

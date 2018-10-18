@@ -1,30 +1,39 @@
 @import "./common";
 
-body {
-    padding-top: 200px;
-    height: 2000px;
-}
-
-.container {
-    max-width: 90%;
+.section_community * {
+    font-family: "cwTeXYen", sans-serif;
 }
 
 .col {
-    width: 33%;
+    padding: 15px 15px;
 }
 
-img {
+.box {
+    height: 30vh;
     width: 100%;
 }
 
-.swiper-container {
-    width: 33%;
+.section_community .label {
+    animation: label_flash 1s linear infinite;
+    color: red;
 }
 
-// 手機寬度小於800px時，轉換成一個swiper輪播照片。
-@media screen and (max-width: 768px) {
+.section_community span {
+    font-size: 2.2rem;
+}
 
-    .swiper_container:not(:first-child) {
-        display: none;
+@keyframes label_flash {
+    0% {
+        opacity: 0;
+        // color: yellow;
+    }
+    50% {
+        opacity: 0.5;
+        // color: red;
+    }
+
+    100% {
+        opacity: 1;
+        // color: yellow;
     }
 }
