@@ -4,36 +4,167 @@
     font-family: "cwTeXYen", sans-serif;
 }
 
+.section_community span {
+    font-size: 40px;
+}
+
+.neon {
+  //  background-color: #0B111D;
+   height: 100%;
+}
+
 .col {
-    padding: 15px 15px;
+  padding: 0;
+    // padding: 15px 15px;
+    // height: 30vh;
 }
 
 .box {
     height: 30vh;
     width: 100%;
+    background-color: red;
 }
 
-.section_community .label {
-    animation: label_flash 1s linear infinite;
-    color: red;
+.box1 {
+    height: 30vh;
+    width: 100%;
+    background-color: blue;
 }
 
-.section_community span {
-    font-size: 2.2rem;
+span {
+  opacity: 0.1;
+  // color: #fee;
+  color: rgb(112, 109, 109);
+ 
 }
 
-@keyframes label_flash {
-    0% {
-        opacity: 0;
-        // color: yellow;
-    }
-    50% {
-        opacity: 0.5;
-        // color: red;
-    }
+.neon_one {
+  animation: neon_one 8s infinite;
+  // text-shadow: 0 -40px 100px, 
+  // 0 0 2px, 
+  //  0 0 1em #FF75FB, 
+  //  0 0 0.5em #FF75FB, 
+  //  0 0 0.1em #FF75FB, 
+  
+}
 
-    100% {
-        opacity: 1;
-        // color: yellow;
-    }
+.neon_two {
+  animation: neon_two 8s infinite;
+  // text-shadow: 0 -40px 100px, 
+  // 0 0 2px, 
+  // 0 0 1em #FFFF00, 
+  // 0 0 0.5em #FFFF00, 
+  // 0 0 0.1em #FFFF00, 
+  // 0 0 1em #FF75FB, 
+  // 0 0 0.5em #FF75FB, 
+  // 0 0 0.1em #FF75FB, 
+}
+
+.neon_three {
+  animation: neon_three 8s infinite;
+  // text-shadow: 0 -40px 100px, 
+  // 0 0 2px, 
+  // 0 0 1em #18FFFF, 
+  // 0 0 0.5em #18FFFF, 
+  // 0 0 0.1em #18FFFF, 
+  // 0 0 1em #FF75FB, 
+  // 0 0 0.5em #FF75FB, 
+  // 0 0 0.1em #FF75FB, 
+}
+
+.neon_four {
+  animation: neon_three 8s infinite;
+  // text-shadow: 0 -40px 100px, 
+  // 0 0 2px, 
+  // 0 0 1em rgb(37, 114, 238), 
+  // 0 0 0.5em rgb(37, 114, 238), 
+  // 0 0 0.1em rgb(37, 114, 238), 
+  // 0 0 1em #FF75FB, 
+  // 0 0 0.5em #FF75FB, 
+  // 0 0 0.1em #FF75FB, 
+}
+
+@keyframes neon_one {
+  0% {
+    opacity: 0.1;
+  }
+  19% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  21% {
+    opacity: 0.8;
+  }
+  22% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 0.8;
+  }
+  24% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes neon_two {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 0.8;
+  }
+  12% {
+    opacity: 0.1;
+  }
+  13% {
+    opacity: 0.8;
+  }
+  14% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes neon_three {
+  0% {
+    opacity: 1;
+  }
+  29% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  31% {
+    opacity: 0.8;
+  }
+  32% {
+    opacity: 0.1;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

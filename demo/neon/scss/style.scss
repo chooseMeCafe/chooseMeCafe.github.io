@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+* {
+  font-family: "cwTeXYen", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.neon {
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  opacity: 0.1;
+  color: #fee;
+ 
+}
+
+.neon_one {
+  animation: neon_one 8s infinite;
+  text-shadow: 0 -40px 100px, 
+  0 0 2px, 
+   0 0 1em #FF75FB, 
+   0 0 0.5em #FF75FB, 
+   0 0 0.1em #FF75FB, 
+  0 10px 3px #000;
+  
+}
+
+.neon_two {
+  animation: neon_two 8s infinite;
+  text-shadow: 0 -40px 100px, 
+  0 0 2px, 
+  0 0 1em #FFFF00, 
+  0 0 0.5em #FFFF00, 
+  0 0 0.1em #FFFF00, 
+  0 10px 3px #000;
+}
+
+.neon_three {
+  animation: neon_three 8s infinite;
+  text-shadow: 0 -40px 100px, 
+  0 0 2px, 
+  0 0 1em #18FFFF, 
+  0 0 0.5em #18FFFF, 
+  0 0 0.1em #18FFFF, 
+  0 10px 3px #000;
+// color:#0062ff;
+}
+
+.neon_four {
+  animation: neon_three 8s infinite;
+  text-shadow: 0 -40px 100px, 
+  0 0 2px, 
+  0 0 1em rgb(37, 114, 238), 
+  0 0 0.5em rgb(37, 114, 238), 
+  0 0 0.1em rgb(37, 114, 238), 
+  0 10px 3px #000;
+// color:#0062ff;
+}
+
+@keyframes neon_one {
+  0% {
+    opacity: 0.1;
+  }
+  19% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  21% {
+    opacity: 0.8;
+  }
+  22% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 0.8;
+  }
+  24% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes neon_two {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 0.8;
+  }
+  12% {
+    opacity: 0.1;
+  }
+  13% {
+    opacity: 0.8;
+  }
+  14% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes neon_three {
+  0% {
+    opacity: 1;
+  }
+  29% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  31% {
+    opacity: 0.8;
+  }
+  32% {
+    opacity: 0.1;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+// @keyframes neon_one{
+//   0% {
+//     opacity: 0.1;
+//   }
+ 
+//   10% {
+//     opacity: 0.1;
+//   }
+
+//   11% {
+//     opacity: 0.8;
+//   }
+//   14% {
+//     opacity: 0.1;
+//   }
+//   15% {
+//     opacity: 0.6;
+//   }
+//   16% {
+//     opacity: 0.1;
+//   }
+//   17% {
+//     opacity: 0.6;
+//   }
+//   18% {
+//     opacity: 0.1;
+//   }
+//   19% {
+//     opacity: 1;
+//   }
+//   20% {
+//     opacity: 0.1;
+//   }
+//   21% {
+//     opacity: 1;
+//   }
+//   // 39% {
+//   //   opacity: 1;
+//   // }
+//   // 40% {
+//   //   opacity: 0.1;
+//   // }
+//   // 50% {
+//   //   opacity: 0.1;
+//   // }
+//   // 51% {
+//   //   opacity: 1;
+//   // }
+//   // 59% {
+//   //  opacity: 0.1;
+//   // }
+//   // 60% {
+//   //   opacity: 1;
+//   // }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes neon_two{
+//   0% {
+//     opacity: 0.1;
+//   }
+//   19% {
+//     opacity: 0.1;
+//   }
+//   20% {
+//     opacity: 0.8;
+//   }
+//   22% {
+//     opacity: 0.1;
+//   }
+//   24% {
+//     opacity: 0.8;
+//   }
+//   // 34% {
+//     // opacity: 0.1;
+//   // }
+//   // 35% {
+//     // opacity: 0.8;
+//   // }
+//   // 6% {
+//   //   opacity: 0;
+//   // }
+//   // 7% {
+//   //   opacity: 1;
+//   // }
+//   // 8% {
+//   //   opacity: 0;
+//   // }
+//   // 20% {
+//   //   opacity: 1;
+//   // }
+
+//   59% {
+
+//   }
+//   60% {
+//     opacity: 1;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+
+
+
+.font-setting{
+  font-family: "Vibur";
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #fee;
+}
+.text-style-1{
+  text-shadow: 0 -40px 100px, 
+               0 0 2px, 
+               0 0 1em #18FFFF, 
+               0 0 0.5em #18FFFF, 
+               0 0 0.1em #18FFFF, 
+               0 10px 3px #000;
+}
+.text-style-2{
+  text-shadow: 0 -40px 100px, 
+               0 0 2px, 
+               0 0 1em #FFFF00, 
+               0 0 0.5em #FFFF00, 
+               0 0 0.1em #FFFF00, 
+               0 10px 3px #000;
+}
+.holder-letter span{
+  animation: turn-off 2s linear infinite;
+}
+
+@keyframes turn-off{
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
