@@ -1,0 +1,40 @@
+@import "./common";
+/* section_navbar */
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    background-color: rgba(233, 219, 219, 0.8);
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 24px;
+}
+
+/* 標題顏色 */
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+#section_navbar {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    width: 100%;
+}
