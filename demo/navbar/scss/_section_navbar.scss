@@ -1,13 +1,23 @@
 @import "./common";
 
+$nav_padding: calc((100vw - 1200px + 30px) / 2);
+
+.section_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0 $nav_padding;
+}
+
 .section_navbar .logo {
-    margin: 10px 0;
+    margin: 15px 0;
     width: 80px;
 }
 
 .section_navbar a {
-    color: black;
+    color: rgb(97, 95, 95);
     text-decoration: none;
-    font-size: 18px;
     margin:  0 10px;
 }
