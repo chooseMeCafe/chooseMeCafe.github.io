@@ -11,12 +11,19 @@
 
 .container {
     display: flex;
+    height: 500px;
     flex-direction: column;
     align-items: center;
+    background-image: url("../img/7.jpg");
+    
+}
+
+.neon_style{
+    margin-top: 170px;
 }
 
 span {
-    opacity: 0.1;
+    opacity: 1;
     color: #fee;
 }
 
@@ -27,17 +34,17 @@ span {
 
 .neon_two {
     animation: neon_two 8s infinite;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #FFFF00, 0 0 0.5em #FFFF00, 0 0 0.1em #FFFF00, 0 10px 3px #000;
-}
-
-.neon_three {
-    animation: neon_three 8s infinite;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #18FFFF, 0 0 0.5em #18FFFF, 0 0 0.1em #18FFFF, 0 10px 3px #000;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #90FC51, 0 0 0.5em #90FC51, 0 0 0.1em #90FC51, 0 10px 3px #000;
 }
 
 .neon_four {
     animation: neon_three 8s infinite;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em rgb(37, 114, 238), 0 0 0.5em rgb(37, 114, 238), 0 0 0.1em rgb(37, 114, 238), 0 10px 3px #000;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #762239, 0 0 0.5em #762239, 0 0 0.1em #762239, 0 10px 3px #000;
+}
+
+.neon_three{
+    animation: neon_three 8s infinite;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #EC7E30, 0 0 0.5em #EC7E30, 0 0 0.1em #EC7E30, 0 10px 3px #000;
 }
 
 @keyframes neon_one {
