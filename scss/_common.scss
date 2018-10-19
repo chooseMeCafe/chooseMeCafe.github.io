@@ -55,13 +55,19 @@ span {
   font-size: 1.8rem; // p 18px
 }
 
+.nav_title {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+
 // footer
 .footer_title {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .footer_content {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: $xl) {
