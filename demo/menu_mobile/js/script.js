@@ -27,23 +27,23 @@ for (let index = 0; index < menuMobileCollapses.length; index++) {
   let menuMobileCollapse = $(menuMobileCollapses[index]);
   let menuMobileOption = menuMobileOptions[index];
 
-  menuMobileCollapse.on("show.bs.collapse", function() {
-    this.classList.add("fadeIn");
-  });
+  // menuMobileCollapse.on("show.bs.collapse", function() {
+  //   this.classList.add("fadeIn");
+  // });
 
   menuMobileCollapse.on("shown.bs.collapse", function() {
-    this.classList.remove("fadeIn");
+    // this.classList.remove("fadeIn");
     menuMobileOption.scrollIntoView({
       block: "start",
       behavior: "smooth"
     });
   });
 
-  menuMobileCollapse.on("hide.bs.collapse", function() {
-    this.classList.add("fadeOut");
-  });
+  // menuMobileCollapse.on("hide.bs.collapse", function() {
+  //   this.classList.add("fadeOut");
+  // });
 
-  menuMobileCollapse.on("hidden.bs.collapse", function() {
-    this.classList.remove("fadeOut");
-  });
+  // menuMobileCollapse.on("hidden.bs.collapse", function() {
+  //   this.classList.remove("fadeOut");
+  // });
 }
