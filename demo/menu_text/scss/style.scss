@@ -9,15 +9,15 @@
   background-color: $bg-color;
 }
 
-.section_menu .col-lg-7 {
+.section_menu .col-lg {
   padding-top: 40px;
 }
 
-.section_menu .col-lg-7 > div {
+.section_menu .col-lg > div {
   margin-bottom: 40px;
 }
 
-.section_menu .col-lg-7 div {
+.section_menu .col-lg div {
   display: flex;
   flex-direction: column;
   align-items: center;
