@@ -2,10 +2,12 @@
 @import "./common";
 
 .section_menu .row:nth-child(odd) {
-  background-color: $primary-color;
+  // background-color: $primary-color;
+  background-color: $bg-color;
 }
 
 .section_menu .row:nth-child(even) {
+  // background-color: $primary-color;
   background-color: $bg-color;
 }
 
