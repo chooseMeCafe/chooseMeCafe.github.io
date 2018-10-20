@@ -16,18 +16,21 @@
 
 .section_menu>div:last-child {
     position: fixed;
-    background-color: rosybrown;
     width: 50px;
     padding: 10px 15px;
     text-align: center;
 }
 
-.btn {
+.btn_group {
     position: fixed;
+    bottom: 0;
+    right: 80px;
+    z-index: 2;
+}
+
+.btn {
     background-color: rosybrown;
-    width: 50px;
-    padding: 10px 15px;
-    top: 50vh;
-    right: 0;
+    margin: 10px;
+    padding: 30px 30px;
     text-align: center;
 }
