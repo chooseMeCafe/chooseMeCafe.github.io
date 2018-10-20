@@ -8,8 +8,6 @@ $sm: 540px;
 
 * {
   font-family: "Noto Sans TC", sans-serif;
-  // font-style: regular;
-  // font-weight: 300;
 }
 
 html {
@@ -60,7 +58,6 @@ span {
   font-weight: 300;
 }
 
-
 // footer
 .footer_title {
   font-size: 2rem;
@@ -70,6 +67,19 @@ span {
   font-size: 1.8rem;
 }
 
+.section_menu {
+  h4 {
+    font-weight: 600;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC",
+      sans-serif;
+      margin: 0;
+  }
+}
 
 @media screen and (max-width: $xl) {
   body {
@@ -87,11 +97,9 @@ span {
   body {
     // background-color: rgb(184, 221, 184);
   }
-
   html {
     font-size: 8px;
   }
-
   p,
   span {
     font-size: 2rem;

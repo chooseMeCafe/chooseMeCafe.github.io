@@ -1,14 +1,25 @@
 @import "./utility";
 @import "./common";
 
-.section_menu * {
-  
-}
-
 .section_menu .row:nth-child(odd) {
   background-color: $primary-color;
 }
 
 .section_menu .row:nth-child(even) {
   background-color: $bg-color;
+}
+
+.section_menu .col-lg-7 {
+  padding-top: 40px;
+}
+
+.section_menu .col-lg-7 > div {
+  margin-bottom: 40px;
+}
+
+.section_menu .col-lg-7 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
