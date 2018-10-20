@@ -1,6 +1,10 @@
 @import "./utility";
 @import "./common";
 
+.section_menu * {
+  
+}
+
 .section_menu .row:nth-child(odd) {
   background-color: $primary-color;
 }
