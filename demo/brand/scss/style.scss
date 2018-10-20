@@ -19,13 +19,15 @@
 }
 
 .section_brand > div:nth-child(even) {
-  background-color: #b3b3b3;
+  background-color: #e6e6e6;
+  // background-color: #b3b3b3;
 }
 
 img.brand_logo {
   width: 60px;
   height: 60px;
 }
+
 
 .text-vertical {
   writing-mode: vertical-lr;
