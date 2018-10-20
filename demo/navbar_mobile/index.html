@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <h1>Responsive Navigation</h1>
+    <h1 id="obj">Responsive Navigation</h1>
 
     <div class="toggle-btn">
         <span class="one"></span>
@@ -38,12 +38,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"> </script>
 
     <script>
-        var t1 = new TimeLineMax();
+        TweenMax.to("#obj", 0.5, {left:200});j
     </script>
     <!-- <script src="./js/script.js"> -->
     <!-- </script> -->
