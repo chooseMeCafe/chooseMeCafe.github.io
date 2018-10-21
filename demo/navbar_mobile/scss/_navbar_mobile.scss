@@ -1,14 +1,7 @@
 @import "./common";
 
 .section_navbar_mobile {
-  background-color: $bg-color;
-
-  .btn {
-    width: 40px;
-    height: 40px;
-    z-index: 23;
-    background-color: red;
-  }
+  // background-color: $bg-color;
 
   .menu {
     display: flex;

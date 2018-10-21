@@ -2,21 +2,9 @@ var t1 = new TimelineMax({ paused: true });
 
 var btn = document.getElementById("btn");
 
-t1.to(".one", 0.8, {
-  y: 6,
-  rotation: 45,
-  ease: Expo.easeInOut
-});
-
-t1.to(".two", 0.8, {
-  y: -6,
-  rotation: -45,
-  ease: Expo.easeInOut
-});
-
 t1.to(".section_navbar_mobile .menu", 0.8, {
   top: "0%",
-  ease: Expo.easeInOut
+  // ease: Expo.easeInOut
 });
 
 t1.staggerFrom(
