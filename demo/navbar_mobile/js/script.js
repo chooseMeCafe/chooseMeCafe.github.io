@@ -1,9 +1,18 @@
-var t1 = new TimeLineMax();
+// var t1 = new TweenMax();
 
-t1.to(".one", 0.8, {
-    y: 6,
-    rotation: 45,
-    ease: expo.easeInOut
-});
+var btn = document.getElementById("btn");
 
-// t1.to(".menu", )
+var isOpen = false;
+
+btn.onclick = function() {
+  if (isOpen) {
+    TweenMax.to(".menu", 1.5, {
+        width: 0,
+      });
+  } else {
+    TweenMax.to(".menu", 1.5, {
+      width: "100%",
+    });
+  }
+  isOpen = !isOpen;
+};

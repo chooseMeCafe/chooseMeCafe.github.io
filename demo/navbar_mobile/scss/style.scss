@@ -1,1 +1,12 @@
 @import "./navbar_mobile";
+
+.menu {
+  width: 0;
+  overflow: hidden;
+}
+
+a {
+  font-size: 20px;
+  display: block;
+  margin: 30px;
+}

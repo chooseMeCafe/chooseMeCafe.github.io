@@ -1,72 +1,79 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
-
 $xl: 1200px;
 $lg: 992px;
 $sm: 540px;
-
-* {
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-html {
-  font-size: 10px;
-}
-
-// 手機含平板寬度設定
-$screen-max-width: 768px;
 // 主色
 $primary-color: #8aa2b7;
 // 背景色
 $bg-color: #e5e7ec;
 
-h1 {
-  font-size: 6rem; // h1 60px
+html {
+  font-size: 10px;
+
+  // 默認字體設置 (思源黑體)
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    // font-family: "Noo Sans TC", sans-serif;
+  }
+
+  h1 {
+    font-size: 6rem; // h1 60px
+  }
+
+  h2 {
+    font-size: 3.2rem; // h2 32px
+  }
+
+  h3 {
+    font-size: 2.6rem; // h3 26px
+  }
+
+  h4 {
+    font-size: 2.4rem; // h4 24px
+  }
+
+  h5 {
+    font-size: 2.2rem; // h5 22px
+  }
+
+  h6 {
+    font-size: 1.6rem; // h6 16px
+  }
+
+  p {
+    font-size: 1.8rem; // p 18px
+  }
+
+  span {
+    font-size: 1.8rem; // p 18px
+  }
 }
 
-h2 {
-  font-size: 3.2rem; // h2 32px
+// section_nav Navbar
+.section_navbar {
+  .nav_title {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
 }
 
-h3 {
-  font-size: 2.6rem; // h3 26px
+// section_banner Banner
+.section_banner {
 }
 
-h4 {
-  font-size: 2.4rem; // h4 24px
+// section_brand 品牌概念
+.section_brand {
 }
 
-h5 {
-  font-size: 2.2rem; // h5 22px
-}
-
-h6 {
-  font-size: 1.6rem; // h6 16px
-}
-
-p {
-  font-size: 1.8rem; // p 18px
-}
-
-span {
-  font-size: 1.8rem; // p 18px
-}
-
-.nav_title {
-  font-size: 1.8rem;
-  font-weight: 300;
-}
-
-// footer
-.footer_title {
-  font-size: 2rem;
-}
-
-.footer_content {
-  font-size: 1.8rem;
-}
-
+// section_menu 菜單
 .section_menu {
   h4 {
     font-weight: 600;
@@ -77,7 +84,18 @@ span {
   h6 {
     font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC",
       sans-serif;
-      margin: 0;
+    margin: 0;
+  }
+}
+
+// section_footer
+.section_footer {
+  .footer_title {
+    font-size: 2rem;
+  }
+
+  .footer_content {
+    font-size: 1.8rem;
   }
 }
 
@@ -97,9 +115,11 @@ span {
   body {
     // background-color: rgb(184, 221, 184);
   }
+
   html {
     font-size: 8px;
   }
+
   p,
   span {
     font-size: 2rem;
