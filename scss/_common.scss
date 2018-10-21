@@ -2,17 +2,21 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
+// 螢幕寬度大小
 $xl: 1200px;
 $lg: 992px;
 $sm: 540px;
+
 // 主色
 $primary-color: #8aa2b7;
 // 背景色
 $bg-color: #e5e7ec;
 
+//字體顔色
+$font-color: rgb(80, 80, 80);
 
 /********************************
- * 默認字型、字體大小設定
+ * 默認文字設定
  *******************************/
 html {
   font-size: 10px;
@@ -29,6 +33,7 @@ html {
     font-family: "Noto Sans TC", sans-serif;
     // font-family: "cwTeXYen", sans-serif;
     // font-family: sans-serif;
+    color: $font-color;
   }
 
   h1 {
@@ -95,7 +100,6 @@ html {
     font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC",
       sans-serif;
     // font-family: "cwTeXYen", sans-serif;
-    color: rgb(82, 80, 80);
   }
 }
 
