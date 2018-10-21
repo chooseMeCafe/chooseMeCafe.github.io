@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -19,15 +18,19 @@
   <title>初米咖啡-brand-v8</title>
 </head>
 
-<body>
-  <div class="d-flex flex-column align-items-center justify-content-center box" style="height: 100vh">
+<body class="fang_song">
+  <div class="brand_top d-flex flex-column align-items-center justify-content-center box">
     <h2>品牌概念</h2>
     <br>
     <h2>PLEASE SCROLL</h2>
+    <h3 id="font_change_btn">仿宋</h3>
   </div>
 
   <div class="section_brand">
 
+    <!-- ********************
+    *    品牌概念
+    ********************* -->
     <div>
       <div class="container">
         <div class="row">
@@ -35,21 +38,10 @@
           <div class="col-lg">
             <div class="h-100 d-flex content">
               <div class="h-100 d-flex flex-column" data-aos="fade-right" data-aos-duration="1500">
-                <h1 class="
-                my-auto label">
-                  品牌概念
-                </h1>
-
-                <h3 class="my-0">
-                  Choose me, enjoy yourself.
-                </h3>
-
-                <h2 class="my-4">
-                  歡迎你加入初米的促咪小時光。
-                </h2>
-                <h5 class="mb-4">
-                  吃飯，是一種展現生活的方式。
-                </h5>
+                <h1 class="my-auto label">品牌概念</h1>
+                <h3 class="my-0">Choose me, enjoy yourself.</h3>
+                <h2 class="my-4">歡迎你加入初米的促咪小時光。</h2>
+                <h5 class="mb-4">吃飯，是一種展現生活的方式。</h5>
 
                 <div class="mb-auto d-flex flex-column">
                   <span>初米的餐點，除了好吃健康，<br></span>
@@ -61,13 +53,17 @@
           </div>
 
           <div class="col-lg" data-aos="zoom-in" data-aos-easing="ease-in" data-aos-duration="1000">
-            <img class="d-block ml-auto" src="./img/section_one_img.jpg" alt="">
+            <img class="d-block ml-auto" src="./img/section_one_img.png" alt="brand">
           </div>
         </div>
       </div>
     </div>
 
-    <div>
+    <!-- ************************
+    *    超越味蕾的體驗-電腦版  
+    *    寬度 > lg:992px時顯示
+    ************************* -->
+    <div class="d-none d-lg-block">
       <div class="container">
         <div class="row">
 
@@ -107,6 +103,53 @@
       </div>
     </div>
 
+    <!-- ************************
+    *    超越味蕾的體驗-手機版  
+    *    寬度 < lg:992px時顯示
+    ************************* -->
+    <div class="d-lg-none">
+      <div class="container">
+        <div class="row">
+
+          <div class="col">
+            <div class="h-100 d-flex flex-column align-items-center justify-content-between">
+              <h2>超越味蕾的體驗</h2>
+              <div class="test d-flex flex-column">
+                <img class="d-block my-0 mx-auto brand_logo" src="./img/logo.jpg" alt="logo">
+                <h3 class="text-center">-初米-</h3>
+                <p class="text-center">
+                  取自於臺灣在地語言"有趣"的諧音，<br>
+                  也希望皆有"促咪"的發音，<br>
+                  營造一個散發有趣輕鬆氛圍的場所。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <img class="d-block mr-auto img_two" src="./img/section_two_img.jpg" alt="">
+          </div>
+
+          <div class="col">
+            <div class="h-100 d-flex flex-column justify-content-center">
+              <p class="text-center">
+                從店內的裝潢到餐點呈現，<br>
+                從希望讓你在用餐時充滿歡樂的笑聲，<br>
+                與朋友分享不完的照片，<br>
+                以及值得一再回鄉的美好回憶。
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ********************
+    *    #醒醒吧 你不是網美 
+    ********************* -->
     <div>
       <div class="container">
         <div class="row">
@@ -122,15 +165,6 @@
                 <span>用眼睛看著這個地方、看看眼前的家人朋友。<br></span>
                 <span>能讓人保存久久不能忘懷的回憶，<br></span>
                 <span>是用身心感受記下的一切。</span>
-                <!-- <p>
-                  生活不容易，所以我們需要一些幽默感來調劑，<br>
-                  也需要更多歡樂的笑聲來療愈。<br>
-                  跟朋友一起歡聚大小、分享有趣又美味的照片把！<br>
-                  但也記得在拍照過後，<br>
-                  用眼睛看著這個地方、看看眼前的家人朋友。<br>
-                  能讓人保存久久不能忘懷的回憶，<br>
-                  是用身心感受記下的一切。
-                </p> -->
                 <h3 class="mt-4 mb-auto">你不是網美，你是你自己。</h3>
               </div>
             </div>
@@ -147,12 +181,9 @@
   </div>
 
   <!-- 以下為JS檔 -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
