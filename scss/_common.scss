@@ -84,9 +84,10 @@ span {
  * Navbar手機版-設定 (.section_navbar_mobile)
  *******************************************/
 .section_navbar_mobile {
-  .nav_title {
-    font-size: 1.8rem;
+  h1 {
+    font-size: 3rem;
     font-weight: 300;
+    color: red;
   }
 }
 

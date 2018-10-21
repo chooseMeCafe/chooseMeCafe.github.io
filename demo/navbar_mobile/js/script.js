@@ -1,20 +1,39 @@
-// var t1 = new TweenMax();
+var t1 = new TimelineMax({ paused: true });
 
 var btn = document.getElementById("btn");
 
-var isOpen = false;
+t1.to(".one", 0.8, {
+  y: 6,
+  rotation: 45,
+  ease: Expo.easeInOut
+});
+
+t1.to(".two", 0.8, {
+  y: -6,
+  rotation: -45,
+  ease: Expo.easeInOut
+});
+
+t1.to(".section_navbar_mobile .menu", 0.8, {
+  top: "0%",
+  ease: Expo.easeInOut
+});
+
+t1.staggerFrom(
+  ".section_navbar_mobile .menu a",
+  0.8,
+  { x: 200, opacity: 0, ease: Expo.easeOut },
+  0.3
+);
+
+t1.reverse();
 
 btn.onclick = function() {
-  if (isOpen) {
-    TweenMax.to(".menu", 0.5, {
-      height: "0"
-    });
-
-  } else {
-    TweenMax.to(".menu", 0.5, {
-      height: "100vh"
-    });
-  }
-  isOpen = !isOpen;
-  console.log(isOpen);
+  t1.reversed(!t1.reversed());
 };
+
+$(document).on("click", "a", function() {
+  t1.reversed(!t1.reversed());
+});
+
+
