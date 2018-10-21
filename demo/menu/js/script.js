@@ -1,9 +1,9 @@
 "use strict";
 
-const btns = document.querySelectorAll(".btn");
+const menuBtns = document.querySelectorAll(".menu_btn");
 const menus = document.querySelectorAll(".container");
 
-btns.forEach(function (btn, index) {
+menuBtns.forEach(function (btn, index) {
     btn.addEventListener('click', function () {
         menus[index].scrollIntoView({
         block: 'start',
