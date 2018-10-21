@@ -10,12 +10,4 @@ menuBtns.forEach(function (btn, index) {
         behavior: 'smooth'
         })
     });
-
-    btn.addEventListener('mouseenter', function() {
-        console.log(index + " in");
-    });
-
-    btn.addEventListener('mouseout', function() {
-        console.log(index + " out");
-    });
 });
