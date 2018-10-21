@@ -1,37 +1,38 @@
 @import "./utility";
 @import "./common";
-.section_menu * {
-}
+
+$btn_height: 50px;
 
 .section_menu > div:nth-child(even) {
   background-color: $bg-color;
 }
 
 .section_menu > div:not(:last-child) {
-  height: 50vh;
-}
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
-.section_menu > div:last-child {
-  position: fixed;
-  width: 50px;
-  padding: 10px 15px;
-  text-align: center;
+    h1 {
+        text-align: center;
+    }
 }
 
 .btn_group {
   position: fixed;
-  bottom: 0;
-  right: 60px;
-  z-index: 2;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -50%);
 }
 
 .menu_btn {
   background-color: rosybrown;
-  width: 60px;
-  height: 60px;
+  width: $btn_height;
+  height: $btn_height;
   padding: 0;
   position: relative;
-  margin: 10px 0;
+  margin-top: 15px;
   text-align: center;
   border-radius: 50%;
 }
@@ -43,12 +44,12 @@
   height: 100%;
   position: absolute;
   top: 0;
-  right: 30px;
+  right: ($btn_height / 2);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 900px 0 0 999px;
-  transition-duration: 0.8s;
+  border-radius: ($btn_height / 2) 0 0 ($btn_height / 2);
+  transition: 0.6s ease;
   word-wrap: true;
   z-index: -1;
   opacity: 0.5;
