@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
 $xl: 1200px;
 $lg: 992px;
 $sm: 540px;
@@ -9,6 +10,10 @@ $primary-color: #8aa2b7;
 // 背景色
 $bg-color: #e5e7ec;
 
+
+/********************************
+ * 默認字型、字體大小設定
+ *******************************/
 html {
   font-size: 10px;
 
@@ -21,7 +26,9 @@ html {
   h6,
   p,
   span {
-    // font-family: "Noo Sans TC", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+    // font-family: "cwTeXYen", sans-serif;
+    // font-family: sans-serif;
   }
 
   h1 {
@@ -57,7 +64,9 @@ html {
   }
 }
 
-// section_nav Navbar
+/********************************
+ * Navbar-設定 (.section_navbar)
+ *******************************/
 .section_navbar {
   .nav_title {
     font-size: 1.8rem;
@@ -65,15 +74,34 @@ html {
   }
 }
 
-// section_banner Banner
+/********************************
+ * Banner-設定 (.section_banner)
+ *******************************/
 .section_banner {
 }
 
-// section_brand 品牌概念
+/********************************
+ * 品牌概念-設定 (.section_brand)
+ *******************************/
 .section_brand {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC",
+      sans-serif;
+    font-family: "cwTeXYen", sans-serif;
+    color: rgb(82, 80, 80);
+  }
 }
 
-// section_menu 菜單
+/********************************
+ * 菜單-設定 (.section_menu)
+ *******************************/
 .section_menu {
   h4 {
     font-weight: 600;
@@ -88,7 +116,9 @@ html {
   }
 }
 
-// section_footer
+/********************************
+ * Footer-設定 (.section_footer)
+ *******************************/
 .section_footer {
   .footer_title {
     font-size: 2rem;
@@ -99,18 +129,27 @@ html {
   }
 }
 
+/********************************
+ * 螢幕寬度 < xl-1200px
+ *******************************/
 @media screen and (max-width: $xl) {
   body {
     // background-color: rgb(235, 177, 177);
   }
 }
 
+/********************************
+ * 螢幕寬度 < lg-992px
+ *******************************/
 @media screen and (max-width: $lg) {
   body {
     // background-color: rgb(156, 156, 231);
   }
 }
 
+/********************************
+ * 螢幕寬度 < sm-540px
+ *******************************/
 @media screen and (max-width: $sm) {
   body {
     // background-color: rgb(184, 221, 184);
