@@ -1,13 +1,4 @@
 "use strict";
-// const btn = document.querySelector('.btn');
-// const test = document.querySelector('.container');
-
-// btn.addEventListener('click', function () {
-//     test.scrollIntoView({
-//         block: 'start',
-//         behavior: 'smooth'
-//     });
-// });
 
 const btns = document.querySelectorAll(".btn");
 const menus = document.querySelectorAll(".container");
@@ -18,5 +9,13 @@ btns.forEach(function (btn, index) {
         block: 'start',
         behavior: 'smooth'
         })
+    });
+
+    btn.addEventListener('mouseenter', function() {
+        console.log(index + " in");
+    });
+
+    btn.addEventListener('mouseout', function() {
+        console.log(index + " out");
     });
 });

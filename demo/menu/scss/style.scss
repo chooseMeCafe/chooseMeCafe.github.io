@@ -1,36 +1,67 @@
 @import "./utility";
 @import "./common";
-.section_menu * {}
-
-// .section_menu>div:nth-child(odd) {
-//     background-color: $primary-color;
-// }
-
-.section_menu>div:nth-child(even) {
-    background-color: $bg-color;
+.section_menu * {
 }
 
-.section_menu>div:not(:last-child) {
-    height: 50vh;
+.section_menu > div:nth-child(even) {
+  background-color: $bg-color;
 }
 
-.section_menu>div:last-child {
-    position: fixed;
-    width: 50px;
-    padding: 10px 15px;
-    text-align: center;
+.section_menu > div:not(:last-child) {
+  height: 50vh;
+}
+
+.section_menu > div:last-child {
+  position: fixed;
+  width: 50px;
+  padding: 10px 15px;
+  text-align: center;
 }
 
 .btn_group {
-    position: fixed;
-    bottom: 0;
-    right: 80px;
-    z-index: 2;
+  position: fixed;
+  bottom: 0;
+  right: 60px;
+  z-index: 2;
 }
 
-.btn {
-    background-color: rosybrown;
-    margin: 10px;
-    padding: 30px 30px;
-    text-align: center;
+.menu_btn {
+  background-color: rosybrown;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  position: relative;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.menu_btn > div {
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.8s;
+  word-wrap: true;
+}
+
+
+.menu_btn > div h4 {
+    color: white;
+    opacity: 0;
+    transition-duration: 0.1s;
+}
+
+.menu_btn:hover {
+  > div {
+    width: 200px;
+    h4 {
+        opacity: 1;
+    }
+  }
 }

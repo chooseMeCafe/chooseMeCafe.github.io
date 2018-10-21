@@ -4,7 +4,6 @@ var btn = document.getElementById("btn");
 
 t1.to(".section_navbar_mobile .menu", 0.8, {
   top: "0%",
-  // ease: Expo.easeInOut
 });
 
 t1.staggerFrom(

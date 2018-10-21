@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
@@ -23,13 +22,15 @@
 
 <body>
 
-  <!-- 網頁版 navbar -->
-  <div id="section_navbar" class="section_navbar">
+  <!-- **************
+  *    網頁版 navbar
+  ******************* -->
+  <div id="section_navbar" class="section_navbar d-none d-lg-block">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
           <div class="d-flex align-items-center justify-content-between">
-            <img class="logo" src="./img/2018-10-09-choosemecafe-07.png" alt="">
+            <img class="logo" src="./img/logo.png" alt="">
             <div class="nav_title">
               <a href="">品牌概念</a>
               <a href="">商品櫥窗</a>
@@ -42,7 +43,42 @@
     </div>
   </div>
 
-  <!-- 網頁版 banner -->
+  <!-- ****************
+  *    navbar 手機版
+  ***************** -->
+  <div id="section_navbar_mobile" class="section_navbar d-lg-block">
+    <!-- navbar -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-between align-items-center">
+            <img class="logo" src="./img/logo.png" alt="">
+            <i id="btn" class="fas fa-bars fa-3x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- menu -->
+    <div class="menu">
+      <a href="#">
+        <h1>品牌概念</h1>
+      </a>
+      <a href="#">
+        <h1>商品櫥窗</h1>
+      </a>
+      <a href="#">
+        <h1>社群平台</h1>
+      </a>
+      <a href="#">
+        <h1>聯絡我們</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- ****************
+  *    banner 電腦版
+  ***************** -->
   <div id="section_banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -61,12 +97,9 @@
   </div>
 
   <!-- bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
