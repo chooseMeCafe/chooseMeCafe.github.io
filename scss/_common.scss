@@ -18,61 +18,72 @@ $font-color: rgb(80, 80, 80);
 /********************************
  * 默認文字設定
  *******************************/
+
 html {
   font-size: 10px;
+}
 
-  // 默認字體設置 (思源黑體)
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span {
-    font-family: "Noto Sans TC", sans-serif;
-    // font-family: "cwTeXYen", sans-serif;
-    // font-family: sans-serif;
-    color: $font-color;
-  }
+// 默認字體設置 (思源黑體)
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Noto Sans TC", sans-serif;
+  // font-family: "cwTeXYen", sans-serif;
+  // font-family: sans-serif;
+  color: $font-color;
+}
 
-  h1 {
-    font-size: 6rem; // h1 60px
-  }
+h1 {
+  font-size: 6rem; // h1 60px
+}
 
-  h2 {
-    font-size: 3.2rem; // h2 32px
-  }
+h2 {
+  font-size: 3.2rem; // h2 32px
+}
 
-  h3 {
-    font-size: 2.6rem; // h3 26px
-  }
+h3 {
+  font-size: 2.6rem; // h3 26px
+}
 
-  h4 {
-    font-size: 2.4rem; // h4 24px
-  }
+h4 {
+  font-size: 2.4rem; // h4 24px
+}
 
-  h5 {
-    font-size: 2.2rem; // h5 22px
-  }
+h5 {
+  font-size: 2.2rem; // h5 22px
+}
 
-  h6 {
-    font-size: 1.6rem; // h6 16px
-  }
+h6 {
+  font-size: 1.6rem; // h6 16px
+}
 
-  p {
-    font-size: 1.8rem; // p 18px
-  }
+p {
+  font-size: 1.8rem; // p 18px
+}
 
-  span {
-    font-size: 1.8rem; // p 18px
-  }
+span {
+  font-size: 1.8rem; // p 18px
 }
 
 /********************************
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar {
+  .nav_title {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+}
+
+/********************************************
+ * Navbar手機版-設定 (.section_navbar_mobile)
+ *******************************************/
+.section_navbar_mobile {
   .nav_title {
     font-size: 1.8rem;
     font-weight: 300;

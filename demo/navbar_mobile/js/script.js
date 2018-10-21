@@ -6,13 +6,15 @@ var isOpen = false;
 
 btn.onclick = function() {
   if (isOpen) {
-    TweenMax.to(".menu", 1.5, {
-        width: 0,
-      });
+    TweenMax.to(".menu", 0.5, {
+      height: "0"
+    });
+
   } else {
-    TweenMax.to(".menu", 1.5, {
-      width: "100%",
+    TweenMax.to(".menu", 0.5, {
+      height: "100vh"
     });
   }
   isOpen = !isOpen;
+  console.log(isOpen);
 };
