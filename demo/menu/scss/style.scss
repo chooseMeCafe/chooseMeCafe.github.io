@@ -4,7 +4,7 @@
 $btn_height: 50px;
 
 .section_menu > div:nth-child(even) {
-  background-color: $bg-color;
+  background-color: $light-color;
 }
 
 .section_menu > div:not(:last-child) {

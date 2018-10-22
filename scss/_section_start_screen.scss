@@ -8,35 +8,35 @@
   top: 0;
   left: 0;
   display: flex;
-  background-color: $bg-color;
+  background-color: $dark-color;
 
-  > div {
-    height: 100%;
-    width: 50%;
-    background-color: gray;
-  }
-
-  .screen_left {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .screen_right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  //  > div {
+  // > div {
   //   height: 100%;
-  //   width: 100%;
-  //   background-color: $primary-color;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   overflow: hidden;
+  //   width: 50%;
+  //   background-color: gray;
   // }
+
+  // .screen_left {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
+
+  // .screen_right {
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  // }
+
+   > div {
+    height: 100%;
+    width: 100%;
+    background-color: $cover-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
 
   .logo {
     @include position-center();

@@ -1,8 +1,8 @@
 @import "./common";
-// $bg-color:red;
+// $light-color:red;
 // 第一個 div(卡片列表)
 .section_footer > div:first-child {
-  background-color: $bg-color;
+  background-color: $light-color;
 }
 
 // 分隔線 hr
@@ -13,7 +13,7 @@
 
 // 所有卡片 .card
 .section_footer .card {
-  background-color: $primary-color;
+  background-color: $dark-color;
 }
 
 // fb ig 小圖標 .icon_group
