@@ -263,131 +263,97 @@
                         <div class="beauty_wall">
                             <div class="wall_container">
                                 <div class="neon_1">#醒醒吧 </div>
-                                <div class="neon_1">
+                                <div class="neon_2">
                                     <div class="text" data-text="你不是網美">你不是網美</div>
                                     <span class="gradient"></span>
                                     <span class="spotlight"></span>
                                 </div>
                             </div>
+                            <!-- 網美牆 -->
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <!-- Swiper -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                <!-- Slide 1 -->
-                                <img src="./img/擷取.PNG" alt="">
+            <div class="container-fluid">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                <div class="community">
+                                    <!-- Slide 1 -->
+                                    <img src="./img/擷取.PNG" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 2
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                <div class="community">
+                                    Slide 2
+                                    <!-- <img src="./img/擷取.PNG" alt=""> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 3
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                <div class="community">
+                                    Slide 3
+                                    <!-- <img src="./img/擷取.PNG" alt=""> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 4
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                <div class="community">
+                                    Slide 4
+                                    <!-- <img src="./img/擷取.PNG" alt=""> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 5
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                <div class="community">
+                                    Slide 5
+                                    <!-- <img src="./img/擷取.PNG" alt=""> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 6
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                <div class="community">
+                                    Slide 6
+                                    <!-- <img src="./img/擷取.PNG" alt=""> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 7
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                <div class="community">
+                                    Slide 7
+                                    <!-- <img src="./img/擷取.PNG" alt=""> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 8
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 9
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-content">
-                            <div class="community">
-                                Slide 10
-                                <!-- <img src="./img/擷取.PNG" alt=""> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-black"></div>
-                <div class="swiper-button-prev swiper-button-black"></div>
 
-            </div>
+        <!-- 以下為JS檔 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+        <script src="./js/script.js"></script>
 
-        </div>
-    </div>
+        <!-- Initialize Swiper -->
 
-    <!-- 以下為JS檔 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-    <script src="./js/script.js"></script>
-
-    <!-- Initialize Swiper -->
-
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 5,
-            spaceBetween: 50,
-            slidesPerGroup: 3,
-            loop: true,
-
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                slidesPerGroup: 5,
+                loop: true,
+                loopFillGroupWithBlank: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
