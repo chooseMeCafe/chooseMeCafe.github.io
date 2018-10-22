@@ -1,24 +1,28 @@
 @import "./common";
 
-$nav_padding: calc((100vw - 1200px + 30px) / 2);
+/**********************
+ * navbar 電腦版
+ *
+ * .section_navbar
+ *********8***********/
 
 .section_navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
 
-.section_navbar .logo {
+  .logo {
     margin: 15px 0;
     width: 80px;
-}
+  }
 
-.section_navbar a {
+  a {
     color: rgb(97, 95, 95);
     text-decoration: none;
-    margin:  0 10px;
+    margin: 0 10px;
+  }
 }
