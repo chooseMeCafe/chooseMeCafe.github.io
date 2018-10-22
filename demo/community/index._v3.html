@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- 自己的 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!-- 請在每次大改時，將版本數字+1，比較方便確認push後，網站是否已更新 -->
+    <title>初米咖啡-community-v2</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 12px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 44px;
+            margin-top: -22px;
+            z-index: 10;
+            cursor: pointer;
+            background-size: 25px 25px;
+            /* 設定箭頭大小 */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .swiper-button-prev.swiper-button-disabled,
+        .swiper-button-next.swiper-button-disabled {
+            opacity: 0.50;
+            cursor: auto;
+            pointer-events: none;
+        }
+
+        /* 箭頭位置 */
+        .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+            left: 0px;
+            right: auto;
+        }
+
+        .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+            right: 0px;
+            left: auto;
+        }
+
+        /* 箭頭顏色 */
+        .swiper-button-prev.swiper-button-black,
+        .swiper-container-rtl .swiper-button-next.swiper-button-black {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+        }
+
+        .swiper-button-next.swiper-button-black,
+        .swiper-container-rtl .swiper-button-prev.swiper-button-black {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+        }
+
+        /* 設定圖片大小 */
+        .community {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .community:hover {
+            position: relative;
+            overflow: hidden;
+            opacity: 0.5;
+            transform: scale(1.10, 1.10);
+            transition: opacity .10s, transform 1s;
+            /* background-color: transparent; */
+            /* color: inherit; */
+            /* text-decoration: none; */
+            /* position: relative; */
+            /* height: 0px; */
+            /* overflow: hidden; */
+        }
+
+        .igId {
+            position: absolute;
+            bottom: 18px;
+            left: 55px;
+            color: black;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+
+      
+    </style>
+</head>
+
+<body>
+    <div id="section_community" class="section_community">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex flex-column align-items-center justify-content-center neon">
+                        <div>
+                            <span class="neon_two">#</span>
+                            <span class="neon_one">醒</span>
+                            <span class="neon_two">醒</span>
+                            <span class="neon_four">吧</span>
+                        </div>
+                        <div>
+                            <span class="neon_one">你</span>
+                            <span class="neon_three">不</span>
+                            <span class="neon_two">是</span>
+                            <span class="neon_three">網</span>
+                            <span class="neon_one">美</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="community" src="./img/擷取.PNG" alt="">
+                            <div class="igId"></div>
+                            <!-- <span class="igId">choose me.</span> -->
+                        </div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                        <div class="swiper-slide"><img class="community" src="./img/擷取.PNG" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 以下為JS檔 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+        <script src="./js/script.js"></script>
+
+        <!-- Initialize Swiper -->
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                slidesPerGroup: 5,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+
+                },
+                hashNavigation: {
+                    replaceState: true,
+                },
+
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    }
+                }
+            });
+
+        </script>
+</body>
+
+</html>
