@@ -17,7 +17,7 @@
 
 </head>
 
-<body style="height: 3000px">
+<body style="padding-top: 100px; height: 3000px">
 
   <!--******************
   *   電腦版 navbar
@@ -32,7 +32,7 @@
             <img class="logo" src="./img/logo/logo.png" alt="logo">
             <!-- navbar 選單 -->
             <div class="nav_option d-flex">
-              <h3>一起促咪</h3>
+              <h3>認識初米</h3>
               <h3>初食味蕾</h3>
               <h3>我是網美</h3>
               <h3>尋找促咪</h3>
@@ -42,6 +42,8 @@
       </div>
     </div>
   </div>
+
+
 
   <!--******************
   *   手機版 navbar
@@ -53,7 +55,7 @@
           <!-- navbar 內容 -->
           <div class="navbar_mobile_container d-flex align-items-center justify-content-between">
             <img class="logo" src="./img/logo/logo.png" alt="logo">
-            <i id="menu_btn" class="fas fa-bars fa-3x"></i>
+            <i id="menu_btn" class="menu_btn fas fa-bars fa-3x"></i>
           </div>
         </div>
       </div>
@@ -63,11 +65,11 @@
   <!--**********************
   *   手機版 navbar menu
   ***********************-->
-  <div id="section_navbar_menu_mobile" class="section_navbar_menu_mobile d-none">
-    <h2>一起促咪</h2>
-    <h2>初食味蕾</h2>
-    <h2>我是網美</h2>
-    <h2>尋找促咪</h2>
+  <div id="section_navbar_menu_mobile" class="section_navbar_menu_mobile d-md-none">
+    <h2 class="option">認識初米</h2>
+    <h2 class="option">初食味蕾</h2>
+    <h2 class="option">我是網美</h2>
+    <h2 class="option">尋找促咪</h2>
   </div>
 
   <!--******************
@@ -77,14 +79,89 @@
   <!--******************
   *   品牌概念 brand 
   *******************-->
+  <div id="section_brand" class="section_brand">
+
+  </div>
+
+  <!--******************
+  *   櫥窗 food
+  *******************-->
+  <div id="section_food" class="section_food">
+
+  </div>
+
+  <!--**********************
+  *   網美牆 beauty_wall
+  ***********************-->
+  <div id="section_beauty_wall" class="section_beauty_wall">
+
+  </div>
 
   <!--***********************
   *   社群平台 community
   ************************-->
+  <div id="section_community" class="section_community">
+
+  </div>
 
   <!--*******************
   *   footer
   ********************-->
+  <div id="section_footer" class="section_footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col px-0">
+          <div class="row">
+            <!-- logo -->
+            <div class="col px-0">
+              <img class="logo" src="./img/logo/logo.png" alt="">
+            </div>
+
+            <div class="w-100"></div>
+
+            <!-- 營業時間 -->
+            <div class="col px-0">
+              <h3>Open Hours</h3>
+            </div>
+
+            <div class="col px-0">
+              <h3>10 : 00 ~ 21 : 00</h3>
+            </div>
+
+            <div class="w-100"></div>
+
+            <!-- 聯絡電話 -->
+            <div class="col px-0">
+              <h3>Tell</h3>
+            </div>
+
+            <div class="col px-0">
+              <h3>(04) 2229 - 8981</h3>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col px-0">
+              <h3>404 台中市北區三民路三段54巷1號</h3>
+            </div>
+
+            <div class="w-100"></div>
+            <div class="col px-0">
+              <h4>如遇國定假日營業時間由臉書公告</h4>
+            </div>
+
+          </div>
+        </div>
+        <!-- 地圖 -->
+        <div class="col px-0">
+          <div class="map">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--******************
   *   過場畫面 cover
@@ -110,6 +187,7 @@
   <!-- js -->
   <script src="js/utility.js"></script>
   <script src="js/common.js"></script>
+  <script src="./js/section_navbar_mobile.js"></script>
   <script src="./js/section_cover.js"></script>
 </body>
 

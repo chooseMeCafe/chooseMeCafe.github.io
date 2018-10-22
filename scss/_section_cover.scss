@@ -5,28 +5,29 @@
   top: 0;
   left: 0;
   display: flex;
-  background-color: $light-color;
+  // background-color: $light-color;
 
   > div {
-    height: 100%;
+    height: 100vh;
     width: 50%;
     background-color: $cover-color;
   }
 
   .cover_left {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
   }
 
   .cover_right {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
   }
 
   .logo {
     @include position-center();
+    position: fixed;
     height: 50px;
     opacity: 0;
   }

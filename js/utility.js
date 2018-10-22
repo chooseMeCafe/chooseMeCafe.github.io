@@ -1,5 +1,9 @@
 function CreateSectionSelect(sectionId) {
   return function(selectElement) {
-    return "#" + sectionId + " " + selectElement;
-  }
+    if (selectElement != undefined) {
+      return "#" + sectionId + " " + selectElement;
+    } else {
+      return "#" + sectionId;
+    }
+  };
 }
