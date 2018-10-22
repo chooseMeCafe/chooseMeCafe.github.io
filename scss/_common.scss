@@ -7,20 +7,17 @@ $xl: 1200px;
 $lg: 992px;
 $sm: 540px;
 
-// 主色
-$dark-color: #A8C9D8;
-// $dark-color: #Abcddd;
-// 背景色
-$light-color: #FEF5F3;
-$cover-color: brown;
-
-//字體顔色
-$font-color: rgb(80, 80, 80);
+/********************************
+ * 顔色設定
+ *******************************/
+$dark-color: #a8c9d8; // 暗色
+$light-color: #fef5f3; //亮色
+$cover-color: $dark-color;
+$font-color: rgb(46, 45, 45); //字體顔色
 
 /********************************
  * 默認文字設定
  *******************************/
-
 html {
   font-size: 10px;
 }
@@ -34,9 +31,8 @@ h5,
 h6,
 p,
 span {
-  font-family: "Noto Sans TC", sans-serif;
-  // font-family: "cwTeXYen", sans-serif;
-  // font-family: sans-serif;
+  // font-family: "Noto Sans TC", sans-serif;
+  font-family: "cwTeXYen", sans-serif;
   color: $font-color;
 }
 
@@ -61,25 +57,22 @@ h5 {
 }
 
 h6 {
-  font-size: 2.0rem; // h6 16px
+  font-size: 2rem; // h6 20px
 }
 
 p {
-  font-size: 2.2rem; // p 18px
+  font-size: 2.2rem; // p 22px
 }
 
 span {
-  font-size: 2.2rem; // p 18px
+  font-size: 2.2rem; // p 22px
 }
 
 /********************************
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar {
-  .nav_title {
-    font-size: 1.8rem;
-    font-weight: 300;
-  }
+
 }
 
 /********************************************
@@ -121,7 +114,6 @@ span {
  *******************************/
 
 .section_menu {
-
   h4 {
     font-weight: 600;
   }

@@ -1,0 +1,1 @@
+const sectionCover = CreateSectionSelect("section_cover");

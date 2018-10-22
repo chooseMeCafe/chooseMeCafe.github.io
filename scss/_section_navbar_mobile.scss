@@ -1,0 +1,17 @@
+/*********************
+ * navbar 手機版 樣式
+*********************/
+.section_navbar_mobile {
+  .navbar_mobile_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background: $light-color;
+  }
+
+  .logo {
+    width: 60px;
+  }
+}
