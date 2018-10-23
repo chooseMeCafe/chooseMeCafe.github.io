@@ -10,12 +10,20 @@ $sm: 540px;
 /********************************
  * 顔色設定
  *******************************/
-$dark-color: #a8c9d8; // 暗色
+// $dark-color: #a8c9d8; // 暗色
+$dark-color: #8ba2b7; // 暗色
 $light-color: #fef5f3; //亮色
+// $dark-color: $light-color; // 暗色
 $cover-color: $dark-color;
 $font-color: rgb(46, 45, 45); //字體顔色
-$navbar-color: rgba(168, 201, 216, 0.8);
 
+// $navbar-color: rgba(168, 201, 216, 0.8);
+// $navbar-color: #E4E4E4;
+// $navbar-color: #83A3BA;
+// $navbar-color: #D7E0E7;
+// $navbar-color: #806D57;
+$navbar-color: rgba(0,0,0,0.8);
+$navbar-menu-color: #8ba2b7;
 /********************************
  * 默認文字設定
  *******************************/
@@ -67,22 +75,34 @@ p {
 
 span {
   font-size: 2.2rem; // p 22px
+  cursor: pointer;
 }
+
+
 
 /********************************
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar {
+  h3 {
+    font-size: 2.0rem;
+    color: white;
+  }
 }
 
 /********************************************
  * Navbar手機版-設定 (.section_navbar_mobile)
  *******************************************/
 .section_navbar_mobile {
-  h1 {
+  h3 {
     font-size: 3rem;
     font-weight: 300;
+    color: white;
   }
+}
+
+.section_navbar_menu_mobile {
+
 }
 
 /********************************
@@ -106,6 +126,11 @@ span {
     // font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC", sans-serif;
     // font-family: "cwTeXYen", sans-serif;
     color: $font-color;
+  }
+  .intro_taste {
+    h1, h2, h3, h4, h5, h6, p ,span {
+    color : white;
+    }
   }
 }
 

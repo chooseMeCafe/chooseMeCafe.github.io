@@ -6,6 +6,7 @@
   left: 0;
   display: flex;
   background-color: $light-color;
+  z-index: 999;
 
   > div {
     height: 100vh;
