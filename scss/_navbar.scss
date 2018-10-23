@@ -4,7 +4,7 @@
 
 .nav_height {
   opacity: 0;
-  padding: 1rem 1rem;
+  padding: $navbar-padding;
   width: 100%;
 
   .logo {
@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: $navbar-padding;
   }
 
   /***************

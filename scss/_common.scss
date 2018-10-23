@@ -8,17 +8,20 @@ $lg: 992px;
 $sm: 540px;
 
 /********************************
- * 顔色設定
+ * 默認顔色設定
  *******************************/
-// $dark-color: #a8c9d8; // 暗色
 $dark-color: #8ba2b7; // 暗色
 $light-color: #fef5f3; //亮色
-// $dark-color: $light-color; // 暗色
 $cover-color: $dark-color;
 $font-color: rgb(46, 45, 45); //字體顔色
-
 $navbar-color: rgba(0,0,0,0.7);
 $navbar-menu-color: #8ba2b7;
+
+/********************************
+ * 默認間距設定
+ *******************************/
+$navbar-padding: 1rem 1rem;
+
 /********************************
  * 默認文字設定
  *******************************/
@@ -79,9 +82,9 @@ span {
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar {
-  h3 {
+  .option {
     font-size: 2.0rem;
-    color: white;
+    color: $light-color;
   }
 }
 
