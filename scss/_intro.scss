@@ -3,7 +3,11 @@
 *********************/
 .section_intro {
   > div {
-    padding: 105px 0;
+    padding: 100px 0;
+  }
+
+  .intro_taste, .intro_taste_mobile {
+    background-color: $dark-color;
   }
 
   img {
