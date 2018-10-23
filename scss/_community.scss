@@ -21,8 +21,26 @@
 @media screen and (max-width: $lg) {
   .section_community {
     .photo {
-      width: (20vw);
-      height: (20vw);
+      width: (25vw);
+      height: (25vw);
     }
   }
 }
+
+@media screen and (max-width: $md) {
+  .section_community {
+    .photo {
+      width: (33vw);
+      height: (33vw);
+    }
+  }
+}
+
+// @media screen and (max-width: $sm) {
+//   .section_community {
+//     .photo {
+//       width: (60vw);
+//       height: (60vw);
+//     }
+//   }
+// }

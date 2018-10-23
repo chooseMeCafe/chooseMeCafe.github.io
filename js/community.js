@@ -4,7 +4,7 @@ setBgImgByPath(photos, "./img/community/community_", "jpg", 1);
 /***************
  * 初始化 Swiper
  ***************/
-const communitySwiper  = new Swiper(SEC_COMMUNITY + " .swiper-container", {
+const communitySwiper = new Swiper(SEC_COMMUNITY + " .swiper-container", {
   slidesPerView: 5,
   loop: true,
   autoplay: {
@@ -13,12 +13,16 @@ const communitySwiper  = new Swiper(SEC_COMMUNITY + " .swiper-container", {
   },
   breakpoints: {
     1200: {
-        slidesPerView: 4,
+      slidesPerView: 4
     },
-    992: {
-        slidesPerView: 3,
+    996: {
+      slidesPerView: 3
     },
-}
+    768: {
+      slidesPerView: 2
+    },
+    540: {
+      slidesPerView: 1
+    }
+  }
 });
-
-
