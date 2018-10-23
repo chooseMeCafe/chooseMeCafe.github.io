@@ -14,12 +14,13 @@ $dark-color: #a8c9d8; // 暗色
 $light-color: #fef5f3; //亮色
 $cover-color: $dark-color;
 $font-color: rgb(46, 45, 45); //字體顔色
+$navbar-color: rgba(168, 201, 216, 0.8);
 
 /********************************
  * 默認文字設定
  *******************************/
 html {
-  font-size:10px;
+  font-size: 10px;
 }
 
 // 默認字體設置 (思源黑體)
@@ -72,7 +73,6 @@ span {
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar {
-
 }
 
 /********************************************
