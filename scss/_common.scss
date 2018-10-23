@@ -5,6 +5,7 @@
 // 螢幕寬度大小
 $xl: 1200px;
 $lg: 992px;
+$md: 768px;
 $sm: 540px;
 
 /********************************
@@ -38,7 +39,6 @@ h5,
 h6,
 p,
 span {
-  // font-family: "Noto Sans TC", sans-serif;
   font-family: "cwTeXYen", sans-serif;
   color: $font-color;
 }

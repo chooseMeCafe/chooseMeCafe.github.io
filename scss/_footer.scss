@@ -4,13 +4,15 @@
 .section_footer {
 
   .logo {
-    height: 100px;
+    height: 60px;
+    // max-width: 100%;
     margin-bottom: 1rem;
   }
 
   .map {
-    height: 520px;
-    width: 520px;
+    // height: 520px;
+    width: 100%;
+    // width: 520px;
     background-color: $dark-color;
   }
 }

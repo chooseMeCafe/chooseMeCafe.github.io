@@ -3,7 +3,7 @@ var bannerMarginTop = 0;
 /***************
  * 初始化 Swiper
  ***************/
-const swiper = new Swiper(SEC_BANNER + " .swiper-container", {
+const bannerSwiper = new Swiper(SEC_BANNER + " .swiper-container", {
   autoHeight: true,
   loop: true,
   autoplay: {

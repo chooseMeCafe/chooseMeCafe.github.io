@@ -1,0 +1,28 @@
+.section_community {
+  padding: 6rem;
+  .photo {
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    width: (100vw / 6);
+    height: (100vw / 6);
+  }
+}
+
+@media screen and (max-width: $xl) {
+  .section_community {
+    .photo {
+      width: (20vw);
+      height: (20vw);
+    }
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .section_community {
+    .photo {
+      width: (20vw);
+      height: (20vw);
+    }
+  }
+}

@@ -3,7 +3,10 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 /********************************
- * 顔色設定
+ * 默認顔色設定
+ *******************************/
+/********************************
+ * 默認間距設定
  *******************************/
 /********************************
  * 默認文字設定
@@ -55,17 +58,24 @@ p {
 
 span {
   font-size: 2.2rem;
+  cursor: pointer;
 }
 
 /********************************
  * Navbar-設定 (.section_navbar)
  *******************************/
+.section_navbar .option {
+  font-size: 2.0rem;
+  color: #fef5f3;
+}
+
 /********************************************
  * Navbar手機版-設定 (.section_navbar_mobile)
  *******************************************/
-.section_navbar_mobile h1 {
+.section_navbar_mobile h3 {
   font-size: 3rem;
   font-weight: 300;
+  color: white;
 }
 
 /********************************
@@ -83,6 +93,10 @@ span {
 .section_brand p,
 .section_brand span {
   color: #2e2d2d;
+}
+
+.section_brand .intro_taste h1, .section_brand .intro_taste h2, .section_brand .intro_taste h3, .section_brand .intro_taste h4, .section_brand .intro_taste h5, .section_brand .intro_taste h6, .section_brand .intro_taste p, .section_brand .intro_taste span {
+  color: white;
 }
 
 /********************************
