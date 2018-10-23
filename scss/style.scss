@@ -1,10 +1,12 @@
 @import "./common";
 @import "./utility";
 
-@import "./section_navbar";
-@import "./section_navbar_mobile";
-@import "./section_navbar_menu_mobile";
-@import "./section_footer";
-@import "./section_cover";
+@import "./_navbar";
+@import "./_navbar_mobile";
+@import "./_navbar_menu_mobile";
+@import "./_banner";
+@import "./_intro";
+@import "./_footer";
+@import "./_cover";
 
 // 請勿編輯此檔案

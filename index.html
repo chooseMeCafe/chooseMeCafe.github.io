@@ -9,91 +9,131 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+  <!-- Fontawesome CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- 專案 CSS -->
   <link rel="stylesheet" href="./css/style.min.css">
 
   <title>初米咖啡</title>
 
 </head>
 
-<body style="padding-top: 100px; height: 3000px">
-
-  <!--******************
-  *   電腦版 navbar
-  *******************-->
-  <div id="section_navbar" class="section_navbar d-none d-md-block">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col px-0">
-          <!-- 電腦版 navbar 內容 -->
-          <div class="navbar_container">
-            <!-- navbar logo -->
-            <img class="logo" src="./img/logo/logo.png" alt="logo">
-            <!-- navbar 選單 -->
-            <div class="nav_option d-flex">
-              <h3>認識初米</h3>
-              <h3>初食味蕾</h3>
-              <h3>我是網美</h3>
-              <h3>尋找促咪</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!--******************
-  *   手機版 navbar
-  *******************-->
-  <div id="section_navbar_mobile" class="section_navbar_mobile d-md-none">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col px-0">
-          <!-- navbar 內容 -->
-          <div class="navbar_mobile_container d-flex align-items-center justify-content-between">
-            <img class="logo" src="./img/logo/logo.png" alt="logo">
-            <i id="menu_btn" class="menu_btn fas fa-bars fa-3x"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--**********************
-  *   手機版 navbar menu
-  ***********************-->
-  <div id="section_navbar_menu_mobile" class="section_navbar_menu_mobile d-md-none">
-    <h2 class="option">認識初米</h2>
-    <h2 class="option">初食味蕾</h2>
-    <h2 class="option">我是網美</h2>
-    <h2 class="option">尋找促咪</h2>
-  </div>
+<body style="padding-top: 80px; height: 3000px">
 
   <!--******************
   *   banner
   *******************-->
-
-  <!--******************
-  *   品牌概念 brand 
-  *******************-->
-  <div id="section_brand" class="section_brand">
-
+  <div id="section_banner" class="section_banner">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="banner_container"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!--******************
-  *   櫥窗 food
-  *******************-->
-  <div id="section_food" class="section_food">
+  <!--****************
+  *   初米介紹 intro
+  *   品牌、商品、社群
+  ********************-->
+  <div id="section_intro" class="section_intro">
 
-  </div>
+    <!--****************
+    *   品牌概念 brand
+    ********************-->
+    <div id="section_brand" class="section_brand">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg px-0">
+            <div class="h-100 d-flex flex-column" style="background: red;">
+              <h1>品牌概念</h1>
+              <h2></h2>
+            </div>
+          </div>
 
-  <!--**********************
-  *   網美牆 beauty_wall
-  ***********************-->
-  <div id="section_beauty_wall" class="section_beauty_wall">
+          <div class="col-lg px-0">
+            <img src="./img/brand/brand_01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--***************************
+    *   超越味蕾的體驗-電腦版 taste
+    *   寬度 > lg:992px 顯示
+    ****************************-->
+    <div id="intro_taste" class="intro_taste d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg px-0">
+            <img class="taste_img" src="./img/brand/brand_02.jpg" alt="">
+          </div>
+
+          <div class="col px-0">
+            <div class="intro_section">
+               <h2 class="title">超越味蕾的體驗</h2>
+               <p class="content">
+                  從店內的裝潢到餐點呈現<br>
+                  都希望你在用餐時充滿歡樂的笑聲<br>
+                  與朋友分享不完的照片<br>
+                  以及值得一再回想的美好回憶
+                </p>
+            </div>
+
+            <div class="button_section">
+              <a class="menu_btn" href="./demo/menu/">
+                <h4 class="btn_label">查看菜單</h4>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--**********************************
+    *   超越味蕾的體驗-手機版 taste_mobile
+    *   寬度 > lg:992px 顯示
+    ***********************************-->
+    <div id="intro_taste_mobile" class="intro_taste_mobile d-lg-none">
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- 標題 -->
+          <div class="col-lg mb-5">
+            <h2 class="text-center">超越味蕾的體驗</h2>
+          </div>
+
+          <!-- 內容 -->
+          <div class="col-lg mb-5">
+            <p class="text-center">
+              從店內的裝潢到餐點的呈現<br>
+              讓你在用餐時充滿歡樂的笑聲<br>
+              與朋友分享不完的照片<br>
+              以及值得一再回想的美好回憶
+            </p>
+          </div>
+
+          <!-- 圖片 -->
+          <div class="col-lg">
+            <img class="d-block m-auto" src="./img/brand/brand_02.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--**********************
+    *   網美牆 beauty_wall
+    ***********************-->
+    <div id="section_beauty_wall" class="section_beauty_wall">
+    </div>
 
   </div>
 
@@ -164,9 +204,60 @@
   </div>
 
   <!--******************
+  *   電腦版 navbar
+  *******************-->
+  <div id="section_navbar" class="section_navbar d-none d-md-block">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col px-0">
+          <!-- 電腦版 navbar 內容 -->
+          <div class="navbar_container">
+            <!-- navbar logo -->
+            <img class="logo" src="./img/logo/logo.png" alt="logo">
+            <!-- navbar 選單 -->
+            <div class="nav_option d-flex">
+              <h3>認識初米</h3>
+              <h3>初食味蕾</h3>
+              <h3>我是網美</h3>
+              <h3>尋找促咪</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--******************
+  *   手機版 navbar
+  *******************-->
+  <div id="section_navbar_mobile" class="section_navbar_mobile d-md-none">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col px-0">
+          <!-- navbar 內容 -->
+          <div class="navbar_mobile_container d-flex align-items-center justify-content-between">
+            <img class="logo" src="./img/logo/logo.png" alt="logo">
+            <i id="menu_btn" class="menu_btn fas fa-bars fa-3x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--**********************
+  *   手機版 navbar menu
+  ***********************-->
+  <div id="section_navbar_menu_mobile" class="section_navbar_menu_mobile d-md-none">
+    <h2 class="option">認識初米</h2>
+    <h2 class="option">初食味蕾</h2>
+    <h2 class="option">我是網美</h2>
+    <h2 class="option">尋找促咪</h2>
+  </div>
+
+  <!--******************
   *   過場畫面 cover
   *******************-->
-  <div id="section_cover" class="section_cover d-none">
+  <div id="section_cover" class="section_cover">
     <div class="cover_left"></div>
     <div class="cover_right"></div>
     <img class="logo" src="./img/logo/logo.png" alt="logo">
@@ -184,10 +275,14 @@
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-  <!-- js -->
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- 專案js -->
   <script src="js/utility.js"></script>
   <script src="js/common.js"></script>
   <script src="./js/section_navbar_mobile.js"></script>
+  <script src="./js/section_banner.js"></script>
   <script src="./js/section_cover.js"></script>
 </body>
 

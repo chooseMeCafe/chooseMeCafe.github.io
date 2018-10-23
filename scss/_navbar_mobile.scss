@@ -1,0 +1,31 @@
+/*********************
+ * navbar 手機版 樣式
+ *********************/
+.section_navbar_mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  .navbar_mobile_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background: $light-color;
+  }
+
+  .logo {
+    user-select: none;
+    width: 60px;
+  }
+
+  .menu_btn {
+    cursor: pointer;
+  }
+}
+/***********************
+ * css樣式請輸入在上方{}內
+ ***********************/

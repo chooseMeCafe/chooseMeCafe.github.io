@@ -1,0 +1,26 @@
+/*************************
+ * navbar menu 手機版 樣式
+ *************************/
+.section_navbar_menu_mobile {
+  @include flex-center();
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $dark-color;
+
+  /*************************
+   * navbar menu 手機版 樣式
+   *************************/
+  h2 {
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 2rem 2rem;
+    user-select: none;
+  }
+}
+/***********************
+ * css樣式請輸入在上方{}內
+ ***********************/

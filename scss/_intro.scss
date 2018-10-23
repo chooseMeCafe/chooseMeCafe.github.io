@@ -1,0 +1,67 @@
+/*********************
+ * 初米介紹 樣式
+*********************/
+.section_intro {
+  > div {
+    padding: 105px 0;
+  }
+
+  img {
+    width: 600px;
+    max-height: 550px;
+  }
+
+  .intro_taste {
+    .taste_img {
+      position: relative;
+      right: 100px;
+    }
+
+    .button_section {
+      position: relative;
+      height: 40%;
+
+      .menu_btn {
+        position: absolute;
+        right: 140px;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-decoration: none;
+        padding: 1rem 3rem;
+        margin: 0;
+        border: 1px solid $font-color;
+        border-radius: 999px;
+
+        .btn_label {
+          margin: 0; 
+        }
+      }
+    }
+
+    .intro_section {
+      position: relative;
+      height: 60%;
+
+      .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+      }
+
+      .title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        writing-mode: vertical-lr;
+      }
+    }
+  }
+}
+/***********************
+ * css樣式請輸入在上方{}內
+ ***********************/
+
+@media screen and (max-width: $lg) {
+}
