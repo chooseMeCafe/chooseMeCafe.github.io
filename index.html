@@ -12,26 +12,54 @@
   <!-- Fontawesome CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- 專案 CSS -->
   <link rel="stylesheet" href="./css/style.min.css">
 
-  <title>初米咖啡</title>
+  <title>初米咖啡-v1</title>
 
 </head>
 
-<body style="padding-top: 80px; height: 3000px; background-color: #fef5f3">
+<body style=" background-color: #fef5f3">
 
+  <div class="container">
+    <div class="nav_height">
+      <img class="logo" src="./img/logo/logo_white_01.png" alt="">
+    </div>
+  </div>
   <!--******************
   *   banner
   *******************-->
   <div id="section_banner" class="section_banner">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="banner_container"></div>
+        <div class="col-sm-12 px-0">
+          <div class="banner_container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/banner/banner_01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/banner/banner_02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/banner/banner_03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/banner/banner_04.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/banner/banner_05.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -251,16 +279,16 @@
   <!--******************
   *   電腦版 navbar
   *******************-->
-  <div id="section_navbar" class="section_navbar d-none d-md-block">
+  <!-- <div id="section_navbar" class="section_navbar d-none d-md-block">
     <div class="contain">
       <div class="row">
-        <div class="col px-0">
+        <div class="col"> -->
           <!-- 電腦版 navbar 內容 -->
-          <div class="navbar_container">
+          <!-- <div class="navbar_container"> -->
             <!-- navbar logo -->
-            <img class="logo" src="./img/logo/logo_white.png" alt="logo">
+            <!-- <img class="logo" src="./img/logo/logo_white_01.png" alt="logo"> -->
             <!-- navbar 選單 -->
-            <div class="nav_option d-flex">
+            <!-- <div class="nav_option d-flex">
               <h3 class="option">認識初米</h3>
               <h3 class="option">初食味蕾</h3>
               <h3 class="option">我是網美</h3>
@@ -270,43 +298,42 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--******************
   *   手機版 navbar
   *******************-->
-  <div id="section_navbar_mobile" class="section_navbar_mobile d-md-none">
+  <!-- <div id="section_navbar_mobile" class="section_navbar_mobile d-md-none">
     <div class="container-fluid">
       <div class="row">
         <div class="col px-0">
-          <!-- navbar 內容 -->
           <div class="navbar_mobile_container d-flex align-items-center justify-content-between">
-            <img class="logo" src="./img/logo/logo.png" alt="logo">
+            <img class="logo" src="./img/logo/logo_white_01.png" alt="logo">
             <i id="menu_btn" class="menu_btn fas fa-bars fa-3x"></i>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--**********************
   *   手機版 navbar menu
   ***********************-->
-  <div id="section_navbar_menu_mobile" class="section_navbar_menu_mobile d-md-none">
+  <!-- <div id="section_navbar_menu_mobile" class="section_navbar_menu_mobile d-md-none">
     <h2 class="option">認識初米</h2>
     <h2 class="option">初食味蕾</h2>
     <h2 class="option">我是網美</h2>
     <h2 class="option">尋找促咪</h2>
-  </div>
+  </div> -->
 
   <!--******************
   *   過場畫面 cover
   *******************-->
-  <div id="section_cover" class="section_cover d-none">
+  <!-- <div id="section_cover" class="section_cover d-none">
     <div class="cover_left"></div>
     <div class="cover_right"></div>
     <img class="logo" src="./img/logo/logo.png" alt="logo">
-  </div>
+  </div> -->
 
   <!-- *****************
   *    JS 檔案
@@ -320,12 +347,16 @@
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-  <!-- AOS -->
+  <!-- AOS js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <!-- Swiper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+
   <!-- 專案js -->
-  <script src="js/utility.js"></script>
-  <script src="js/common.js"></script>
+  <script src="./js/utility.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/banner.js"></script>
   <script src="./js/navbar_.js"></script>
   <script src="./js/section_navbar_mobile.js"></script>
   <script src="./js/section_banner.js"></script>

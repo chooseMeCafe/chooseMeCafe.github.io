@@ -4,14 +4,14 @@
  *  變量設定
  **************/
 const secNavMTl = new TimelineMax({ paused: true });
-const navMBtn = document.querySelector(sectionNavbarMobile("#menu_btn"));
+const navMBtn = document.querySelector(SEC_NAVBAR_MOBILE + " #menu_btn");
 
-secNavMTl.to(sectionNavbarMenuMobile(), 0.8, {
+secNavMTl.to(SEC_NAVBAR_MENU_MOBILE, 0.8, {
   top: "0%",
 });
 
 secNavMTl.staggerFrom(
-  sectionNavbarMenuMobile(".option"),
+  SEC_NAVBAR_MENU_MOBILE + " .option",
   0.8,
   {
     x: 200,
@@ -27,7 +27,7 @@ navMBtn.onclick = function() {
   secNavMTl.reversed(!secNavMTl.reversed());
 };
 
-$(document).on("click", sectionNavbarMenuMobile(".option"), function() {
+$(document).on("click", SEC_NAVBAR_MENU_MOBILE + " .option", function() {
   console.log("!!")
   secNavMTl.reversed(!secNavMTl.reversed());
 });

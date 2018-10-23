@@ -2,40 +2,56 @@
  * navbar 樣式
 ***************/
 
+.nav_height {
+  opacity: 1;
+  padding: 1rem 1rem;
+  width: 100%;
+  height:100px;
+
+  .logo {
+    // width: 60px;
+  }
+}
+
 .section_navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $navbar-color;
+  transition-duration: 0.5s;
+  z-index: 999;
+
+  .navbar_container {
     width: 100%;
-    background-color: $navbar-color;
-    .navbar_container {
-        width: 100%;
-        margin: 0 auto;
-        max-width: 1200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.2rem 1rem;
-    }
-    /***************
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+
+  /***************
    * logo 樣式
    ***************/
-    .logo {
-        width: 60px;
-    }
-    /***************
+  .logo {
+    width: 60px;
+  }
+  /***************
    *  選單樣式
    ***************/
-    .nav_option>h3 {
-        margin-left: 2rem;
-        user-select: none;
-        cursor: pointer;
-        padding: 0.5rem 0;
-        transition-duration: 1s ease;
-        &:hover {
-            font-weight: 600;
-        }
+  .nav_option > h3 {
+    margin-bottom: 0;
+    margin-left: 2rem;
+    user-select: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    transition-duration: 1s ease;
+    &:hover {
+      font-weight: 600;
     }
+  }
 }
 
 /***********************

@@ -4,9 +4,9 @@
  *  變量設定
  **************/
 const secCoverTl = new TimelineMax();
-const coverLeft = sectionCover(".cover_left");
-const coverRight = sectionCover(".cover_right");
-const coverLogo = sectionCover(".logo");
+const coverLeft = SEC_COVER + " .cover_left";
+const coverRight = SEC_COVER + " .cover_right";
+const coverLogo = SEC_COVER + " .logo";
 
 /***************
  *  過場動畫 
@@ -14,7 +14,7 @@ const coverLogo = sectionCover(".logo");
 secCoverTl.from(coverLeft, 0.4, { height: 0 }, 0)
   .from(coverRight, 0.4, { height: 0 }, 0)
   .to(coverLogo, 0.4, { opacity: 1, scale: 2 }, 0.4)
-  .to(sectionCover(), 0, {height: 0}, 0.5)
+  .to(SEC_COVER, 0, {height: 0}, 0.5)
   .to(coverLogo, 0.4, { opacity: 0, scale: 1 }, 1.5)
   .to(coverLeft, 0.4, { height: 0 }, 2)
   .to(coverRight, 0.4, { height: 0 }, 2);
