@@ -19,7 +19,11 @@ $font-color: rgb(46, 45, 45); //字體顔色
  * 默認文字設定
  *******************************/
 html {
-  font-size: 10px;
+  font-size:10px;
+}
+
+body {
+  background-color: $light-color;
 }
 
 // 默認字體設置 (思源黑體)
