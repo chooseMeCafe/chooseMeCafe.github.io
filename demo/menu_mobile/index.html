@@ -18,13 +18,7 @@
 
   <!-- 請在每次大改時，將版本數字+1，比較方便確認push後，網站是否已更新 -->
   <title>初米咖啡-menu手機版-v13</title>
-  <style>
-    .arrow{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
+ 
 </head>
 
 <body>
@@ -51,9 +45,9 @@
 
             <div class="col menu_list_appetizer">
               <div id="collapse_appetizer" class="collapse menu_collapse animated" data-parent="#menu_mobile">
-                <img class="arrow" src="./img/down.png" alt="">
+                
                 <img class="menu_img" src="./img/menu_appetizer.jpg" alt="">
-                <img class="arrow imgup" src="./img/up.png" alt="">
+                
               </div>
             </div>
           </div>
@@ -69,9 +63,9 @@
 
             <div class="col px-0 menu_list_brunch">
               <div id="collapse_brunch" class="collapse menu_collapse animated" data-parent="#menu_mobile">
-                  <img class="arrow" src="./img/down.png" alt="">
+                 
                 <img class="menu_img" src="./img/menu_brunch.jpg" alt="">
-                <img class="arrow imgup" src="./img/up.png" alt="">
+              
               </div>
             </div>
           </div>
@@ -87,9 +81,9 @@
 
             <div class="col px-0 menu_list_rice">
               <div id="collapse_rice" class="collapse menu_collapse animated" data-parent="#menu_mobile">
-                  <img class="arrow" src="./img/down.png" alt="">
+                  
                 <img class="menu_img" src="./img/menu_rice.jpg" alt="">
-                <img class="arrow imgup" src="./img/up.png" alt="">
+                
               </div>
             </div>
           </div>
@@ -105,9 +99,9 @@
 
             <div class="col px-0 menu_list_pasta">
               <div id="collapse_pasta" class="collapse menu_collapse animated" data-parent="#menu_mobile">
-                  <img class="arrow" src="./img/down.png" alt="">
+                
                 <img class="menu_img" src="./img/menu_pasta.jpg" alt="">
-                <img class="arrow imgup" src="./img/up.png" alt="">
+               
               </div>
             </div>
           </div>
@@ -123,9 +117,9 @@
 
             <div class="col px-0 menu_list_dessert">
               <div id="collapse_dessert" class="collapse menu_collapse animated" data-parent="#menu_mobile">
-                  <img class="arrow" src="./img/down.png" alt="">
+                 
                 <img class="menu_img" src="./img/menu_dessert.jpg" alt="">
-                <img class="arrow imgup" src="./img/up.png" alt="">
+              
               </div>
             </div>
           </div>
@@ -141,9 +135,9 @@
 
             <div class="col px-0 menu_list_drink">
               <div id="collapse_drink" class="collapse menu_collapse animated" data-parent="#menu_mobile">
-                  <img class="arrow" src="./img/down.png" alt="">
+                 
                 <img class="menu_img" src="./img/menu_drink.jpg" alt="">
-                <img class="arrow imgup" src="./img/up.png" alt="">
+              
               </div>
             </div>
           </div>
@@ -162,6 +156,11 @@
     crossorigin="anonymous"></script>
   <script src="../menu/js/utility.js"></script>
   <script src="./js/script.js"></script>
+  <script>
+    var menu_mobile = document.querySelector('#imgup');
+    menu_mobile.onclick = function () {
+        document.querySelector('.animated').classList.toggle('disappea');
+      </script>
 </body>
 
 </html>
