@@ -2,20 +2,67 @@
  * footer 樣式
 *********************/
 .section_footer {
+  background-color: $navbar-color;
 
-  .logo {
-    height: 60px;
-    // max-width: 100%;
-    margin-bottom: 1rem;
-  }
+}
 
-  .map {
-    // height: 520px;
-    width: 100%;
-    // width: 520px;
-    background-color: $dark-color;
-  }
+// 分隔線 hr
+.section_footer hr {
+  background-color: white;
+  width: 50px;
+}
+
+// 版權聲明 .copyright
+.section_footer .copyright {
+  text-align: center;
+  margin-top: 40px;
 }
 /***********************
  * css樣式請輸入在上方{}內
  ***********************/
+
+
+ .section_footer > div:first-child {
+  background-color: $light-color;
+}
+
+// 所有卡片 .card
+.section_footer .card {
+  background-color: $dark-color;
+}
+
+// fb ig 小圖標 .icon_group
+.section_footer .icon_group {
+  line-height: 50px;
+}
+
+// 返回最上按鈕 .go_top
+.go_top {
+  position: fixed;
+  float: right;
+  margin-top: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+// 版權聲明 .copyright
+.section_footer .copyright {
+  text-align: center;
+  margin-top: 40px;
+}
+
+// 螢幕寬度介於 lg:992px 與 xl:1200px 之間
+@media (min-width: $lg) and (max-width: $xl) {
+  // 選取 col* 最後一個元素(卡片 Follow Us)
+  div[class^="col"]:last-child {
+    margin-top: 0.5rem;
+  }
+}
+
+// 螢幕寬度小於 lg:992px
+@media screen and (max-width: $lg) {
+  // 選取所有 col* 元素(3張卡片)
+  div[class^="col"] {
+    margin-bottom: 0.5rem;
+  }
+}

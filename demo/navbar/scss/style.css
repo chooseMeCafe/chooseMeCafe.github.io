@@ -28,6 +28,7 @@ h4,
 h5,
 h6,
 p,
+a,
 span {
   font-family: "cwTeXYen", sans-serif;
   color: #2e2d2d;
@@ -70,8 +71,8 @@ span {
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar .option {
-  font-size: 2.0rem;
-  color: #fef5f3;
+  font-size: 2rem;
+  color: white;
 }
 
 /********************************************
@@ -86,31 +87,38 @@ span {
 /********************************
  * Banner-設定 (.section_banner)
  *******************************/
-/********************************
- * 品牌概念-設定 (.section_brand)
+/*******************************
+ * 初米介紹 (.section_intro)
+ * 品牌、餐點、社群
  *******************************/
-.section_brand h1,
-.section_brand h2,
-.section_brand h3,
-.section_brand h4,
-.section_brand h5,
-.section_brand h6,
-.section_brand p,
-.section_brand span {
-  color: #2e2d2d;
+.section_intro {
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
+  /*******************************
+   * 網美牆 (.intro_beauty_wall)
+   *******************************/
 }
 
-.section_brand .intro_taste h1, .section_brand .intro_taste h2, .section_brand .intro_taste h3, .section_brand .intro_taste h4, .section_brand .intro_taste h5, .section_brand .intro_taste h6, .section_brand .intro_taste p, .section_brand .intro_taste span {
+.section_intro .intro_taste .title,
+.section_intro .intro_taste .content {
+  color: white;
+}
+
+.section_intro .intro_taste .menu_btn {
+  border-color: white;
+}
+
+.section_intro .intro_taste .btn_label {
   color: white;
 }
 
 /********************************
  * 菜單-設定 (.section_menu)
  *******************************/
-.section_menu h4 {
-  font-weight: 600;
-}
-
 .section_menu h4,
 .section_menu h5,
 .section_menu h6 {
@@ -121,6 +129,10 @@ span {
 /********************************
  * Footer-設定 (.section_footer)
  *******************************/
+.section_footer {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .section_footer .footer_title {
   font-size: 2rem;
 }
@@ -243,6 +255,7 @@ h4,
 h5,
 h6,
 p,
+a,
 span {
   font-family: "cwTeXYen", sans-serif;
   color: #2e2d2d;
@@ -285,8 +298,8 @@ span {
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar .option {
-  font-size: 2.0rem;
-  color: #fef5f3;
+  font-size: 2rem;
+  color: white;
 }
 
 /********************************************
@@ -301,31 +314,38 @@ span {
 /********************************
  * Banner-設定 (.section_banner)
  *******************************/
-/********************************
- * 品牌概念-設定 (.section_brand)
+/*******************************
+ * 初米介紹 (.section_intro)
+ * 品牌、餐點、社群
  *******************************/
-.section_brand h1,
-.section_brand h2,
-.section_brand h3,
-.section_brand h4,
-.section_brand h5,
-.section_brand h6,
-.section_brand p,
-.section_brand span {
-  color: #2e2d2d;
+.section_intro {
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
+  /*******************************
+   * 網美牆 (.intro_beauty_wall)
+   *******************************/
 }
 
-.section_brand .intro_taste h1, .section_brand .intro_taste h2, .section_brand .intro_taste h3, .section_brand .intro_taste h4, .section_brand .intro_taste h5, .section_brand .intro_taste h6, .section_brand .intro_taste p, .section_brand .intro_taste span {
+.section_intro .intro_taste .title,
+.section_intro .intro_taste .content {
+  color: white;
+}
+
+.section_intro .intro_taste .menu_btn {
+  border-color: white;
+}
+
+.section_intro .intro_taste .btn_label {
   color: white;
 }
 
 /********************************
  * 菜單-設定 (.section_menu)
  *******************************/
-.section_menu h4 {
-  font-weight: 600;
-}
-
 .section_menu h4,
 .section_menu h5,
 .section_menu h6 {
@@ -336,6 +356,10 @@ span {
 /********************************
  * Footer-設定 (.section_footer)
  *******************************/
+.section_footer {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .section_footer .footer_title {
   font-size: 2rem;
 }
@@ -409,6 +433,7 @@ h4,
 h5,
 h6,
 p,
+a,
 span {
   font-family: "cwTeXYen", sans-serif;
   color: #2e2d2d;
@@ -451,8 +476,8 @@ span {
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar .option {
-  font-size: 2.0rem;
-  color: #fef5f3;
+  font-size: 2rem;
+  color: white;
 }
 
 /********************************************
@@ -467,31 +492,38 @@ span {
 /********************************
  * Banner-設定 (.section_banner)
  *******************************/
-/********************************
- * 品牌概念-設定 (.section_brand)
+/*******************************
+ * 初米介紹 (.section_intro)
+ * 品牌、餐點、社群
  *******************************/
-.section_brand h1,
-.section_brand h2,
-.section_brand h3,
-.section_brand h4,
-.section_brand h5,
-.section_brand h6,
-.section_brand p,
-.section_brand span {
-  color: #2e2d2d;
+.section_intro {
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
+  /*******************************
+   * 網美牆 (.intro_beauty_wall)
+   *******************************/
 }
 
-.section_brand .intro_taste h1, .section_brand .intro_taste h2, .section_brand .intro_taste h3, .section_brand .intro_taste h4, .section_brand .intro_taste h5, .section_brand .intro_taste h6, .section_brand .intro_taste p, .section_brand .intro_taste span {
+.section_intro .intro_taste .title,
+.section_intro .intro_taste .content {
+  color: white;
+}
+
+.section_intro .intro_taste .menu_btn {
+  border-color: white;
+}
+
+.section_intro .intro_taste .btn_label {
   color: white;
 }
 
 /********************************
  * 菜單-設定 (.section_menu)
  *******************************/
-.section_menu h4 {
-  font-weight: 600;
-}
-
 .section_menu h4,
 .section_menu h5,
 .section_menu h6 {
@@ -502,6 +534,10 @@ span {
 /********************************
  * Footer-設定 (.section_footer)
  *******************************/
+.section_footer {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .section_footer .footer_title {
   font-size: 2rem;
 }

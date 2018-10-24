@@ -11,6 +11,7 @@
 /********************************
  * 默認文字設定
  *******************************/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 html {
   font-size: 10px;
 }
@@ -154,96 +155,63 @@ span {
   }
 }
 
-.section_brand h1,
-.section_brand h2,
-.section_brand h3,
-.section_brand h4,
-.section_brand h5,
-.section_brand h6 {
-  font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC";
-  font-family: "cwTeXYen", sans-serif;
+* {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
 }
 
-.section_brand p,
-.section_brand span {
-  font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC";
-  font-family: "cwTeXYen", sans-serif;
-  font-size: 20px;
+body {
+  height: 2500px;
 }
 
-.section_brand img {
-  width: 600px;
-  max-height: 550px;
+.menu_img {
+  width: 100%;
+  margin: 30px 0;
 }
 
-.section_brand .row > div {
-  padding: 105px 0;
+.collapsing {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
-.section_brand > div:nth-child(odd) {
-  background-color: #fef5f3;
+.menu_mobile_option {
+  background-position: center;
+  background-size: cover;
+  height: 14.28571vh;
+  border-radius: 10px;
+  margin: 5px 0;
 }
 
-.section_brand > div:nth-child(even) {
-  background-color: #8ba2b7;
+.menu_mobile_label {
+  color: white;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 3px 3px 3px rgba(56, 56, 56, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 4px rgba(56, 56, 56, 0.4);
+          box-shadow: 2px 2px 4px rgba(56, 56, 56, 0.4);
 }
 
-.section_brand img.brand_logo {
-  width: 60px;
-  height: 60px;
-}
-
-.section_brand .text-vertical {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-}
-
-.section_brand .label {
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 1200px) {
-  .section_brand img {
-    max-width: 100%;
-    height: auto;
-  }
-  .box {
-    background-color: #ebb1b1;
+@media screen and (max-width: 768px) {
+  .screen_size_prompt {
+    display: none;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .section_brand .content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .section_brand img {
-    margin: 0 auto;
-  }
-  .section_brand .label {
-    margin-bottom: 40px !important;
-  }
-  .section_brand .row > div {
-    padding: 50px 15px;
-  }
-  .section_brand .row > div:first-child {
-    padding-bottom: 0;
-  }
-  .box {
-    background-color: #9c9ce7;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .box {
-    background-color: #b8ddb8;
-  }
-  .section_brand .content div {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media screen and (min-width: 768px) {
+  .section_menu_mobile {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
