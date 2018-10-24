@@ -1,4 +1,4 @@
-$main_title_font_size: 20rem;
+$main_title_font_size: 12rem;
 $btn_size: 50px;
 $border_color: #a3814d;
 
@@ -31,14 +31,16 @@ $border_color: #a3814d;
       height: 5rem;
     }
 
+    // 大標題文字
     .main_title {
       position: absolute;
       font-size: $main_title_font_size;
       opacity: 0.2;
       color: $border_color;
-      bottom: 10%;
+      top: 10%;
       font-weight: 600;
-      left: 20%;
+      left: 5%;
+      writing-mode: vertical-lr;
     }
 
     // 設定菜單文字列表區塊
