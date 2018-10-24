@@ -15,8 +15,10 @@ $dark-color: #8ba2b7; // 暗色
 $light-color: #fef5f3; //亮色
 $cover-color: $dark-color;
 $font-color: rgb(46, 45, 45); //字體顔色
-$navbar-color: rgba(0,0,0,0.7);
+$navbar-color: rgba(0, 0, 0, 0.7);
 $navbar-menu-color: #8ba2b7;
+
+$dark-font-color: white;
 
 /********************************
  * 默認間距設定
@@ -76,15 +78,13 @@ span {
   cursor: pointer;
 }
 
-
-
 /********************************
  * Navbar-設定 (.section_navbar)
  *******************************/
 .section_navbar {
   .option {
-    font-size: 2.0rem;
-    color: $light-color;
+    font-size: 2rem;
+    color: $dark-font-color;
   }
 }
 
@@ -100,7 +100,6 @@ span {
 }
 
 .section_navbar_menu_mobile {
-
 }
 
 /********************************
@@ -109,25 +108,44 @@ span {
 .section_banner {
 }
 
-/********************************
- * 品牌概念-設定 (.section_brand)
+/*******************************
+ * 初米介紹 (.section_intro)
+ * 品牌、餐點、社群
  *******************************/
-.section_brand {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span {
-    // font-family: "cwTeXFangSong", "STFangSong", "FangSong", "Noto Sans TC", sans-serif;
-    // font-family: "cwTeXYen", sans-serif;
-    color: $font-color;
+.section_intro {
+
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
+  .intro_brand {
+    .title,
+    .sub_title,
+    .content {
+    }
   }
+
+  /*******************************
+   * 品牌 (.intro_brand)
+   *******************************/
   .intro_taste {
-    h1, h2, h3, h4, h5, h6, p ,span {
-    color : white;
+    .title,
+    .content {
+      color: $dark-font-color;
+    }
+    .menu_btn {
+      border-color: $dark-font-color;
+    }
+    .btn_label {
+      color: $dark-font-color;
+    }
+  }
+
+  /*******************************
+   * 網美牆 (.intro_beauty_wall)
+   *******************************/
+  .intro_beauty_wall {
+    .title,
+    .content {
     }
   }
 }

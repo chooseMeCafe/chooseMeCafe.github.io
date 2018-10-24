@@ -15,7 +15,7 @@ navOptions[1].onclick = function() {
 };
 
 navOptions[2].onclick = function() {
-  document.querySelector(SEC_INTRO + " .section_beauty_wall").scrollIntoView({
+  document.querySelector(SEC_INTRO + " .intro_beauty_wall").scrollIntoView({
     block: "center",
     behavior: "smooth"
   });

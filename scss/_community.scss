@@ -11,6 +11,7 @@
 
 @media screen and (max-width: $xl) {
   .section_community {
+    padding: 5rem;
     .photo {
       width: (20vw);
       height: (20vw);
@@ -20,6 +21,7 @@
 
 @media screen and (max-width: $lg) {
   .section_community {
+    padding: 4rem;
     .photo {
       width: (25vw);
       height: (25vw);
@@ -29,18 +31,20 @@
 
 @media screen and (max-width: $md) {
   .section_community {
+    padding: 2rem;
     .photo {
-      width: (33vw);
-      height: (33vw);
+      width: (40vw);
+      height: (40vw);
     }
   }
 }
 
-// @media screen and (max-width: $sm) {
-//   .section_community {
-//     .photo {
-//       width: (60vw);
-//       height: (60vw);
-//     }
-//   }
-// }
+@media screen and (max-width: $sm) {
+  .section_community {
+    padding: 1.5rem;
+    .photo {
+      width: (80vw);
+      height: (80vw);
+    }
+  }
+}

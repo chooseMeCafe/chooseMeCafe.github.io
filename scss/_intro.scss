@@ -4,22 +4,25 @@
 .section_intro {
   > div {
     padding: 100px 0;
+    // min-height: 1200px;
+    // padding-top: 400px;
   }
 
-  .intro_taste, .intro_taste_mobile {
+  .intro_taste,
+  .intro_taste_mobile {
     background-color: $dark-color;
   }
 
   img {
-    // width: 600px;
     width: 100%;
     max-height: 550px;
   }
 
   .intro_taste {
+
     .taste_img {
       position: relative;
-      right: 100px;
+      right: 50px;
     }
 
     .button_section {
@@ -34,11 +37,12 @@
         text-decoration: none;
         padding: 1rem 3rem;
         margin: 0;
-        border: 2px solid white;
+        border-width: 2px;
+        border-style: solid;
         border-radius: 999px;
 
         .btn_label {
-          margin: 0; 
+          margin: 0;
         }
       }
     }
@@ -63,10 +67,37 @@
       }
     }
   }
+
+  .intro_beauty_wall {
+    .neon:first-child {
+      margin-bottom: 4rem;
+    }
+    .neon {
+      color: #ff75fb;
+      font-size: 60px;
+      text-shadow: 0 0 3vw #ff75fb;
+      animation: neon 3s ease infinite;
+    }
+  }
 }
 /***********************
  * css樣式請輸入在上方{}內
  ***********************/
 
 @media screen and (max-width: $lg) {
+  .section_intro {
+    .title,
+    .sub_title,
+    .content {
+      text-align: center;
+    }
+
+    .title {
+      margin-bottom: 4rem;
+    }
+
+    .brand_img {
+      margin-top: 4rem;
+    }
+  }
 }
