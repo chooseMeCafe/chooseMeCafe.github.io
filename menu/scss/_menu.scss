@@ -1,8 +1,27 @@
 $btn_height: 50px;
 
 .section_menu {
-  > div:nth-child(even) {
+
+  //  設定各菜單高度為 100vh
+  .menu {
+    height: 100vh;
+  }
+
+  // 設定奇數背景顔色
+  .menu:nth-child(odd) {
     background-color: $light-color;
+  }
+  // 設定偶數背景顔色
+  .menu:nth-child(even) {
+    background-color: $dark-color;
+  }
+
+  // 設定菜單圖片與標籤區塊
+  .menu_img_section {
+    background:red;
+    display: flex;
+    flex-direction: column;
+    align-items: 
   }
 
   .menu {
