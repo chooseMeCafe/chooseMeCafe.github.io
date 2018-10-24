@@ -2,7 +2,6 @@
  * 初米介紹 樣式
 *********************/
 .section_intro {
-
   // intro_brand, intro_taste, intro_beauty_wall
   > div {
     position: relative;
@@ -28,14 +27,29 @@
       right: 50px;
     }
 
-    .button_section {
+    .intro_section {
       position: relative;
-      height: 40%;
+      height: 100%;
+
+      .title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        writing-mode: vertical-lr;
+      }
+
+      .content {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        margin: 0;
+      }
 
       .menu_btn {
         position: absolute;
-        right: 140px;
-        top: 50%;
+        right: 10%;
+        bottom: 0;
         transform: translate(0, -50%);
         text-decoration: none;
         padding: 1rem 3rem;
@@ -47,26 +61,6 @@
         .btn_label {
           margin: 0;
         }
-      }
-    }
-
-    .intro_section {
-      position: relative;
-      height: 60%;
-
-      .content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
-      }
-
-      .title {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 0;
-        writing-mode: vertical-lr;
       }
     }
   }
