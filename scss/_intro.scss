@@ -2,9 +2,14 @@
  * 初米介紹 樣式
 *********************/
 .section_intro {
+  // 設定介紹頁面與螢幕同高，並將container置中
   > div {
-    padding: 100px 0; // min-height: 1200px;
-    // padding-top: 400px;
+    position: relative;
+    height: 100vh;
+
+    .container {
+      @include position-center();
+    }
   }
 
   .intro_taste,
@@ -18,8 +23,8 @@
   }
 
   /*********************
- * 商品 樣式
-*********************/
+   * 商品 樣式
+   *********************/
   .intro_taste {
     .taste_img {
       position: relative;
