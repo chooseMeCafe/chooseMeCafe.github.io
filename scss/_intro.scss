@@ -1,124 +1,155 @@
 /*********************
  * 初米介紹 樣式
 *********************/
+
 .section_intro {
-  // 設定介紹頁面與螢幕同高，並將container置中
-  > div {
-    position: relative;
-    height: 100vh;
-
-    .container {
-      @include position-center();
+    // 設定介紹頁面與螢幕同高，並將container置中
+    >div {
+        position: relative;
+        height: 100vh;
+        .container {
+            @include position-center();
+        }
     }
-  }
-
-  .intro_taste,
-  .intro_taste_mobile {
-    background-color: $dark-color;
-  }
-
-  img {
-    width: 100%;
-    max-height: 550px;
-  }
-
-  /*********************
+    .intro_taste,
+    .intro_taste_mobile {
+        background-color: $dark-color;
+    }
+    img {
+        width: 100%;
+        max-height: 550px;
+    }
+    /*********************
    * 商品 樣式
    *********************/
-  .intro_taste {
-    .taste_img {
-      position: relative;
-      right: 50px;
+    .intro_taste {
+        .taste_img {
+            position: relative;
+            right: 50px;
+        }
+        .button_section {
+            position: relative;
+            height: 40%;
+            $color: $dark-font-color;
+            @keyframes sheen {
+                0% {
+                    transform: skewY(-45deg) translateX(0);
+                }
+                100% {
+                    transform: skewY(-45deg) translateX(12.5em);
+                }
+            }
+            .menu_btn {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .btn_label {
+                padding: 0.3em 1.5em;
+                text-align: center;
+                text-decoration: none;
+                color: $color;
+                border: 2px solid $color;
+                font-size: 24px;
+                display: inline-block;
+                border-radius: 1em;
+                transition: all 0.2s ease-in-out;
+                position: relative;
+                overflow: hidden;
+                &:before {
+                    content: "";
+                    background-color: rgba(0, 0, 0, 0.5);
+                    height: 100%;
+                    width: 3em;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: -4.5em;
+                    transform: skewX(-45deg) translateX(0);
+                    transition: none;
+                }
+                &:hover {
+                    background-color: $color;
+                    color: $navbar-color;
+                    border-bottom: 4px solid darken($color, 10%);
+                    &:before {
+                        transform: skewX(-45deg) translateX(13.5em);
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+        .intro_section {
+            position: relative;
+            height: 60%;
+            .content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+            }
+            .title {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0;
+                writing-mode: vertical-lr;
+            }
+        }
     }
-
-    .button_section {
-      position: relative;
-      height: 40%;
-      $color: $dark-font-color;
-      @keyframes sheen {
-        0% {
-          transform: skewY(-45deg) translateX(0);
+    .intro_beauty_wall {
+        .neon:first-child {
+            margin-bottom: 4rem;
         }
-        100% {
-          transform: skewY(-45deg) translateX(12.5em);
+        .neon {
+            color: #ff75fb;
+            font-size: 60px;
+            text-shadow: 0 0 3vw #ff75fb;
+            animation: neon 3s ease infinite;
         }
-      }
-      .menu_btn {
-        display: block;
+    } // swiper
+    .swiper-button-next1,
+    .swiper-button-prev1 {
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .btn_label {
-        padding: 0.3em 1.5em;
-        text-align: center;
-        text-decoration: none;
-        color: $color;
-        border: 2px solid $color;
-        font-size: 24px;
-        display: inline-block;
-        border-radius: 1em;
-        transition: all 0.2s ease-in-out;
-        position: relative;
-        overflow: hidden;
-
-        &:before {
-          content: "";
-          background-color: rgba(0, 0, 0, 0.5);
-          height: 100%;
-          width: 3em;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: -4.5em;
-          transform: skewX(-45deg) translateX(0);
-          transition: none;
-        }
-
-        &:hover {
-          background-color: $color;
-          color: $navbar-color;
-          border-bottom: 4px solid darken($color, 10%);
-
-          &:before {
-            transform: skewX(-45deg) translateX(13.5em);
-            transition: all 0.5s ease-in-out;
-          }
-        }
-      }
+        width: 30px;
+        height: 44px;
+        margin-top: -22px;
+        z-index: 10;
+        cursor: pointer;
+        background-size: 25px 25px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    .intro_section {
-      position: relative;
-      height: 60%;
-      .content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
-      }
-      .title {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 0;
-        writing-mode: vertical-lr;
-      }
+    .swiper-button-prev1,
+    .swiper-container-rtl .swiper-button-next1 {
+      left: 0px;
+      padding-left: 10px;
     }
-  }
-
-  .intro_beauty_wall {
-    .neon:first-child {
-      margin-bottom: 4rem;
+    .swiper-button-next1,
+    .swiper-container-rtl .swiper-button-prev1 {
+        right: 0px;
+    } // 箭頭位置
+    // .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    //   left: -25px;
+    // }
+    // .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    //   right: -25px;
+    // }
+    // .swiper-button-next.swiper-button-black, .swiper-container-rtl .swiper-button-prev.swiper-button-black{
+    //   padding: 0 25px;
+    // }
+    //箭頭顏色 
+    .swiper-button-prev.swiper-button-black,
+    .swiper-container-rtl .swiper-button-next.swiper-button-black {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
     }
-
-    .neon {
-      color: #ff75fb;
-      font-size: 60px;
-      text-shadow: 0 0 3vw #ff75fb;
-      animation: neon 3s ease infinite;
+    .swiper-button-next.swiper-button-black,
+    .swiper-container-rtl .swiper-button-prev.swiper-button-black {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
     }
-  }
 }
 
 /***********************
@@ -126,17 +157,17 @@
  ***********************/
 
 @media screen and (max-width: $lg) {
-  .section_intro {
-    .title,
-    .sub_title,
-    .content {
-      text-align: center;
+    .section_intro {
+        .title,
+        .sub_title,
+        .content {
+            text-align: center;
+        }
+        .title {
+            margin-bottom: 4rem;
+        }
+        .brand_img {
+            margin-top: 4rem;
+        }
     }
-    .title {
-      margin-bottom: 4rem;
-    }
-    .brand_img {
-      margin-top: 4rem;
-    }
-  }
 }

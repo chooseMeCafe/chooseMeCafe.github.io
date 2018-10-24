@@ -11,6 +11,10 @@ const communitySwiper = new Swiper(SEC_COMMUNITY + " .swiper-container", {
     delay: 3000,
     disableOnInteraction: false
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
   breakpoints: {
     1200: {
       slidesPerView: 4
