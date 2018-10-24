@@ -2,7 +2,7 @@
  * footer 樣式
 *********************/
 .section_footer {
-  background-color: $navbar-color;
+  background-color: black;
 
 }
 
@@ -20,8 +20,6 @@
 /***********************
  * css樣式請輸入在上方{}內
  ***********************/
-
-
  .section_footer > div:first-child {
   background-color: $light-color;
 }
