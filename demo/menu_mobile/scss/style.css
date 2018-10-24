@@ -54,12 +54,11 @@ h6 {
 }
 
 p {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 span {
   font-size: 2.2rem;
-  cursor: pointer;
 }
 
 /********************************
@@ -125,15 +124,7 @@ span {
  * Footer-設定 (.section_footer)
  *******************************/
 .section_footer {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.section_footer .footer_title {
-  font-size: 2rem;
-}
-
-.section_footer .footer_content {
-  font-size: 1.8rem;
+  background-color: black;
 }
 
 /********************************
