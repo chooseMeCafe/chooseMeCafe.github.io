@@ -1,6 +1,42 @@
+/*************************
+ * 社群照片展示 樣式
+ *************************/
 .section_community {
-  padding: 6rem;
+  // 設定邊距
+  .photo_swiper {
+    padding: 0 4rem;
+    position: relative;
+  }
 
+  .swiper_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: gray;
+    opacity: 0.4;
+    transition-duration: 0.2s;
+    user-select: none;
+
+    &:nth-child(even) {
+      left: 0;
+      transform: translate(0, -50%);
+    }
+
+    &:nth-child(odd) {
+      right: 0;
+      transform: translate(0, -50%);
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  // 設定照片位置及大小
   .photo {
     margin: 0 auto;
     background-size: cover;
@@ -10,9 +46,12 @@
   }
 }
 
+/*************************
+ * 使照片隨着螢幕寬度大小縮放
+ *************************/
 @media screen and (max-width: $xl) {
-  .section_community {
-    padding: 5rem;
+  padding: 1rem;
+  .photo_swiper {
     .photo {
       width: (20vw);
       height: (20vw);
@@ -21,8 +60,8 @@
 }
 
 @media screen and (max-width: $lg) {
-  .section_community {
-    padding: 4rem;
+  .photo_swiper {
+    padding: 1rem;
     .photo {
       width: (25vw);
       height: (25vw);
@@ -31,18 +70,17 @@
 }
 
 @media screen and (max-width: $md) {
-  .section_community {
-    padding: 2rem;
+  .photo_swiper {
+    padding: 0rem;
     .photo {
-      width: (40vw);
-      height: (40vw);
+      width: (35vw);
+      height: (35vw);
     }
   }
 }
 
 @media screen and (max-width: $sm) {
-  .section_community {
-    padding: 1.5rem;
+  .photo_swiper {
     .photo {
       width: (80vw);
       height: (80vw);

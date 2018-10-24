@@ -1,4 +1,10 @@
 const photos = document.querySelectorAll(SEC_COMMUNITY + " .photo");
+const swiperNextBtn = document.querySelector(
+  SEC_COMMUNITY + " #swiper_next_btn"
+);
+const swiperlastBtn = document.querySelector(
+  SEC_COMMUNITY + " #swiper_last_btn"
+);
 
 setBgImgByPath(photos, "./img/community/community_", "jpg", 1);
 /***************
@@ -10,10 +16,6 @@ const communitySwiper = new Swiper(SEC_COMMUNITY + " .swiper-container", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
   },
   breakpoints: {
     1200: {
@@ -30,3 +32,11 @@ const communitySwiper = new Swiper(SEC_COMMUNITY + " .swiper-container", {
     }
   }
 });
+
+swiperlastBtn.onclick = function() {
+  communitySwiper.slidePrev();
+};
+
+swiperNextBtn.onclick = function() {
+  communitySwiper.slideNext();
+};
