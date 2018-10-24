@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
+body{
+   background-color: #424242;
+}
+.container{
+   transform: translate(-50%, -50%);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+p {
+   transform: translate(-50%, -50%);
+   position: absolute;
+   top: 50%;
+   left: 49%;
+   font-family: Fredoka One;
+   font-size: 40px;
+   color: #4c0000;
+   text-shadow: -1px -1px 0 #A31919, -1px 1px 0 #7b0000, 1px -1px 0 #7b0000, 1px 1px 0 #7b0000;
+}
+
+/* ANIMATE LIQUID FILL */
+.liquid {
+   transform: translateX(100%);
+   transform: translateY(100%);
+   opacity: 0.8;
+   animation: fill 3.2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+   0%{
+      opacity: 0.5;
+      transform: translateY(100%);
+   }
+   100%{
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+/* ANIMATE STEAM */
+.steam {
+   stroke: #F7F7F7;
+   stroke-width: 1.5px;
+   stroke-dasharray: 200;
+   stroke-dashoffset: 200;
+   opacity: 0.2;
+   animation: steamAnimate 2.5s;
+   animation-delay: 3.3s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes steamAnimate{
+	0%{
+		stroke-dashoffset: 200;
+	}
+	  
+	100%{
+		stroke-dashoffset: 0;
+	}
+}
