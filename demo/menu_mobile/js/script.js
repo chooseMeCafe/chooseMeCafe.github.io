@@ -3,6 +3,7 @@
 const MENU_MOBILE_OPTION_CLASS = ".menu_mobile_option";
 const MENU_COLLAPSE = ".menu_collapse";
 
+
 var bgImages = [
   "./img/menu_option_appetizer.jpg",
   "./img/menu_option_brunch.jpg",
@@ -14,6 +15,7 @@ var bgImages = [
 
 var menuMobileOptions = document.querySelectorAll(MENU_MOBILE_OPTION_CLASS);
 var menuMobileCollapses = document.querySelectorAll(MENU_COLLAPSE);
+
 
 setBackgroundImages(menuMobileOptions, bgImages);
 
@@ -47,3 +49,4 @@ for (let index = 0; index < menuMobileCollapses.length; index++) {
     this.classList.remove("fadeOut");
   });
 }
+
