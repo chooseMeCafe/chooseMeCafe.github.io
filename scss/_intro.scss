@@ -109,9 +109,10 @@
             text-shadow: 0 0 3vw #ff75fb;
             animation: neon 3s ease infinite;
         }
-    } // swiper
-    .swiper-button-next1,
-    .swiper-button-prev1 {
+    } 
+    // swiper
+    .swiper-button-next,
+    .swiper-button-prev {
         position: absolute;
         top: 50%;
         width: 30px;
@@ -123,13 +124,13 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-    .swiper-button-prev1,
-    .swiper-container-rtl .swiper-button-next1 {
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next {
       left: 0px;
       padding-left: 10px;
     }
-    .swiper-button-next1,
-    .swiper-container-rtl .swiper-button-prev1 {
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
         right: 0px;
     } 
     .swiper-button-prev.swiper-button-black,
