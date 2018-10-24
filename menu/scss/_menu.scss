@@ -4,6 +4,18 @@ $border_color: #a3814d;
 
 .section_menu {
   // 菜單樣式設定
+
+   // 大標題文字
+    .main_title {
+      position: absolute;
+      font-size: $main_title_font_size;
+      opacity: 0.2;
+      color: $border_color;
+      top: 10%;
+      font-weight: 600;
+      left: 0;
+      writing-mode: vertical-lr;
+    }
   .menu {
     position: relative;
 
@@ -31,17 +43,7 @@ $border_color: #a3814d;
       height: 5rem;
     }
 
-    // 大標題文字
-    .main_title {
-      position: absolute;
-      font-size: $main_title_font_size;
-      opacity: 0.2;
-      color: $border_color;
-      top: 10%;
-      font-weight: 600;
-      left: 5%;
-      writing-mode: vertical-lr;
-    }
+   
 
     // 設定菜單文字列表區塊
     .menu_list_section {
