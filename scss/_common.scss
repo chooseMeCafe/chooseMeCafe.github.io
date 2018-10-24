@@ -40,6 +40,7 @@ h4,
 h5,
 h6,
 p,
+a,
 span {
   font-family: "cwTeXYen", sans-serif;
   color: $font-color;
@@ -131,6 +132,7 @@ span {
     .title,
     .content {
       color: $dark-font-color;
+
     }
     .menu_btn {
       border-color: $dark-font-color;
