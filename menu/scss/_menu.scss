@@ -1,37 +1,17 @@
-$main_title_font_size: 12rem;
+$main_title_font_size: 14rem;
 $btn_size: 50px;
 $border_color: #a3814d;
 
 .section_menu {
   // 菜單樣式設定
-
-   // 大標題文字
-    .main_title {
-      position: absolute;
-      font-size: $main_title_font_size;
-      opacity: 0.2;
-      color: $border_color;
-      top: 10%;
-      font-weight: 600;
-      left: 0;
-      writing-mode: vertical-lr;
-    }
   .menu {
     position: relative;
 
     // 設定各菜單高度為 100vh
     height: 100vh;
 
-   
-    // 設定奇數背景顔色
-    &:nth-child(odd) {
-      background-color: $light-color;
-    }
-
-    // 設定偶數背景顔色
-    &:nth-child(even) {
-      background-color: $dark-color;
-    }
+    // 背景顔色
+    background-color: $light-color;
 
     // 將內容置中
     & > .container {
@@ -43,7 +23,18 @@ $border_color: #a3814d;
       height: 5rem;
     }
 
-   
+    // 大標題文字
+    .main_title {
+      position: absolute;
+      font-size: $main_title_font_size;
+      opacity: 0.2;
+      color: $border_color;
+      top: 50%;
+      font-weight: 600;
+      left: 0;
+      writing-mode: vertical-lr;
+      transform: translate(0%, -50%);
+    }
 
     // 設定菜單文字列表區塊
     .menu_list_section {
@@ -61,7 +52,11 @@ $border_color: #a3814d;
 
       // 菜單圖片大小
       .menu_img {
-        width: 27rem;
+        width: 24rem;
+        // filter: drop-shadow(1px 1px 0 $border_color)
+        //   drop-shadow(-1px -1px 0 $border_color)
+        //   drop-shadow(-1px 1px 0 $border_color)
+        //   drop-shadow(1px -1px 0 $border_color);
       }
 
       // 文字設定
