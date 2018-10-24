@@ -34,6 +34,7 @@
     .button_section {
       position: relative;
       height: 40%;
+
       $color: $dark-font-color;
       @keyframes sheen {
         0% {
@@ -43,6 +44,7 @@
           transform: skewY(-45deg) translateX(12.5em);
         }
       }
+
       .menu_btn {
         display: block;
         position: absolute;
@@ -50,6 +52,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
       .btn_label {
         padding: 0.3em 1.5em;
         text-align: center;
