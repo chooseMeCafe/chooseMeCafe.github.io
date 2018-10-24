@@ -63,7 +63,7 @@ $btn_height: 50px;
   .menu_btn > div h4 {
     color: white;
     opacity: 0;
-    margin-right: 30px;
+    margin-right: ($btn_height / 2);
     transition-duration: 0.1s;
   }
 
