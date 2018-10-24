@@ -2,7 +2,7 @@
  * footer 樣式
 *********************/
 .section_footer {
-  background-color: black;
+  background-color: $dark-color;
 
 }
 
@@ -20,9 +20,6 @@
 /***********************
  * css樣式請輸入在上方{}內
  ***********************/
- .section_footer > div:first-child {
-  background-color: $light-color;
-}
 
 // 所有卡片 .card
 .section_footer .card {

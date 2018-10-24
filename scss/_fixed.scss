@@ -1,0 +1,17 @@
+.go_top {
+  position: fixed;
+  float: right;
+  margin-top: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  .arrow_icon {
+    color: $font-color;
+    text-align: center;
+    display: block;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}

@@ -113,7 +113,6 @@ span {
  * 品牌、餐點、社群
  *******************************/
 .section_intro {
-
   /*******************************
    * 品牌 (.intro_brand)
    *******************************/
@@ -131,7 +130,6 @@ span {
     .title,
     .content {
       color: $dark-font-color;
-
     }
     .menu_btn {
       border-color: $dark-font-color;
@@ -172,14 +170,17 @@ span {
  * Footer-設定 (.section_footer)
  *******************************/
 .section_footer {
-  background-color: black;
-  // .footer_title {
-  //   font-size: 2rem;
-  // }
+  .footer_title {
+    font-size: 2rem;
+    color: $dark-font-color;
+  }
 
-  // .footer_content {
-  //   font-size: 1.8rem;
-  // }
+  .footer_content {
+    p {
+      font-size: 1.6rem;
+      color: $dark-font-color;
+    }
+  }
 }
 
 /********************************

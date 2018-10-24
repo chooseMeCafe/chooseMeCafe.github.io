@@ -19,8 +19,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Fontawesome CSS -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
   <!-- 專案 CSS -->
   <link rel="stylesheet" href="./css/style.min.css">
@@ -131,9 +130,9 @@
 
             <div class="button_section">
               <div class="menu_btn">
-                <a href="./menu" class="btn_label">
-                  <h4>查看菜單</h4>
-                </a>
+                <!-- <a href="./menu" class="btn_label"> -->
+                <h4>查看菜單</h4>
+                <!-- </a> -->
               </div>
             </div>
 
@@ -266,7 +265,7 @@
   <!--*******************
   *   footer
   ********************-->
-  <div id="section_footer" class="section_footer" style="margin-top: 600px; background-color: black; font-size: 12px;">
+  <div id="section_footer" class="section_footer">
     <div class="container">
       <div class="row">
         <!-- 另一版 -->
@@ -279,14 +278,29 @@
                 <div class="mx-1 h-100">
                   <div class="card-body px-5">
                     <!-- 標題 About ChooseMe -->
-                    <h5 class="card-title text-center footer_title" style="color: #fef5f3;">About ChooseMe</h5>
+                    <h5 class="card-title text-center footer_title">About ChooseMe</h5>
                     <hr>
                     <!-- 訂位專線、地址、營業時間 -->
                     <div class="footer_content">
-                      <p class="card-text text-left" style="color: #fef5f3; font-size: 16px; text-align: center;"><i class="fas fa-clock"></i> 10：00 - 21：00</p>
-                      <p class="card-text text-left" style="color: #fef5f3; font-size: 16px;"><i class="fas fa-phone"></i> (04) 2229 - 8981</p>
-                      <p class="card-text text-left" style="color: #fef5f3; font-size: 16px;"><i class="fas fa-map-marker-alt"></i> 台中市北區三民路三段54巷1號</p>
-                      <p class="card-text text-left" style="color: #fef5f3; font-size: 14px;">*如遇國定假日營業時間由臉書公告</p>
+                      <p class="card-text text-left">
+                        <i class="fas fa-clock"></i>
+                        10：00 - 21：00
+                      </p>
+
+                      <p class="card-text text-left">
+                        <i class="fas fa-phone"></i>
+                        (04) 2229 - 8981
+                      </p>
+
+                      <p class="card-text text-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        台中市北區三民路三段54巷1號
+                      </p>
+
+                      <p class="card-text text-left">
+                        *如遇國定假日營業時間由臉書公告
+                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -297,13 +311,15 @@
                 <div class="mx-1 h-100">
                   <div class="card-body px-5">
                     <!-- 標題 Active Info -->
-                    <h5 class="card-title text-center" style="color: #fef5f3;">Active Info</h5>
+                    <h5 class="card-title text-center">Active Info</h5>
                     <hr>
                     <!-- 活動列表 -->
-                    <p class="card-text text-left" style="color: #fef5f3; font-size: 16px; text-align: center;">《 芭戚 》甜蜜推出</p>
-                    <p class="card-text text-left" style="color: #fef5f3; font-size: 16px;">四人分享餐 只要$1,398</p>
-                    <p class="card-text text-left" style="color: #fef5f3; font-size: 16px;">當月壽星 即享85折優惠</p>
-                    <p class="card-text text-left" style="color: #fef5f3; font-size: 16px;">歡慶萬聖節 期間限定蛋糕開賣囉 !</p>
+                    <div class="footer_content">
+                      <p class="card-text">《 芭戚 》甜蜜推出</p>
+                      <p class="card-text">四人分享餐 只要$1,398</p>
+                      <p class="card-text">當月壽星 即享85折優惠</p>
+                      <p class="card-text">歡慶萬聖節 期間限定蛋糕開賣囉!</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -313,7 +329,7 @@
                 <div class="mx-1 h-100">
                   <div class="card-body px-5">
                     <!-- 標題 Follow US -->
-                    <h5 class="card-title text-center" style="color: #fef5f3; font-size: 16px;">Follow US</h5>
+                    <h5 class="card-title text-center">Follow US</h5>
                     <hr>
                     <!-- icons -->
                     <div class="icon_group text-center">
@@ -335,21 +351,23 @@
         </div>
 
         <!-- 版權聲明 copyright -->
-        <p class="copyright" style="margin: 0 auto; color: #fef5f3; font-size: 8px;">
-          <img src="./img/footer/1024px-Copyright.svg.png" width="15px" height="15px" alt="">
+        <p class="copyright">
+          <img src=" ./img/footer/1024px-Copyright.svg.png" width="15px" height="15px" alt="">
           Copyright 2018 - ChooseMe Coffee
         </p>
 
-        <!-- 按鈕(返回最上方) -->
-        <!-- <button class="go_top">
-          <i class="fas fa-arrow-circle-up"></i>
-        </button> -->
+      </div>
 
+      <!-- 按鈕(返回最上方) -->
+      <!-- fixed.scss -->
+      <div class="go_top">
+        <i class="arrow_icon fas fa-angle-up fa-3x"></i>
+        <p>TOP</p>
       </div>
 
       <!--******************
-  *   電腦版 navbar
-  *******************-->
+      *   電腦版 navbar
+      *******************-->
       <div id="section_navbar" class="section_navbar d-none d-md-block">
         <div class="contain">
           <div class="row">
@@ -372,8 +390,8 @@
       </div>
 
       <!--******************
-  *   手機版 navbar
-  *******************-->
+      *   手機版 navbar
+      *******************-->
       <div id="section_navbar_mobile" class="section_navbar_mobile d-md-none">
         <div class="container-fluid">
           <div class="row">
@@ -389,8 +407,8 @@
       </div>
 
       <!--**********************
-  *   手機版 navbar menu
-  ***********************-->
+      *   手機版 navbar menu
+      ***********************-->
       <div id="section_navbar_menu_mobile" class="section_navbar_menu_mobile d-md-none">
         <h2 class="option">認識初米</h2>
         <h2 class="option">初食味蕾</h2>
@@ -399,41 +417,41 @@
       </div>
 
       <!--******************
-  *   過場畫面 cover
-  *******************-->
-  <!-- <div id="section_cover" class="section_cover">
-    <div class="cover_left"></div>
-    <div class="cover_right"></div>
-    <img class="logo" src="./img/logo/logo_white_01.png" alt="logo">
-  </div> -->
+      *   過場畫面 cover
+      *******************-->
+      <!-- <div id="section_cover" class="section_cover">
+        <div class="cover_left"></div>
+        <div class="cover_right"></div>
+        <img class="logo" src="./img/logo/logo_white_01.png" alt="logo">
+      </div> -->
 
       <!-- *****************
-  *    JS 檔案
-  ****************** -->
+      *    JS 檔案
+      ****************** -->
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+      <!-- GSAP -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-  <!-- AOS js -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- AOS js -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Swiper js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+      <!-- Swiper js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 
-  <!-- 專案js -->
-  <script src="./js/utility.js"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/banner.js"></script>
-  <script src="./js/community.js"></script>
-  <script src="./js/navbar_.js"></script>
-  <script src="./js/section_navbar_mobile.js"></script>
-  <script src="./js/section_banner.js"></script>
-  <script src="./js/section_cover.js"></script>
+      <!-- 專案js -->
+      <script src="./js/utility.js"></script>
+      <script src="./js/common.js"></script>
+      <script src="./js/cover.js"></script>
+      <script src="./js/banner.js"></script>
+      <script src="./js/community.js"></script>
+      <script src="./js/navbar.js"></script>
+      <script src="./js/intro.js"></script>
+      <script src="./js/navbar_mobile.js"></script>
 </body>
 
 </html>

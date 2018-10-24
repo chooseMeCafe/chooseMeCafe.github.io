@@ -1,6 +1,6 @@
 $main_title_font_size: 14rem;
 $btn_size: 50px;
-$border_color: #a3814d;
+$main_color: #a3814d;
 
 .section_menu {
   // 菜單樣式設定
@@ -28,7 +28,7 @@ $border_color: #a3814d;
       position: absolute;
       font-size: $main_title_font_size;
       opacity: 0.2;
-      color: $border_color;
+      color: $main_color;
       top: 50%;
       font-weight: 600;
       left: 0;
@@ -53,10 +53,10 @@ $border_color: #a3814d;
       // 菜單圖片大小
       .menu_img {
         width: 24rem;
-        // filter: drop-shadow(1px 1px 0 $border_color)
-        //   drop-shadow(-1px -1px 0 $border_color)
-        //   drop-shadow(-1px 1px 0 $border_color)
-        //   drop-shadow(1px -1px 0 $border_color);
+        // filter: drop-shadow(1px 1px 0 $main_color)
+        //   drop-shadow(-1px -1px 0 $main_color)
+        //   drop-shadow(-1px 1px 0 $main_color)
+        //   drop-shadow(1px -1px 0 $main_color);
       }
 
       // 文字設定
@@ -65,9 +65,9 @@ $border_color: #a3814d;
         margin-top: 2rem;
         font-size: 2.4rem;
         padding: 0 2rem;
-        color: $border_color;
+        color: $main_color;
         letter-spacing: 1px;
-        border: 3px solid $border_color;
+        border: 3px solid $main_color;
       }
     }
   }
@@ -142,7 +142,6 @@ $border_color: #a3814d;
     bottom: $btn_size;
     right: $btn_size;
 
-    background-color: red;
     border-radius: 50%;
     height: $btn_size;
     margin-top: ($btn_size / 2);
