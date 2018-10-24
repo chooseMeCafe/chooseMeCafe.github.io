@@ -2,8 +2,11 @@
  * 初米介紹 樣式
 *********************/
 .section_intro {
+  
+  // intro_brand, intro_taste, intro_beauty_wall
   > div {
-    padding: 100px 0;
+    // padding: 100px 0;
+    height: 100vh;
     // min-height: 1200px;
     // padding-top: 400px;
   }
