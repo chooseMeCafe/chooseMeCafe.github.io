@@ -1,7 +1,7 @@
 var navOptions = document.querySelectorAll(SEC_NAVBAR + " .option");
 
 navOptions[0].onclick = function() {
-  document.querySelector(SEC_INTRO + " .section_brand").scrollIntoView({
+  document.querySelector(SEC_INTRO + " .intro_brand").scrollIntoView({
     block: "center",
     behavior: "smooth"
   });
