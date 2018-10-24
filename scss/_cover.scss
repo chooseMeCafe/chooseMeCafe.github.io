@@ -6,12 +6,14 @@
   left: 0;
   display: flex;
   background-color: $light-color;
+  // background-color: rgb(100, 95, 91);
   z-index: 999;
 
   > div {
     height: 100vh;
     width: 50%;
-    background-color: $cover-color;
+  background-color: rgb(100, 95, 91);
+    // background-color: $cover-color;
   }
 
   .cover_left {
