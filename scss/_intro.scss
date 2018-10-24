@@ -1,111 +1,119 @@
 /*********************
  * 初米介紹 樣式
 *********************/
-
 .section_intro {
-    >div {
-        padding: 100px 0; // min-height: 1200px;
-        // padding-top: 400px;
-    }
-    .intro_taste,
-    .intro_taste_mobile {
-        background-color: $dark-color;
-    }
-    img {
-        width: 100%;
-        max-height: 550px;
-    }
-    .intro_taste {
-        .taste_img {
-            position: relative;
-            right: 50px;
-        }
-        .button_section {
-            position: relative;
-            height: 40%;
-            $color: $dark-font-color;
-            @keyframes sheen {
-                0% {
-                    transform: skewY(-45deg) translateX(0);
-                }
-                100% {
-                    transform: skewY(-45deg) translateX(12.5em);
-                }
-            }
-            .menu_btn {
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .btn_label {
-                padding: 0.3em 1.5em;
-                text-align: center;
-                text-decoration: none;
-                color: $color;
-                border: 2px solid $color;
-                font-size: 24px;
-                display: inline-block;
-                border-radius: 1em;
-                transition: all 0.2s ease-in-out;
-                position: relative;
-                overflow: hidden;
+  > div {
+    padding: 100px 0; // min-height: 1200px;
+    // padding-top: 400px;
+  }
 
-                &:before {
-                    content: "";
-                    background-color: rgba(0, 0, 0, 0.5);
-                    height: 100%;
-                    width: 3em;
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: -4.5em;
-                    transform: skewX(-45deg) translateX(0);
-                    transition: none;
-                }
+  .intro_taste,
+  .intro_taste_mobile {
+    background-color: $dark-color;
+  }
 
-                &:hover {
-                    background-color: $color;
-                    color: $navbar-color;
-                    border-bottom: 4px solid darken($color, 10%);
+  img {
+    width: 100%;
+    max-height: 550px;
+  }
 
-                    &:before {
-                        transform: skewX(-45deg) translateX(13.5em);
-                        transition: all 0.5s ease-in-out;
-                    }
-                }
-            } 
-        }
-        .intro_section {
-            position: relative;
-            height: 60%;
-            .content {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                margin: 0;
-            }
-            .title {
-                position: absolute;
-                top: 0;
-                right: 0;
-                margin: 0;
-                writing-mode: vertical-lr;
-            }
-        }
+  /*********************
+ * 商品 樣式
+*********************/
+  .intro_taste {
+    .taste_img {
+      position: relative;
+      right: 50px;
     }
-    .intro_beauty_wall {
-        .neon:first-child {
-            margin-bottom: 4rem;
+
+    .button_section {
+      position: relative;
+      height: 40%;
+      $color: $dark-font-color;
+      @keyframes sheen {
+        0% {
+          transform: skewY(-45deg) translateX(0);
         }
-        .neon {
-            color: #ff75fb;
-            font-size: 60px;
-            text-shadow: 0 0 3vw #ff75fb;
-            animation: neon 3s ease infinite;
+        100% {
+          transform: skewY(-45deg) translateX(12.5em);
         }
+      }
+      .menu_btn {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn_label {
+        padding: 0.3em 1.5em;
+        text-align: center;
+        text-decoration: none;
+        color: $color;
+        border: 2px solid $color;
+        font-size: 24px;
+        display: inline-block;
+        border-radius: 1em;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+          content: "";
+          background-color: rgba(0, 0, 0, 0.5);
+          height: 100%;
+          width: 3em;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -4.5em;
+          transform: skewX(-45deg) translateX(0);
+          transition: none;
+        }
+
+        &:hover {
+          background-color: $color;
+          color: $navbar-color;
+          border-bottom: 4px solid darken($color, 10%);
+
+          &:before {
+            transform: skewX(-45deg) translateX(13.5em);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
     }
+    .intro_section {
+      position: relative;
+      height: 60%;
+      .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+      }
+      .title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        writing-mode: vertical-lr;
+      }
+    }
+  }
+
+  .intro_beauty_wall {
+    .neon:first-child {
+      margin-bottom: 4rem;
+    }
+
+    .neon {
+      color: #ff75fb;
+      font-size: 60px;
+      text-shadow: 0 0 3vw #ff75fb;
+      animation: neon 3s ease infinite;
+    }
+  }
 }
 
 /***********************
@@ -113,17 +121,17 @@
  ***********************/
 
 @media screen and (max-width: $lg) {
-    .section_intro {
-        .title,
-        .sub_title,
-        .content {
-            text-align: center;
-        }
-        .title {
-            margin-bottom: 4rem;
-        }
-        .brand_img {
-            margin-top: 4rem;
-        }
+  .section_intro {
+    .title,
+    .sub_title,
+    .content {
+      text-align: center;
     }
+    .title {
+      margin-bottom: 4rem;
+    }
+    .brand_img {
+      margin-top: 4rem;
+    }
+  }
 }
