@@ -2,13 +2,14 @@
  * 初米介紹 樣式
 *********************/
 .section_intro {
-  
+
   // intro_brand, intro_taste, intro_beauty_wall
   > div {
-    // padding: 100px 0;
+    position: relative;
     height: 100vh;
-    // min-height: 1200px;
-    // padding-top: 400px;
+    .container {
+      @include position-center();
+    }
   }
 
   .intro_taste,
@@ -22,7 +23,6 @@
   }
 
   .intro_taste {
-
     .taste_img {
       position: relative;
       right: 50px;
