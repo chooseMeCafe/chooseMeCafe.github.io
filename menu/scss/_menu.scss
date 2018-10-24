@@ -9,22 +9,21 @@ $btn_height: 50px;
     padding: 10rem 0;
     width: 100%;
     height: 100vh;
-  }
 
-  h4 {
-    text-align: center;
-    margin-bottom: 2.4rem;
-  }
+    h4 {
+      text-align: center;
+      margin-bottom: 2.4rem;
+    }
 
-  h6 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+    h6 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
 
-  p {
-    text-align: center;
+    p {
+      text-align: center;
+    }
   }
-
   .btn_group {
     position: fixed;
     top: 50%;
@@ -64,7 +63,7 @@ $btn_height: 50px;
   .menu_btn > div h4 {
     color: white;
     opacity: 0;
-    margin-right: 30px;
+    margin-right: ($btn_height / 2);
     transition-duration: 0.1s;
   }
 
