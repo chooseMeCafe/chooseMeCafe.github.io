@@ -6,27 +6,6 @@
   font-weight: 700;
 }
 
-// .menu_new {
-//   height: 100px;
-//   background-color: #F7F8F8;
-//   border: 5px solid #D6AA99;
-//   box-shadow: 1px 1px 2px rgba($color: #383838, $alpha: 0.4);
-//   border-radius: 10px;
-//   width: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-top: 30px;
-
-//   .label {
-//     margin: 0;
-//     font-family: " Segoe Print";
-//     color: #B8A58C;
-//     color: #7A5A34;
-//   }
-// }
-
-
 body {
   height: 2500px;
 }
@@ -43,14 +22,13 @@ body {
 .menu_mobile_option {
   background-position: center;
   background-size: cover;
-  height: calc(100vh / 8);
+  height: (100vh / 7);
   border-radius: 10px;
   margin: 5px 0;
 }
 
 .menu_mobile_label {
   color:white;
-  // font-size: 28px;
   font-size: 28px;
   display: flex;
   width: 100%;
