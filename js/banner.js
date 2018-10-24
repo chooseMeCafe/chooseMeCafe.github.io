@@ -8,10 +8,14 @@ const bannerSwiper = new Swiper(SEC_BANNER + " .swiper-container", {
   loop: true,
   autoplay: {
     delay: 4000,
-    disableOnInteraction: false
+    disableOnInteraction: true
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 });
