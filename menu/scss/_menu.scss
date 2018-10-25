@@ -47,10 +47,12 @@ $img_size: 20rem;
     // 設定菜單圖片與標籤區塊
     .menu_img_section {
       // background: red;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      
 
       // 菜單圖片大小
       .menu_img {
