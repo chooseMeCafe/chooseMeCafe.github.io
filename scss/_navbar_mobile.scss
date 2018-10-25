@@ -1,6 +1,19 @@
 /*********************
  * navbar 手機版 樣式
  *********************/
+
+ 
+.nav_mobile_height {
+  opacity: 0;
+  padding: $navbar-padding;
+  width: 100%;
+
+  .logo {
+    width: 60px;
+  }
+}
+
+
 .section_navbar_mobile {
   position: fixed;
   top: 0;
@@ -18,9 +31,9 @@
   }
 
   .logo {
-    user-select: none;
+    // user-select: none;
     width: 60px;
-    cursor: pointer;
+    // cursor: pointer;
   }
 
   .menu_btn {

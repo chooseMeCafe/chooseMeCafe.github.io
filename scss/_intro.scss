@@ -3,18 +3,10 @@
 *********************/
 
 .section_intro {
-  // 設定介紹頁面與螢幕同高，並將container置中
-  // >div {
-  //     position: relative;
-  //     min-height: 100vh;
-  //     .container {
-  //         @include position-center();
-  //     }
-  // }
+  position: relative;
 
   .intro_brand,
   .intro_taste,
-  .intro_taste_mobile,
   .intro_beauty_wall {
     position: relative;
     min-height: 100vh;
@@ -36,6 +28,20 @@
   /*********************
    * 商品 樣式
    *********************/
+
+  // 調整顔色
+  .intro_taste,
+  .intro_taste_mobile {
+    .title,
+    .content {
+      color: white;
+    }
+
+    h4 {
+      color: white;
+      margin: 0;
+    }
+  }
   .intro_taste {
     .taste_img {
       position: relative;
@@ -160,6 +166,19 @@
 /***********************
  * css樣式請輸入在上方{}內
  ***********************/
+
+@media screen and (max-width: $xl) {
+  .intro_brand,
+    .intro_taste,
+    // .intro_taste_mobile,
+    .intro_beauty_wall {
+    position: static;
+    min-height: 0;
+    .container {
+      position: static;
+    }
+  }
+}
 
 @media screen and (max-width: $lg) {
   .section_intro {

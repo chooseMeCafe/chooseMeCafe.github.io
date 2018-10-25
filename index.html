@@ -31,9 +31,13 @@
 <body>
 
   <div class="container">
-    <div class="nav_height">
+    <div class="nav_height d-none d-lg-block">
       <img class="logo" src="./img/logo/logo_white_01.png" alt="">
     </div>
+
+    <div class="nav_mobile_height d-lg-none">
+        <img class="logo" src="./img/logo/logo_white_01.png" alt="">
+      </div>
   </div>
   <!--******************
   *   banner
@@ -146,19 +150,19 @@
 
   <!--**********************************
     *   超越味蕾的體驗-手機版 taste_mobile
-    *   寬度 > lg:992px 顯示
+    *   寬度 < lg:992px 顯示
     ***********************************-->
   <div id="intro_taste_mobile" class="intro_taste_mobile d-lg-none">
     <div class="container-fluid">
       <div class="row">
 
         <!-- 標題 -->
-        <div class="col-lg px-lg-0 mb-lg-5">
+        <div class="col-lg px-lg-0 mb-lg-5 pt-5">
           <h2 class="text-center title">超越味蕾的體驗</h2>
         </div>
 
         <!-- 內容 -->
-        <div class="col-lg px-0 mb-5">
+        <div class="col-lg px-0">
           <p class="text-center content">
             從店內的裝潢到餐點的呈現<br>
             讓你在用餐時充滿歡樂的笑聲<br>
@@ -166,11 +170,9 @@
             以及值得一再回想的美好回憶
           </p>
         </div>
-
-        <!-- 圖片 -->
-        <!-- <div class="col-lg">
+        <div class="col d-none d-md-block">
           <img class="d-block m-auto" src="./img/brand/brand_02.png" alt="">
-        </div> -->
+        </div>
 
       </div>
     </div>
@@ -481,7 +483,7 @@
       <!--******************
       *   電腦版 navbar
       *******************-->
-      <div id="section_navbar" class="section_navbar d-none d-md-block">
+      <div id="section_navbar" class="section_navbar d-none d-lg-block">
         <div class="contain">
           <div class="row">
             <div class="col">
@@ -505,10 +507,10 @@
       <!--******************
       *   手機版 navbar
       *******************-->
-      <div id="section_navbar_mobile" class="section_navbar_mobile d-md-none">
+      <div id="section_navbar_mobile" class="section_navbar_mobile d-lg-none">
         <div class="container-fluid">
           <div class="row">
-            <div class="col">
+            <div class="col m-0">
               <!-- navbar 內容 -->
               <div class="navbar_mobile_container d-flex align-items-center justify-content-between">
                 <img id="logo" class="logo" src="./img/logo/logo_white_01.png" alt="logo">
@@ -532,11 +534,11 @@
       <!--******************
       *   過場畫面 cover
       *******************-->
-      <div id="section_cover" class="section_cover">
+      <!-- <div id="section_cover" class="section_cover">
         <div class="cover_left"></div>
         <div class="cover_right"></div>
         <img class="logo" src="./img/logo/logo_white_01.png" alt="logo">
-      </div>
+      </div> -->
 
 
       <!-- 按鈕(返回最上方) -->
