@@ -33,9 +33,6 @@ $(document).on("click", SEC_NAVBAR_MENU_MOBILE + " .option", function() {
 });
 
 // menu點擊
-
-console.log(navMobileOptions);
-
 navMobileOptions[0].onclick = function() {
   document.querySelector(SEC_INTRO + " .intro_brand").scrollIntoView({
     block: "center",
@@ -51,7 +48,8 @@ navMobileOptions[1].onclick = function() {
 };
 
 navMobileOptions[2].onclick = function() {
-  document.querySelector(SEC_INTRO + " .intro_beauty_wall").scrollIntoView({
+  console.log(document.querySelector(SEC_INTRO));
+  document.querySelector(SEC_INTRO + " #intro_beauty_wall").scrollIntoView({
     block: "center",
     behavior: "smooth"
   });
