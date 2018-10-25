@@ -6,15 +6,24 @@
   .brand_img {
     width: 100%;
   }
+}
 
+@media screen and (min-width: $lg) {
+  .section_intro {
+    position: relative;
+    min-height: 100vh;
+    .container {
+      @include position-center();
+    }
+  }
 }
 
 @media screen and (max-width: $lg) {
-  .title, .sub_title,
+  .title,
+  .sub_title,
   .content {
     text-align: center;
   }
-
 }
 
 // .section_intro {
