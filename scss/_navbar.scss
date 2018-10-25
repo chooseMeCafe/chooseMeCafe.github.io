@@ -1,59 +1,64 @@
 /***************
- * navbar 樣式
-***************/
+ * 變量設定
+ ***************/
 
-.nav_height {
+// logo大小
+$logo-size: 6rem;
+
+// nav padding
+$nav-p: 1rem;
+
+// nav 顔色
+$nav-color: rgba(0, 0, 0, 0.7);
+
+// font 顔色
+$nav-font-color: white;
+
+/***************
+ * nav 高度區塊
+ ***************/
+.section_nav_block {
+  background-color: $nav-color;
+  padding: $nav-p;
   opacity: 0;
-  padding: $navbar-padding;
-  width: 100%;
-
   .logo {
-    width: 60px;
+    width: $logo-size;
   }
 }
 
-.section_navbar {
+/***************
+ * navbar
+ ***************/
+.section_nav {
+  background-color: $nav-color;
+  width: 100%;
   position: fixed;
+  padding: $nav-p;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: $navbar-color;
-  transition-duration: 0.5s;
+  right: 0;
   z-index: 999;
 
-  .navbar_container {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1140px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: $navbar-padding;
-  }
-
-  /***************
-   * logo 樣式
-   ***************/
   .logo {
-    width: 60px;
+    width: $logo-size;
+    user-select: none;
     cursor: pointer;
   }
-  /***************
-   *  選單樣式
-   ***************/
-  .nav_option > h3 {
-    margin-bottom: 0;
+
+  .option {
+    color: $nav-font-color;
     margin-left: 2rem;
     user-select: none;
     cursor: pointer;
     padding: 0.5rem 0;
     transition-duration: 1s ease;
+    
     &:hover {
       font-weight: 600;
     }
   }
+  .nav_menu_btn {
+    color: $nav-font-color;
+    cursor: pointer;
+  }
 }
-
-/***********************
- * css樣式請輸入在上方{}內
- ***********************/

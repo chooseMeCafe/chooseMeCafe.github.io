@@ -2,15 +2,26 @@
  * banner 樣式
 *********************/
 .section_banner {
-  // min-height: 100vh;
-  .banner_container {
-    max-width: 1140px;
-    margin: 0 auto;
+  .container {
+    box-shadow: 0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
   }
-  img {
+  .banner_img {
+    border-radius: 1rem;
     width: 100%;
   }
 }
-/***********************
- * css樣式請輸入在上方{}內
- ***********************/
+
+@media screen and (max-width: $md) {
+  .section_banner {
+    .container {
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .banner_img {
+      border-radius: 0;
+      width: 120%;
+    }
+  }
+}

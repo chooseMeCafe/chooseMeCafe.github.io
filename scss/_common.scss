@@ -15,7 +15,7 @@ $dark-color: #8ba2b7; // 暗色
 $light-color: #fef5f3; //亮色
 $cover-color: $dark-color;
 $font-color: rgb(46, 45, 45); //字體顔色
-$navbar-color: rgba(0, 0, 0, 0.7);
+
 $navbar-menu-color: rgba(0, 0, 0, 0.9);
 
 $dark-font-color: white;
@@ -23,7 +23,7 @@ $dark-font-color: white;
 /********************************
  * 默認間距設定
  *******************************/
-$navbar-padding: 1rem 1rem;
+
 
 /********************************
  * 默認背景顔色設定
@@ -39,6 +39,7 @@ html {
   font-size: 10px;
 }
 
+
 // 默認字體設置 (思源黑體)
 h1,
 h2,
@@ -51,6 +52,7 @@ a,
 span {
   font-family: "cwTeXYen", sans-serif;
   color: $font-color;
+  margin: 0;
 }
 
 h1 {

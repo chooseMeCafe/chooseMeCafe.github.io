@@ -1,0 +1,10 @@
+.divider_line {
+  height: 20vh;
+  width: 100%;
+}
+
+@media screen and (max-width: $lg) {
+  .divider_line {
+    height: 5vh;
+  }
+}

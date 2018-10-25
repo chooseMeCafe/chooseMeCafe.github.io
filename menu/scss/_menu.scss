@@ -58,7 +58,6 @@ $sm: 540px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
 
       // 菜單圖片大小
       .menu_img {
@@ -92,7 +91,6 @@ $sm: 540px;
 
   // 選單鈕外觀設定
   .menu_btn {
-    background-color: red;
     border-radius: 50%;
     height: $btn_size;
     margin-top: ($btn_size / 2);
