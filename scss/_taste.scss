@@ -1,0 +1,74 @@
+/*********************
+ * 超越味蕾的體驗
+ *********************/
+
+.section_taste {
+  background-color: $dark-color;
+
+  .title,
+  .sub_title,
+  .content,
+  .menu_btn {
+    color: $dark-font-color;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu_btn {
+    border: 0.2rem solid white;
+    display: inline;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition-duration: 0.5s;
+
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 2px 2px 2px #76899c;
+    }
+
+    &:active {
+      opacity: 0.6;
+      box-shadow: 5px 5px 2px #76899c;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .section_taste {
+    position: relative;
+    min-height: 100vh;
+
+    .container {
+      position: absolute;
+      @include position-center();
+    }
+
+    .taste_img {
+      width: 90%;
+    }
+
+    .title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      writing-mode: vertical-lr;
+      font-size: 4.4rem;
+    }
+
+    .content {
+      position: absolute;
+      top: 20%;
+      left: 0;
+    }
+
+    .menu_btn {
+      position: absolute;
+      right: 30%;
+      bottom: 10%;
+    }
+  }
+}

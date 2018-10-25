@@ -5,7 +5,7 @@
   .container {
     box-shadow: 0.3rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
-    // overflow: hidden;
+    overflow: hidden;
   }
   .swiper-wrapper {
     align-items: center;
@@ -21,6 +21,7 @@
     .container {
       box-shadow: none;
       border-radius: 0;
+      overflow: hidden;
     }
     .banner_img {
       border-radius: 0;
