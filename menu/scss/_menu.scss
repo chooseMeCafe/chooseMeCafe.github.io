@@ -1,7 +1,7 @@
 $main_title_font_size: 14rem;
 $btn_size: 50px;
 $main_color: #a3814d;
-$img_size: 20rem;
+$img_size: 18rem;
 
 // 設定寬度
 $xl: 1200px;
@@ -63,10 +63,10 @@ $sm: 540px;
       // 菜單圖片大小
       .menu_img {
         width: $img_size;
-        // filter: drop-shadow(1px 1px 0 $main_color)
-        //   drop-shadow(-1px -1px 0 $main_color)
-        //   drop-shadow(-1px 1px 0 $main_color)
-        //   drop-shadow(1px -1px 0 $main_color);
+        filter: drop-shadow(2px 2px 0 $main_color)
+          drop-shadow(-2px -2px 0 $main_color)
+          drop-shadow(-2px 2px 0 $main_color)
+          drop-shadow(2px -2px 0 $main_color);
       }
 
       // 文字設定
