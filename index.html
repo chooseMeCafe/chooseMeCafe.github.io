@@ -24,11 +24,11 @@
   <!-- 專案 CSS -->
   <link rel="stylesheet" href="./css/style.min.css">
 
-  <title>初米咖啡-v7</title>
+  <title>初米咖啡</title>
 
 </head>
 
-<body style=" background-color: #fef5f3">
+<body>
 
   <div class="container">
     <div class="nav_height">
@@ -358,12 +358,6 @@
 
       </div>
 
-      <!-- 按鈕(返回最上方) -->
-      <!-- fixed.scss -->
-      <div class="go_top">
-        <i class="arrow_icon fas fa-angle-up fa-3x"></i>
-        <p>TOP</p>
-      </div>
 
       <!--******************
       *   電腦版 navbar
@@ -375,7 +369,7 @@
               <!-- 電腦版 navbar 內容 -->
               <div class="navbar_container">
                 <!-- navbar logo -->
-                <img class="logo" src="./img/logo/logo_white_01.png" alt="logo">
+                <img id="logo" class="logo" src="./img/logo/logo_white_01.png" alt="logo">
                 <!-- navbar 選單 -->
                 <div class="nav_option d-flex">
                   <h3 class="option">認識初米</h3>
@@ -398,7 +392,7 @@
             <div class="col">
               <!-- navbar 內容 -->
               <div class="navbar_mobile_container d-flex align-items-center justify-content-between">
-                <img class="logo" src="./img/logo/logo_white_01.png" alt="logo">
+                <img id="logo" class="logo" src="./img/logo/logo_white_01.png" alt="logo">
                 <i id="menu_btn" class="menu_btn fas fa-bars fa-3x"></i>
               </div>
             </div>
@@ -424,6 +418,14 @@
         <div class="cover_right"></div>
         <img class="logo" src="./img/logo/logo_white_01.png" alt="logo">
       </div> -->
+
+      
+      <!-- 按鈕(返回最上方) -->
+      <!-- fixed.scss -->
+      <div id="go_top" class="go_top">
+        <i class="arrow_icon fas fa-angle-up fa-3x"></i>
+        <p>TOP</p>
+      </div>
 
       <!-- *****************
       *    JS 檔案
@@ -451,7 +453,8 @@
       <script src="./js/community.js"></script>
       <script src="./js/navbar.js"></script>
       <script src="./js/intro.js"></script>
+      <script src="./js/fixed.js"></script>
       <script src="./js/navbar_mobile.js"></script>
-</body>
+</bodybackground-color:>
 
 </html>

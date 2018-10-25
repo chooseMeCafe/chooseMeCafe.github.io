@@ -1,9 +1,14 @@
 .go_top {
   position: fixed;
-  float: right;
-  margin-top: 20px;
-  right: 20px;
-  bottom: 20px;
+  right: 2rem;
+  bottom: 2rem;
+  user-select: none;
+  opacity: 0.6;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   .arrow_icon {
     color: $font-color;
