@@ -14,4 +14,6 @@ const secCommunity = document.querySelector(SEC_COMMUNITY);
 /************
  * 初始化 AOS
  ************/
-AOS.init();
+AOS.init({
+  once: true
+});
