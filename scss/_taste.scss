@@ -11,11 +11,6 @@
   .menu_btn {
     color: $dark-font-color;
   }
-
-  a {
-    text-decoration: none;
-  }
-
   .menu_btn {
     border: 0.2rem solid white;
     display: inline;
@@ -69,6 +64,25 @@
       position: absolute;
       right: 30%;
       bottom: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .section_taste {
+    padding: 4rem 0;
+
+    .btn_container {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    .title {
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+    .content {
+      text-align: center;
     }
   }
 }

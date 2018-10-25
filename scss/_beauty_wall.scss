@@ -1,0 +1,44 @@
+.beauty_wall {
+  padding: 6rem 0;
+
+  .neon {
+    margin-bottom: 4rem;
+    animation: neon 3s ease infinite;
+  }
+
+  .arrow_section {
+    padding: 6rem;
+    text-align: center;
+  }
+
+  .fas {
+    color: rgba($color: gray, $alpha: 0.4);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .beauty_wall {
+    position: relative;
+    min-height: 100vh;
+
+    .neon {
+      font-size: 8rem;
+      margin: 1rem;
+    }
+
+    .container {
+      @include position-center();
+    }
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .beauty_wall {
+    padding: 6rem 0;
+
+    .content {
+      margin-top: 4rem;
+      text-align: center;
+    }
+  }
+}

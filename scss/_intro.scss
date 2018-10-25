@@ -19,35 +19,16 @@
 }
 
 @media screen and (max-width: $lg) {
-  .title,
-  .sub_title,
-  .content {
-    text-align: center;
+  .section_intro {
+    padding: 5rem 0;
+    .title,
+    .sub_title,
+    .content {
+      text-align: center;
+    }
   }
 }
 
-// .section_intro {
-//   position: relative;
-
-//   .intro_brand,
-//   .intro_taste,
-//   .intro_beauty_wall {
-//     position: relative;
-//     min-height: 100vh;
-//     .container {
-//       @include position-center();
-//     }
-
-//     & img {
-//       width: 100%;
-//       max-height: 550px;
-//     }
-//   }
-
-//   .intro_taste,
-//   .intro_taste_mobile {
-//     background-color: $dark-color;
-//   }
 
 //   /*********************
 //    * 商品 樣式
