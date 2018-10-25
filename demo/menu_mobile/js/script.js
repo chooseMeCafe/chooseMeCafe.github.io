@@ -2,9 +2,10 @@
 
 const MENU_MOBILE_OPTION_CLASS = ".menu_mobile_option";
 const MENU_COLLAPSE = ".menu_collapse";
+const menuMobileOptions = document.querySelectorAll(MENU_MOBILE_OPTION_CLASS);
+const menuMobileCollapses = document.querySelectorAll(MENU_COLLAPSE);
 
-
-var bgImages = [
+const bgImages = [
   "./img/menu_option_appetizer.jpg",
   "./img/menu_option_brunch.jpg",
   "./img/menu_option_rice.jpg",
@@ -12,10 +13,6 @@ var bgImages = [
   "./img/menu_option_dessert.jpg",
   "./img/menu_option_drink.jpg"
 ];
-
-var menuMobileOptions = document.querySelectorAll(MENU_MOBILE_OPTION_CLASS);
-var menuMobileCollapses = document.querySelectorAll(MENU_COLLAPSE);
-
 
 setBackgroundImages(menuMobileOptions, bgImages);
 
