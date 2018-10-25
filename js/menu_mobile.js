@@ -6,12 +6,12 @@ const menuMobileOptions = document.querySelectorAll(MENU_MOBILE_OPTION_CLASS);
 const menuMobileCollapses = document.querySelectorAll(MENU_COLLAPSE);
 
 const bgImages = [
-  "./img/menu_option_appetizer.jpg",
-  "./img/menu_option_brunch.jpg",
-  "./img/menu_option_rice.jpg",
-  "./img/menu_option_pasta.jpg",
-  "./img/menu_option_dessert.jpg",
-  "./img/menu_option_drink.jpg"
+  "./img/menu_mobile/menu_option_appetizer.jpg",
+  "./img/menu_mobile/menu_option_brunch.jpg",
+  "./img/menu_mobile/menu_option_rice.jpg",
+  "./img/menu_mobile/menu_option_pasta.jpg",
+  "./img/menu_mobile/menu_option_dessert.jpg",
+  "./img/menu_mobile/menu_option_drink.jpg"
 ];
 
 setBackgroundImages(menuMobileOptions, bgImages);
@@ -46,4 +46,3 @@ for (let index = 0; index < menuMobileCollapses.length; index++) {
     this.classList.remove("fadeOut");
   });
 }
-
