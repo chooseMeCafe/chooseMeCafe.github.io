@@ -1,6 +1,7 @@
 $main_title_font_size: 14rem;
 $btn_size: 50px;
 $main_color: #a3814d;
+$img_size: 20rem;
 
 .section_menu {
   // 菜單樣式設定
@@ -52,7 +53,7 @@ $main_color: #a3814d;
 
       // 菜單圖片大小
       .menu_img {
-        width: 24rem;
+        width: $img_size;
         // filter: drop-shadow(1px 1px 0 $main_color)
         //   drop-shadow(-1px -1px 0 $main_color)
         //   drop-shadow(-1px 1px 0 $main_color)
