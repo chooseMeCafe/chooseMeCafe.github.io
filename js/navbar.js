@@ -27,10 +27,3 @@ navOptions[3].onclick = function() {
     behavior: "smooth"
   });
 };
-
-navOptions[0].onclick = function() {
-  document.querySelector("#section_intro").scrollIntoView({
-    block: "center",
-    behavior: "smooth"
-  });
-};
