@@ -12,6 +12,10 @@
   background-color: $navbar-menu-color;
   z-index: 100;
 
+  a{
+    text-decoration: none;
+  }
+
   /*************************
    * navbar menu 手機版 樣式
    *************************/

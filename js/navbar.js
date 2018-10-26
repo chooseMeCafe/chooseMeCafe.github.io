@@ -1,5 +1,4 @@
 var navOptions = document.querySelectorAll("#section_nav .option");
-console.log(navOptions)
 
 navOptions[0].onclick = function() {
   document.querySelector("#section_intro").scrollIntoView({

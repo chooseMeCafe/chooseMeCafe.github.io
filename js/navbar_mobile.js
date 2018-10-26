@@ -6,6 +6,7 @@
 const secNavMTl = new TimelineMax({ paused: true });
 const navMBtn = document.querySelector("#section_nav #nav_menu_btn");
 var navMobileOptions = document.querySelectorAll("#section_nav_mobile_menu .option");
+console.log(navMobileOptions);
 
 secNavMTl.to(SEC_NAVBAR_MENU_MOBILE, 0.8, {
   top: "0%",
@@ -34,14 +35,14 @@ $(document).on("click", SEC_NAVBAR_MENU_MOBILE + " .option", function() {
 
 // menu點擊
 navMobileOptions[0].onclick = function() {
-  document.querySelector(SEC_INTRO + " .intro_brand").scrollIntoView({
+  document.querySelector("#section_intro").scrollIntoView({
     block: "center",
     behavior: "smooth"
   });
 };
 
 navMobileOptions[1].onclick = function() {
-  document.querySelector(SEC_INTRO + " .intro_taste").scrollIntoView({
+  document.querySelector("#section_taste").scrollIntoView({
     block: "center",
     behavior: "smooth"
   });
@@ -49,14 +50,14 @@ navMobileOptions[1].onclick = function() {
 
 navMobileOptions[2].onclick = function() {
   console.log(document.querySelector(SEC_INTRO));
-  document.querySelector(SEC_INTRO + " #intro_beauty_wall").scrollIntoView({
+  document.querySelector("#beauty_wall").scrollIntoView({
     block: "center",
     behavior: "smooth"
   });
 };
 
 navMobileOptions[3].onclick = function() {
-  document.querySelector(SEC_FOOTER).scrollIntoView({
+  document.querySelector("#section_footer").scrollIntoView({
     block: "center",
     behavior: "smooth"
   });
