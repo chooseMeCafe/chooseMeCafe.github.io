@@ -17,7 +17,7 @@ $sm: 540px;
  *******************************/
 $dark-color: #8ba2b7; // 暗色
 $light-color: #fef5f3; //亮色
-$cover-color: $dark-color;
+$cover-color: #645f5b;
 $font-color: rgb(75, 75, 75); //字體顔色
 
 $navbar-menu-color: rgba(0, 0, 0, 0.9);
@@ -27,7 +27,6 @@ $dark-font-color: white;
 /********************************
  * 默認間距設定
  *******************************/
-
 
 /********************************
  * 默認背景顔色設定
@@ -42,7 +41,6 @@ body {
 html {
   font-size: 10px;
 }
-
 
 // 默認字體設置 (思源黑體)
 h1,
@@ -89,111 +87,6 @@ p {
 
 span {
   font-size: 2.2rem; // p 22px
-}
-
-/********************************
- * Navbar-設定 (.section_navbar)
- *******************************/
-.section_navbar {
-  .option {
-    font-size: 2rem;
-    color: $dark-font-color;
-  }
-}
-
-/********************************************
- * Navbar手機版-設定 (.section_navbar_mobile)
- *******************************************/
-.section_navbar_mobile {
-  h3 {
-    font-size: 3rem;
-    font-weight: 300;
-    color: white;
-  }
-}
-
-.section_navbar_menu_mobile {
-}
-
-/********************************
- * Banner-設定 (.section_banner)
- *******************************/
-.section_banner {
-}
-
-/*******************************
- * 初米介紹 (.section_intro)
- * 品牌、餐點、社群
- *******************************/
-.section_intro {
-  /*******************************
-   * 品牌 (.intro_brand)
-   *******************************/
-  .intro_brand {
-    .title,
-    .sub_title,
-    .content {
-    }
-  }
-
-  /*******************************
-   * 品牌 (.intro_brand)
-   *******************************/
-  .intro_taste {
-    .title,
-    .content {
-      color: $dark-font-color;
-    }
-    .menu_btn {
-      border-color: $dark-font-color;
-    }
-    .btn_label {
-      color: $dark-font-color;
-    }
-  }
-
-  /*******************************
-   * 網美牆 (.intro_beauty_wall)
-   *******************************/
-  .intro_beauty_wall {
-    .title,
-    .content {
-    }
-  }
-}
-
-/********************************
- * 菜單-設定 (.section_menu)
- *******************************/
-
-.section_menu {
-  h4 {
-    // font-weight: 600;
-  }
-
-  h4,
-  h5,
-  h6 {
-    font-family: "cwTeXYen", sans-serif;
-    margin: 0;
-  }
-}
-
-/********************************
- * Footer-設定 (.section_footer)
- *******************************/
-.section_footer {
-  .footer_title {
-    font-size: 2rem;
-    color: $dark-font-color;
-  }
-
-  .footer_content {
-    p {
-      font-size: 1.6rem;
-      color: $dark-font-color;
-    }
-  }
 }
 
 /********************************

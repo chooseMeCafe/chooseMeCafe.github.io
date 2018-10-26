@@ -1,63 +1,69 @@
 /*********************
  * footer 樣式
 *********************/
+$footer-bg-color: rgba(0, 0, 0, 0.7);
+// $footer-bg-color: black;
+$footer-font-color: white;
+
 .section_footer {
-  background-color: $dark-color;
+  background-color: $footer-bg-color;
+  padding: 2rem;
 
-}
+  hr {
+    background-color: $footer-font-color;
+    width: 50px;
+  }
 
-// 分隔線 hr
-.section_footer hr {
-  background-color: white;
-  width: 50px;
-}
+  h5 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $footer-font-color;
+  }
 
-// 版權聲明 .copyright
-.section_footer .copyright {
-  text-align: center;
-  margin-top: 40px;
-}
-/***********************
- * css樣式請輸入在上方{}內
- ***********************/
+  p {
+    font-size: 2rem;
+    color: $footer-font-color;
+  }
 
-// 所有卡片 .card
-.section_footer .card {
-  background-color: $dark-color;
-}
+  .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
 
-// fb ig 小圖標 .icon_group
-.section_footer .icon_group {
-  line-height: 50px;
-}
-
-// 返回最上按鈕 .go_top
-.go_top {
-  position: fixed;
-  float: right;
-  margin-top: 20px;
-  right: 20px;
-  bottom: 20px;
-}
-
-// 版權聲明 .copyright
-.section_footer .copyright {
-  text-align: center;
-  margin-top: 40px;
+  .icon_group {
+    line-height: 50px;
+  }
 }
 
 // 螢幕寬度介於 lg:992px 與 xl:1200px 之間
 @media (min-width: $lg) and (max-width: $xl) {
   // 選取 col* 最後一個元素(卡片 Follow Us)
-  div[class^="col"]:last-child {
-    margin-top: 0.5rem;
+  .footer {
+    div[class^="col"]:last-child {
+      margin-top: 0.5rem;
+    }
   }
 }
 
 // 螢幕寬度小於 lg:992px
 @media screen and (max-width: $lg) {
+ 
   // 選取所有 col* 元素(3張卡片)
-  div[class^="col"] {
-    margin-bottom: 0.5rem;
+  .footer {
+    div[class^="col"] {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      text-align: center;
+    }
   }
 }

@@ -4,8 +4,8 @@
  *  變量設定
  **************/
 const secNavMTl = new TimelineMax({ paused: true });
-const navMBtn = document.querySelector(SEC_NAVBAR_MOBILE + " #menu_btn");
-const navMobileOptions = document.querySelectorAll(SEC_NAVBAR_MENU_MOBILE + " .option");
+const navMBtn = document.querySelector("#section_nav #nav_menu_btn");
+var navMobileOptions = document.querySelectorAll("#section_nav_mobile_menu .option");
 
 secNavMTl.to(SEC_NAVBAR_MENU_MOBILE, 0.8, {
   top: "0%",

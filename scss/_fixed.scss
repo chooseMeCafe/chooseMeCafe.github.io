@@ -11,12 +11,13 @@
   }
 
   .arrow_icon {
-    color: $font-color;
+    color: $dark-color;
     text-align: center;
     display: block;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    color: $dark-color;
   }
 }

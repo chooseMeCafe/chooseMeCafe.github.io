@@ -2,9 +2,25 @@
  * 社群照片展示 樣式
  *************************/
 .section_community {
-  // 設定邊距
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .title {
+    font-size: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .neon {
+    font-size: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .neon {
+    animation: neon 3s ease infinite;
+  }
+
   .photo_swiper {
-    padding: 0 4rem;
+    padding: 4rem 4rem;
     position: relative;
   }
 
