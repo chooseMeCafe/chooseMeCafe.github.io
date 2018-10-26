@@ -14,7 +14,7 @@ const communitySwiper = new Swiper(SEC_COMMUNITY + " .swiper-container", {
   slidesPerView: 5,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
     disableOnInteraction: false
   },
   breakpoints: {
